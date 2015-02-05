@@ -46,34 +46,75 @@
 \section{Project description}
 %==============================================================================
 
-My Major project is to create a social messaging platform that is based on the location based posts, the main idea is to be able to leave a message on a specific physical location and when one of your followers on the application walks over this specific location then a notification is thrown up on the recipients phone showing the message that has been left on this location. \\
+My Major project is to create a social messaging platform that is based on location based posts. The main idea is to be able to leave a message on a specific physical location and when one of your followers on the application walks over this specific location then a notification is thrown up on the recipient's phone showing the message that has been left on this location. \\
 \\
-Some of the key applications of this application could also be to be a public notifier of information people in specific areas, So for example an event like a run there could be a marker at various points throughout the event where it notifiers the user the percentage they are through the run. \\
+Some of the key uses of this application could be as a public notifier of information for people in specific areas. So for example in an event like a run there could be a marker at various points throughout the event where it notifiers the user of the percentage they are through the run. \\
 \\
 A more mundane usage of the application could be to notify various members of a household to remind one of the other members to pick something up from the local shop when they reach the entrance of their work place. \\
 \\
-The application main talent should be that it is easy to post a new message without to much thought and most of the work should be hidden behind the scenes to make it as simple for the user to post messages, the user should be able to leave feedback on the tags that have been left (something a bit like a Facebook comments) with the ability to up vote and down vote various posts to give more social feedback on members posts.\\
+The application's main talent should be that it is easy to post a new message without too much thought and most of the work should be hidden behind the scenes to make it simple for the user to post messages. The user should be able to leave feedback on the tags that have been left (something a bit like a Facebook comments) with the ability to up vote and down vote various posts to give more social feedback on member's posts.\\
 \\
-A considerable amount of work for the project will be determining if the post user is close to a post in the local area. And triggering notification to the user to give them the relevant information that they want to receive in the most efficient and battery friendly means possible, the problem with GPS is that it is incredibly power hungry and will drain the users battery very quickly if there is no effort to preserve it.\\
+A considerable amount of work for the project will be in determining if the post user is close to a post in the local area triggering notifications to the user to give them the relevant information that they want to receive in the most efficient and battery-friendly means possible. The problem with GPS is that it is incredibly power hungry and will drain the user's battery very quickly if there is no effort to preserve it.\\
 \\
-I will develop the application in the native Android SDK, for efficiency and greater support my decision was aided by the fact I already own an Android based phone. And after talking to a few application developers I decided it is not wise to use phone gap as a lot of the functionality that I would require I would have to write my own custom libraries for to do the functionality that I was requiring.\\
-\\
-
-
-
+I will develop the application in the native Android SDK, for efficiency and greater support. My decision was aided by the fact I already own an Android based phone. After talking to a few application developers I decided it is not wise to use phone gap as for a lot of the functionality that I require I would have to write my own custom libraries.
 
 %==============================================================================
 \section{Proposed tasks}
 %==============================================================================
+
+Most of the tasks that I will be involved with for my project will be battling with various types of technologies. There may be some research in the best way of implementing various parts of the system.\\
+\\
+Some research and reading will be needed on determining how far various GPS co-ordinates are away from each other and to ensure that notifications are triggered at correct times.\\
+\\
+Most of my time in the early stages of the development will be dedicated to learning the Android eco-system along with the development environment that goes with all of the Android type projects. Additionally a great deal of research will go into researching and learning the Google Maps API for Android. I will also learn the Android GPS API and being able to do calculations on it to work out where we are in relation to other co-ordinates.\\
+\\
+Some of the main reading I will have to do for my project will be on the Android Material Design methodologies of design theories. This will be important to developing a commercial application with the stock Android look and feel.\\
+\\
+Another thing that will be outside of my comfort zone will be using Postgres SQL, so researching and learning to use this for the database side of the application will be something that I will need to read up on. I don't think this will be too much of a time sink due to my prior knowledge of other SQL-type languages.\\
+\\
+I will be writing a backed application to tie all of the services together. This will be written in Node.js, and will interact between the database and some RESTful type services that will enable the mobile application to relay and talk back to one central point. Some of the spike work will be finding out where the compilation will be carried out that will do the detection of nearby events. It is very likely that the work will be done by the database engine rather than the Node.js backend.\\
+\\ 
+One of my additional goals will be to create a Pebble smart watch application that will tie into the main Android application giving the ability to quickly check the messages from the wrist of the user along with the ability to quickly post to the application with some pre-defined messages. This will require learning the Pebble SDK, which already taps into the Android SDK and the applications can be written in C or JavaScript which are two languages that I already know so it should not be too hard to develop overall.
+
+% Dealing with google maps API, *
+% Learning Android *
+% Moving to postgress *
+% Dealing with GPS Api's *
+% Android Material Design standards *
+% Writing node back end. * 
+% Researching how to work out how close gps to another point. *
+% Developer Pebble app (nice to have). *
 
 
 %==============================================================================
 \section{Project deliverables}
 %==============================================================================
 
-%
-% Start to comment out / remove the following lines. They are only provided for instruction for this example template.  You don't need the following section title, because it will be added as part of the bibliography section. 
-%
+My project will try to embody the use of extreme programming mentality. This will mean that there will be rolling releases of my project, and I will try to issue a testing version multiple times a week to try and get user feedback as quickly as I can.
+
+\begin{itemize}
+\item \textbf{Feature List:} This will detail the various types of actions that the user can carry out when they are working with the application, and what features will be added throughout the development of the application and services.
+
+\item \textbf{Initial Design Documents:} This contains a high level design and description of how all the pieces of the puzzle fit together and inter-operate and what needs to be developed to create the Android application and the services that are required for the project.
+
+\item \textbf{Android Application:} Main outcome of the project will be this. It will be to deliver a working application that will be able to achieve the concepts that have been covered in the first section of this document.
+
+\item \textbf{Web Services:} This will be the services that serve the main Android application giving all the functionality that has been mentioned in the previous section.
+
+\item \textbf{Project Report:} This report will detail the development of all the other deliverables including all the problems, solutions and conclusion of the development of all the other deliverable items. This report can be anywhere between 10,000 and 20,000 words long.
+
+\item \textbf{(Optional) Pebble Application:} This will be a functioning application for the Pebble Smart watch. This is not a 'must have' so it may not be finished or exist at all.
+
+\end{itemize}
+
+% Feature list.
+% Initial Design Documents.
+% Android Application.
+% Back end services.
+% (Optional) Pebble App.
+% Project Report.
+
+
 %==============================================================================
 \section*{Your Bibliography - REMOVE this title and text for final version}
 %==============================================================================
