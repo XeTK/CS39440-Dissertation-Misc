@@ -1,67 +1,60 @@
-
-% This is an example of a string: this is the way you do variables in BiBTex
-% @string{variable_name="string the variable_name refers to"}
-@string{aij= "Artificial Intelligence"}
+%% This BibTeX bibliography file was created using BibDesk.
+%% http://bibdesk.sourceforge.net/
 
 
-% This is an example of a book. By putting the title in {{ double brackets,
-% capitalisation is preserved.
-
-@book{NumericalRecipes,
-  title={{Numerical recipes in C}},
-  author={Press, W.H. and others},
-  year={1992},
-  publisher={Cambridge University Press Cambridge},
-  isbn={0123456789},
-  pages = {349--361},
-  annote={This is my annotation. I can add in comments that are in \textbf{bold} and \em{italics} and then other content.},
-}
+%% Created for Tom Rosier at 2015-02-05 21:23:02 +0000 
 
 
-% This is an example of a conference paper. Note the accented character in the 
-% author list.  Again, capitalisation of the title is important so it is in
-% double brackets 
-@INPROCEEDINGS{MarksPaper,
-    author = {Mark Neal and Jan Feyereisl and Rosario Rascun\`{a} and Xiaolei Wang},
-    title = {{Don't touch me, I'm fine: Robot autonomy using an artificial innate immune system}}, 
-    booktitle = {Proceedings of the 5th International Conference on Artificial Immune Systems},
-    year = {2006},
-    pages = {349--361},
-    publisher = {Springer},
-    annote={This paper...}
-}
+%% Saved with string encoding Unicode (UTF-8) 
 
-% This is an example of a journal article. We use the variable defined at the
-% top here - by typing aij, we get Artificial Intelligence journal title 
-% without having to type it out
-@article{HannahsPaper,
- author={Dee, H. M. and Hogg, D. C.},
- title={Navigational strategies in behaviour modelling},
- year=2009,
- journal=aij, 
- volume={173(2)}, 
- pages={329-342},
-  annote={This is my annotation. I should add in a description here.}
-}
 
-% This is an example of a URL reference
-% Note you should try to identify authorship of web resources
-% Also note you should include the date you last accessed the page.
-@MISC{FailBlog,
-author = {Various},
-title = {Fail Blog},
-month = Aug,
-year = {2011},
-howpublished={\url{http://www.failblog.org/}},
-note={Accessed August 2011},
-annote={This is my annotation. I should add in a description here.}
-}
+@string{aij = {Artificial Intelligence}}
 
-@misc{kittenpic_ref,
-  author="Sylvia Duckworth",
- title={{A picture of a kitten at Hellifield Peel}},
- howpublished={\url{http://www.geograph.org.uk/photo/640959}},
- year=2007,
- note={Copyright Sylvia Duckworth and licensed for reuse under a Creative Commons Attribution-Share Alike 2.0 Generic Licence. Accessed August 2011},
-  annote={This is my annotation. I should add in a description here.}
-}
+
+@url{Source6,
+	Annote = {http://www.fastcolabs.com/3030873/our-html5-web-app-flopped-so-we-went-native-and-havent-looked-back This article was part part of the reason I elected to go for a Native App over Phonegap.},
+	Author = {Kyri Sarantakos},
+	Date-Added = {2015-02-05 21:08:14 +0000},
+	Date-Modified = {2015-02-05 21:17:35 +0000},
+	Lastchecked = {05/02/2015},
+	Title = {Our HTML5 Web App Flopped, So We Went Native (And Haven't Looked Back)}}
+
+@url{Source5,
+	Annote = {https://developer.android.com/design/material/index.html This details the design requirements that are required for working with Android to make the UI consistent with the rest of the OS.},
+	Author = {Google},
+	Date-Added = {2015-02-05 20:56:08 +0000},
+	Date-Modified = {2015-02-05 21:15:54 +0000},
+	Lastchecked = {05/02/2015},
+	Title = {Material Design}}
+
+@url{Source4,
+	Annote = {https://www.digitalocean.com/community/tutorials/sqlite-vs-mysql-vs-postgresql-a-comparison-of-relational-database-management-systems This was one of the articales that helped me decided to use Postgress SQL over some of the alternatives.},
+	Author = {O.S. Tezer},
+	Date-Added = {2015-02-05 20:33:07 +0000},
+	Date-Modified = {2015-02-05 21:22:40 +0000},
+	Lastchecked = {05/02/2015},
+	Title = {SQLite vs MySQL vs PostgreSQL: A Comparison Of Relational Database Management Systems}}
+
+@url{Source3,
+	Annote = {https://www.npmjs.com/package/pg This is the package I plan to use to interface the backend of the application into the database.},
+	Author = {Brian Carlson},
+	Date-Added = {2015-02-05 20:29:53 +0000},
+	Date-Modified = {2015-02-05 21:22:34 +0000},
+	Lastchecked = {05/02/2015},
+	Title = {PostgreSQL client - pure javascript and libpq with the same API}}
+
+@url{Source2,
+	Annote = {https://developers.google.com/maps/documentation/android/ This details how to work with the Google Mapping API that I will use for the main ui map within my application, and this undermins alot of the app developmnet.},
+	Author = {Google},
+	Date-Added = {2015-02-05 20:25:20 +0000},
+	Date-Modified = {2015-02-05 21:14:45 +0000},
+	Lastchecked = {05/02/2015},
+	Title = {Google Maps Android API v2}}
+
+@url{Source1,
+	Annote = {http://www.movable-type.co.uk/scripts/latlong.html This blog post contains the various components that are required for calculating the distance between two points on a map using the GPS positions.},
+	Author = {Chris Veness},
+	Date-Added = {2015-02-05 20:20:02 +0000},
+	Date-Modified = {2015-02-05 21:12:52 +0000},
+	Lastchecked = {05/02/2015},
+	Title = {Calculate distance, bearing and more between Latitude/Longitude points}}
