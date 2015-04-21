@@ -28,6 +28,8 @@
 \usepackage{cite}
 %\usepackage{natbib}
 
+\usepackage{titlesec}
+
 % Use the following to selectively exclude chapters
 %\includeonly{cover,abstract,acknowledge,declare,chapter1,chapter2}
 
@@ -50,6 +52,13 @@
 
 \include{acknowledgements} % Acknowledgements
 \include{abstract}                 % Abstract
+
+\setcounter{secnumdepth}{4}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
 
 \pagenumbering{roman}
 \pagestyle{fancy}

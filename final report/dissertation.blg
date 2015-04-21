@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2013)
+This is BibTeX, Version 0.99d (TeX Live 2014)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: dissertation.aux
 A level-1 auxiliary file: cover.aux
@@ -19,55 +19,54 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: References/references.bib
-Warning--entry type for "apache_poi" isn't style-file defined
---line 57 of file References/references.bib
-Warning--entry type for "apache_license" isn't style-file defined
---line 66 of file References/references.bib
+Warning--I didn't find a database entry for "apache_poi"
+Warning--I didn't find a database entry for "apache_license"
+Warning--I didn't find a database entry for "NumericalRecipes"
 -- IEEEtranS.bst version 1.11 (2003/04/02) by Michael Shell.
 -- http://www.ctan.org/tex-archive/macros/latex/contrib/supported/IEEEtran/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 ** Sorting version - not for use with work to be submitted to the IEEE.
 
 Done.
-You've used 7 entries,
+You've used 91 entries,
             4538 wiz_defined-function locations,
-            944 strings with 9409 characters,
-and the built_in function-call counts, 4927 in all, are:
-= -- 426
-> -- 105
-< -- 27
-+ -- 54
-- -- 24
-* -- 237
-:= -- 781
-add.period$ -- 15
-call.type$ -- 7
-change.case$ -- 33
-chr.to.int$ -- 69
-cite$ -- 7
-duplicate$ -- 325
-empty$ -- 402
-format.name$ -- 27
-if$ -- 1082
+            1356 strings with 30503 characters,
+and the built_in function-call counts, 39842 in all, are:
+= -- 3640
+> -- 637
+< -- 0
++ -- 275
+- -- 182
+* -- 1396
+:= -- 7363
+add.period$ -- 182
+call.type$ -- 91
+change.case$ -- 364
+chr.to.int$ -- 0
+cite$ -- 91
+duplicate$ -- 2700
+empty$ -- 3520
+format.name$ -- 182
+if$ -- 8262
 int.to.chr$ -- 0
-int.to.str$ -- 7
-missing$ -- 57
-newline$ -- 48
-num.names$ -- 14
-pop$ -- 161
+int.to.str$ -- 91
+missing$ -- 637
+newline$ -- 566
+num.names$ -- 182
+pop$ -- 1986
 preamble$ -- 1
-purify$ -- 25
+purify$ -- 273
 quote$ -- 2
-skip$ -- 372
+skip$ -- 3094
 stack$ -- 0
-substring$ -- 206
-swap$ -- 228
-text.length$ -- 4
+substring$ -- 457
+swap$ -- 1563
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 6
-type$ -- 55
+type$ -- 819
 warning$ -- 0
-while$ -- 25
-width$ -- 8
-write$ -- 87
-(There were 2 warnings)
+while$ -- 182
+width$ -- 93
+write$ -- 1005
+(There were 3 warnings)
