@@ -41,6 +41,13 @@
 \contentsline {chapter}{\numberline {5}Evaluation}{7}
 \contentsline {chapter}{Appendices}{8}
 \contentsline {chapter}{\numberline {A}Third-Party Code and Libraries}{9}
-\contentsline {chapter}{\numberline {B}Code samples}{10}
-\contentsline {section}{\numberline {2.1}Random Number Generator}{10}
-\contentsline {chapter}{Annotated Bibliography}{13}
+\contentsline {section}{\numberline {1.1}Android application}{9}
+\contentsline {subsection}{\numberline {1.1.1}Libraries}{9}
+\contentsline {subsection}{\numberline {1.1.2}Code Snippets}{9}
+\contentsline {section}{\numberline {1.2}Server side}{25}
+\contentsline {subsection}{\numberline {1.2.1}Libraries}{25}
+\contentsline {subsection}{\numberline {1.2.2}Code Snippets}{25}
+\contentsline {chapter}{\numberline {B}Code samples}{28}
+\contentsline {section}{\numberline {2.1}Android Application}{28}
+\contentsline {section}{\numberline {2.2}Server Side}{28}
+\contentsline {chapter}{Annotated Bibliography}{29}

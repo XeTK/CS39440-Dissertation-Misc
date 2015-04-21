@@ -1,13 +1,944 @@
 \chapter{Third-Party Code and Libraries}
 
-If you have made use of any third party code or software libraries, i.e. any code that you have not designed and written yourself, then you must include this appendix. 
+\lstjava
 
-As has been said in lectures, it is acceptable and likely that you will make use of third-party code and software libraries. The key requirement is that we understand what is your original work and what work is based on that of other people. 
+\section{Android application}
 
-Therefore, you need to clearly state what you have used and where the original material can be found. Also, if you have made any changes to the original versions, you must explain what you have changed. 
 
-As an example, you might include a definition such as: 
+\subsection{Libraries}
 
-Apache POI library – The project has been used to read and write Microsoft Excel files (XLS) as part of the interaction with the client’s existing system for processing data. Version 3.10-FINAL was used. The library is open source and it is available from the Apache Software Foundation 
-\cite{apache_poi}. The library is released using the Apache License 
-\cite{apache_license}. This library was used without modification. 
+\subsubsection*{Google Maps API}
+
+\subsubsection*{Android Asynchronous Http Client}
+
+
+\subsection{Code Snippets}
+
+\subsubsection*{GPS Code}
+
+\begin{lstlisting}
+
+package uk.co.tomrosier.xetk.losesono.prototype.prototype.utils;
+
+import android.app.AlertDialog;
+import android.app.Service;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
+import android.os.Bundle;
+import android.os.IBinder;
+import android.provider.Settings;
+import android.util.Log;
+
+/**
+ * TODO: power saving needs to be implemented.
+ * This handles interaction with the Android GPS and location services.
+ */
+
+// Taken from http://stackoverflow.com/a/15757944
+
+public class GPSTracker extends Service implements LocationListener {
+
+    private final Context mContext;
+
+    // Flag for GPS status
+    boolean isGPSEnabled = false;
+
+    // Flag for network status
+    boolean isNetworkEnabled = false;
+
+    // Flag for GPS status
+    boolean canGetLocation = false;
+
+    Location location; // Location
+    double latitude; // Latitude
+    double longitude; // Longitude
+
+    // The minimum distance to change Updates in meters
+    private static final long MIN_DISTANCE_CHANGE_FOR_UPDATES = 10; // 10 meters
+
+    // The minimum time between updates in milliseconds
+    private static final long MIN_TIME_BW_UPDATES = 1000 * 60 * 1; // 1 minute
+
+    // Declaring a Location Manager
+    protected LocationManager locationManager;
+
+    public GPSTracker(Context context) {
+        this.mContext = context;
+        getLocation();
+    }
+
+    public Location getLocation() {
+        try {
+
+            locationManager = (LocationManager) mContext
+                    .getSystemService(LOCATION_SERVICE);
+
+            // Getting GPS status
+            isGPSEnabled = locationManager
+                    .isProviderEnabled(LocationManager.GPS_PROVIDER);
+
+            // Getting network status
+
+            if (!isGPSEnabled && !isNetworkEnabled) {
+                // No network provider is enabled
+            } else {
+                this.canGetLocation = true;
+                if (isNetworkEnabled) {
+
+                    locationManager.requestLocationUpdates(
+                            LocationManager.NETWORK_PROVIDER,
+                            MIN_TIME_BW_UPDATES,
+                            MIN_DISTANCE_CHANGE_FOR_UPDATES, this);
+
+                    Log.d("Network", "Network");
+
+                    if (locationManager != null) {
+                        location = locationManager
+                                .getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
+
+                        if (location != null) {
+                            latitude = location.getLatitude();
+                            longitude = location.getLongitude();
+                        }
+                    }
+                }
+
+                // If GPS enabled, get latitude/longitude using GPS Services
+                if (isGPSEnabled) {
+
+                    if (location == null) {
+
+                        locationManager.requestLocationUpdates(
+                                LocationManager.GPS_PROVIDER,
+                                MIN_TIME_BW_UPDATES,
+                                MIN_DISTANCE_CHANGE_FOR_UPDATES, this);
+
+                        Log.d("GPS Enabled", "GPS Enabled");
+
+                        if (locationManager != null) {
+                            location = locationManager
+                                    .getLastKnownLocation(LocationManager.GPS_PROVIDER);
+
+                            if (location != null) {
+                                latitude = location.getLatitude();
+                                longitude = location.getLongitude();
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return location;
+    }
+
+
+    /**
+     * Stop using GPS listener
+     * Calling this function will stop using GPS in your app.
+     * */
+    public void stopUsingGPS(){
+        if(locationManager != null){
+            locationManager.removeUpdates(GPSTracker.this);
+        }
+    }
+
+
+    /**
+     * Function to get latitude
+     * */
+    public double getLatitude(){
+        if(location != null){
+            latitude = location.getLatitude();
+        }
+
+        // return latitude
+        return latitude;
+    }
+
+
+    /**
+     * Function to get longitude
+     * */
+    public double getLongitude(){
+        if(location != null){
+            longitude = location.getLongitude();
+        }
+
+        // return longitude
+        return longitude;
+    }
+
+    /**
+     * Function to check GPS/Wi-Fi enabled
+     * @return boolean
+     * */
+    public boolean canGetLocation() {
+        return this.canGetLocation;
+    }
+
+
+    /**
+     * Function to show settings alert dialog.
+     * On pressing the Settings button it will launch Settings Options.
+     * */
+    public void showSettingsAlert(){
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(mContext);
+
+        // Setting Dialog Title
+        alertDialog.setTitle("GPS is settings");
+
+        // Setting Dialog Message
+        alertDialog.setMessage("GPS is not enabled. Do you want to go to settings menu?");
+
+        // On pressing the Settings button.
+        alertDialog.setPositiveButton("Settings", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog,int which) {
+                Intent intent = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
+                mContext.startActivity(intent);
+            }
+        });
+
+        // On pressing the cancel button
+        alertDialog.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.cancel();
+            }
+        });
+
+        // Showing Alert Message
+        alertDialog.show();
+    }
+
+
+    @Override
+    public void onLocationChanged(Location location) {
+    }
+
+
+    @Override
+    public void onProviderDisabled(String provider) {
+    }
+
+
+    @Override
+    public void onProviderEnabled(String provider) {
+    }
+
+
+    @Override
+    public void onStatusChanged(String provider, int status, Bundle extras) {
+    }
+
+
+    @Override
+    public IBinder onBind(Intent arg0) {
+        return null;
+    }
+}
+
+\end{lstlisting}
+
+
+\subsubsection*{GPS Distance Calculation Code}
+
+\begin{lstlisting}
+
+// This calculates the distance between two gps coordinates.
+// Based off http://www.movable-type.co.uk/scripts/latlong.html.
+private static double calculateDistance(Double lat1, Double lon1, Double lat2, Double lon2) {
+
+    // The radius of the earth.
+    long radius = 6371000;
+
+    // Seriously do not have a idea whats going on here, Copied it from the movable-type source and just checked the variables had the same values.
+
+    double la1 = Math.toRadians(lat1);
+    double la2 = Math.toRadians(lat2);
+
+    double lo1 = Math.toRadians(lon1);
+    double lo2 = Math.toRadians(lon2);
+
+    double lat = (la2 - la1);
+    double lon = (lo2 - lo1);
+
+    double a = Math.sin(lat / 2) * Math.sin(lat / 2) +
+               Math.cos(la1)     * Math.cos(la2) *
+               Math.sin(lon / 2) * Math.sin(lon / 2);
+
+    double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+
+    double distant = radius * c;
+
+    return distant;
+}
+ 
+\end{lstlisting}
+
+
+\subsubsection*{Google Maps API Code}
+
+\begin{lstlisting}
+
+    // This sets up map ready.
+    private void setUpMapIfNeeded() {
+
+        /* Side note, all Google's API documentation is out of date for this... */
+
+        // Try to obtain the map from the SupportMapFragment.
+        MapFragment mapFragment = (MapFragment) getFragmentManager().findFragmentById(R.id.messageMapFragment);
+
+        // Setup the map asynchronously,
+        mapFragment.getMapAsync(
+            new OnMapReadyCallback() {
+
+                // When the map has loaded then we do stuff thats important.
+                @Override
+                public void onMapReady(GoogleMap googleMap) {
+                    // Setup the map for the needs we need.
+                    setUpMap(googleMap);
+                }
+            }
+        );
+    }
+
+    // Setup the map with the things important to us.
+    private void setUpMap(GoogleMap mMap) {
+
+        // Get the current location so we can tag it on the map.
+        HandleGPS gps = new HandleGPS(this);
+
+        // Set the current lat and long, so we can access them again later.
+        lat = gps.getLatitude();
+        lon = gps.getLongitude();
+
+        // Check we have a valid GPS fix before we populate the maps.
+        boolean validGPSFix = gps.isValidGPS();
+
+        if (validGPSFix) {
+
+            // Gen a new lat and long ready to make the marker.
+            LatLng location = new LatLng(lat, lon);
+
+            // The specific options for the tag.
+            MarkerOptions markerOpts = new MarkerOptions();
+            markerOpts.position(location);
+            markerOpts.title("Add a tag to this location.");
+            markerOpts.visible(true);
+
+            // Get a marker from the options.
+            Marker marker = mMap.addMarker(markerOpts);
+            marker.showInfoWindow(); // Show the information handle.
+
+            // Setup the view point for the map.
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(location, 16));
+
+            // Disable the things we don't need.
+            mMap.getUiSettings().setScrollGesturesEnabled(false);
+            mMap.getUiSettings().setZoomGesturesEnabled(false);
+            mMap.getUiSettings().setMapToolbarEnabled(false);
+            mMap.getUiSettings().setCompassEnabled(false);
+            mMap.getUiSettings().setRotateGesturesEnabled(false);
+            mMap.getUiSettings().setTiltGesturesEnabled(false);
+        }
+    }
+ 
+\end{lstlisting}
+
+
+\subsubsection*{Notification Code}
+
+GPSService.java
+\begin{lstlisting}
+ 
+    // This creates a notification that can be viewable in the Android notification draw.
+    private void createNotification(Message msg, User user) {
+
+        System.out.println("Creating notification");
+
+        // Get the message ID from the message to make it easy to access.
+        int msgID = msg.getMessageID();
+
+        // Create some pending intents needed for the notification, one thats for if the notification is dismissed and one for if we want to view the notification.
+        PendingIntent dismissIntent = NotificationActivity.getDismissIntent(msgID, context);
+        PendingIntent realIntent    = NotificationActivity.getRealIntent(msgID,    context);
+
+        // Build the string that is displayed in the notification preview.
+        String msgStr = msg.getContent() + " - " + user.getFirstName() + " " + user.getLastName();
+
+        // Build the notification with the details we need.
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(context);
+
+        builder .setDefaults(Notification.DEFAULT_ALL) // also requires VIBRATE permission
+                .setSmallIcon(R.drawable.icon) // Required!
+                .setContentTitle("Tag nearby")
+                .setContentText(msgStr)
+                .setAutoCancel(true)
+                .setOnlyAlertOnce(true)
+                .addAction(0, "View Tag", realIntent)
+                .addAction(0, "Dismiss Tag", dismissIntent);
+
+        // Builds the notification and issues it.
+        notifyMgr.notify(msgID, builder.build());
+    }
+\end{lstlisting}
+
+NotificationActivity.java
+
+\begin{lstlisting}
+
+package uk.co.tomrosier.xetk.losesono.prototype.prototype.activities;
+
+import android.app.Activity;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.app.TaskStackBuilder;
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.widget.Toast;
+
+/**
+ * This handles the dealing with notifications, as we decide if we want to either clear the notification or we go to the tag on the map.
+ */
+public class NotificationActivity extends Activity {
+
+    // The id of the notification.
+    public static final String NOTIFICATION_ID = "NOTIFICATION_ID";
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        // This gets the list of notifications that have already been created.
+        NotificationManager manager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+
+        // Get the id of the message that we are working with that is the notification.
+        int msgID = getIntent().getIntExtra(NOTIFICATION_ID, -1);
+
+        // Clear the notification from the list that shows the notifications.
+        manager.cancel(msgID);
+
+        // Show that we are clearing all of the notificiations.
+        Toast.makeText(getApplicationContext(), "Clearing Notification: " + msgID, Toast.LENGTH_LONG).show();
+
+        // Close this activity when we are done.
+        finish(); // since finish() is called in onCreate(), onDestroy() will be called immediately
+    }
+
+    // This clears the notification and marks it as already read.
+    public static PendingIntent getDismissIntent(int notificationId, Context context) {
+
+        // Get the activity ready which is this activity.
+        Intent intent = new Intent(context, NotificationActivity.class);
+
+        //intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+
+        // Put the id's of the notification we want to cancel.
+        intent.putExtra(NOTIFICATION_ID, notificationId);
+        intent.setAction("Notification: " + notificationId);
+
+        // Create the pending intent ready for us to clear it.
+        PendingIntent dismissIntent = PendingIntent.getActivity(context, 0, intent, PendingIntent.FLAG_CANCEL_CURRENT);
+
+        // Return the pending intent.
+        return dismissIntent;
+    }
+
+    // This loads the activity to display the notification.
+    public static PendingIntent getRealIntent(int messageID, Context context) {
+
+        // Create a intent to the activity that displays the messages.
+        Intent resultIntent = new Intent(context, ViewMessage.class);
+
+        // Pass the message_id to the activity to view the message that has been left.
+        resultIntent.putExtra("MsgObj", messageID);
+        resultIntent.setAction("Notification: " + messageID);
+
+        // Create a stack that holds the other activityies that need to be in the stack.
+        TaskStackBuilder stackBuilder = TaskStackBuilder.create(context);
+
+        // Put a activity to fall back once we have finished with the message.
+        stackBuilder.addParentStack(NavigationActivity.class);
+
+        // Add the pending intent.
+        stackBuilder.addNextIntent(resultIntent);
+
+        // return the pending intent.
+        return stackBuilder.getPendingIntent(0, PendingIntent.FLAG_ONE_SHOT);
+    }
+}
+
+\end{lstlisting}
+
+
+
+\subsubsection*{Background Services Code}
+
+DiscoverService.java
+
+\begin{lstlisting}
+
+package uk.co.tomrosier.xetk.losesono.prototype.prototype.services;
+
+import android.app.AlarmManager;
+import android.app.PendingIntent;
+import android.app.Service;
+import android.content.Intent;
+import android.os.IBinder;
+
+/**
+ * This is the service that runs every so often to check if the user is close by to a specific message.
+ */
+public class DiscoverService extends Service {
+
+    // Set the delay in secounds between checking again for new notifications.
+    private final static int delay = 30;
+
+    @Override
+    public IBinder onBind(Intent intent) {
+        return null;
+    }
+
+    // Load up the service when the services are deployed.
+    @Override
+    public int onStartCommand(Intent intent, int flags, int startId) {
+
+        System.out.println("Service has been run");
+
+        // Get the current GPS location and check for changes.
+        GPSService gPSS = new GPSService(getApplicationContext());
+
+        gPSS.checkForChange();
+
+        stopSelf();
+        return START_NOT_STICKY;
+    }
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+
+        // Needed to debug services.
+        // android.os.Debug.waitForDebugger();
+
+    }
+
+    @Override
+    public void onDestroy() {
+        // Setup alarm to run services again in x amount of time.
+        AlarmManager alarm = (AlarmManager)getSystemService(ALARM_SERVICE);
+
+        Intent resumeService = new Intent(this, DiscoverService.class);
+
+        alarm.set(
+                alarm.RTC_WAKEUP,
+                System.currentTimeMillis() + (delay * 1000),
+                PendingIntent.getService(this, 0, resumeService, 0)
+        );
+    }
+}
+
+\end{lstlisting}
+
+BootReceiver.java
+
+\begin{lstlisting}
+
+package uk.co.tomrosier.xetk.losesono.prototype.prototype.services;
+
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+
+/**
+ * This class detects when the application is started.
+ */
+public class BootReceiver extends BroadcastReceiver {
+
+    @Override
+    public void onReceive(Context context, Intent intent) {
+
+        // When the application is installed or the phone has finished booting then run this code.
+        if (intent.getAction().equals(Intent.ACTION_BOOT_COMPLETED) ||
+                intent.getAction().equals(Intent.ACTION_MY_PACKAGE_REPLACED)) {
+
+            // Start the service to detect when a message is near.
+            Intent service = new Intent(context, DiscoverService.class);
+            context.startService(service);
+        }
+    }
+}
+
+\end{lstlisting}
+
+\subsubsection*{Listview Code}
+
+MessageFriendsActivity.java
+
+\begin{lstlisting}
+package uk.co.tomrosier.xetk.losesono.prototype.prototype.activities;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ListView;
+
+import java.util.ArrayList;
+
+import uk.co.tomrosier.xetk.losesono.prototype.prototype.ArrayAdapters.FriendArrayAdapter;
+import uk.co.tomrosier.xetk.losesono.prototype.prototype.R;
+import uk.co.tomrosier.xetk.losesono.prototype.prototype.RestClient.FriendRestClient;
+import uk.co.tomrosier.xetk.losesono.prototype.prototype.RestClient.MessageRestClient;
+import uk.co.tomrosier.xetk.losesono.prototype.prototype.entities.Friend;
+import uk.co.tomrosier.xetk.losesono.prototype.prototype.utils.AjaxCompleteHandler;
+
+/**
+ * This is the activity for adding the visibility to friends for a given message.
+ */
+
+public class MessageFriendsActivity extends ActionBarActivity {
+
+    // List of the items shown on the screen.
+    private ArrayList<Friend> listItems = new ArrayList<Friend>();
+
+    /// This is the adapter that shows the listview on the screen.
+    private FriendArrayAdapter adapter;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_message_friends);
+
+        // Get the list view from the layout so we can add items to it.
+        ListView lw = (ListView) findViewById(R.id.ListViewFriends);
+
+        // Setup the display adapter to add the items to.
+        adapter = new FriendArrayAdapter(this, listItems);
+
+        // Set the view point for the listview.
+        lw.setAdapter(adapter);
+
+        // Get the bundle from the intent.
+        Bundle extras = getIntent().getExtras();
+
+        // Check the extras see if we have any.
+        if (extras != null) {
+
+            // Get the message_id that has been passed to the activity.
+            final int messageID = extras.getInt("Message_ID");
+
+            // Get the restclient for dealing with friends.
+            FriendRestClient fRC = new FriendRestClient(this);
+
+            // Get the list of friends from the server.
+            fRC.getFriends(
+                new AjaxCompleteHandler() {
+                    @Override
+                    public void handleAction(Object someData) {
+                        // What we do with each friends in the list.
+                        Friend user = (Friend)someData;
+
+                        // Add each friend to the list.
+                        listItems.add(user);
+                        // Show the data has been changed once we added.
+                        adapter.notifyDataSetChanged();
+                    }
+                }
+            );
+
+            // Get the button for submitting the data.
+            Button BtnSelectFriends = (Button) findViewById(R.id.BtnSelectFriends);
+
+            // Process the selected friends on the button press.
+            BtnSelectFriends.setOnClickListener(
+                    new View.OnClickListener() {
+
+                        @Override
+                        public void onClick(View arg0) {
+                            // For each of the friends, in the list view.
+                            for (int i = 0; i < adapter.getCount(); i++) {
+                                // Get the friend object from the adapter view.
+                                Friend fi = adapter.getItem(i);
+
+                                if (fi.isChecked()) {
+                                    // Get the message rest client ready to append the friend to the message.
+                                    MessageRestClient mRC = new MessageRestClient(getApplicationContext());
+
+                                    // Add the user to the message.
+                                    mRC.addUser(
+                                            new AjaxCompleteHandler() {
+                                                @Override
+                                                public void handleAction(Object someData) {
+                                                    int groupID = (int) someData;
+                                                    System.out.println("GroupID: " + groupID);
+                                                }
+                                            },
+                                            messageID,
+                                            fi.getLinkID()
+                                    );
+                                }
+                            }
+                            // Close the activity.
+                            finish();
+                            // Go back to the home activity.
+                            Intent intent = new Intent(getApplicationContext(), NavigationActivity.class);
+                            startActivity(intent);
+                        }
+
+                    }
+            );
+        }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_message_friends, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.add_friend) {
+
+            // Show the dialog for adding a new friends.
+            Intent myIntent = new Intent(MessageFriendsActivity.this, AddFriendActivity.class);
+            MessageFriendsActivity.this.startActivity(myIntent);
+
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+}
+\end{lstlisting}
+
+FriendArrayAdapter.java
+\begin{lstlisting}
+package uk.co.tomrosier.xetk.losesono.prototype.prototype.ArrayAdapters;
+
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.CheckBox;
+import android.widget.TextView;
+
+import java.util.ArrayList;
+
+import uk.co.tomrosier.xetk.losesono.prototype.prototype.R;
+import uk.co.tomrosier.xetk.losesono.prototype.prototype.entities.Friend;
+
+/**
+ * This is for the listview on the adding friends to a message page.
+ */
+public class FriendArrayAdapter extends ArrayAdapter<Friend> {
+
+    // Keep track of the friends that our shown on the page.
+    private ArrayList<Friend> friendList = new ArrayList<Friend>();
+
+    // When we instantiate the listview we want to get everything ready, for action.
+    public FriendArrayAdapter(Context context, ArrayList<Friend> friends) {
+        super(context, 0, friends);
+        this.friendList = new ArrayList<Friend>();
+        this.friendList.addAll(friendList);
+    }
+
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+        // Get the data item for this position
+        final Friend user = getItem(position);
+        // Check if an existing view is being reused, otherwise inflate the view
+
+        if (convertView == null) {
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.friend_list_item, parent, false);
+        }
+
+        // Lookup view for data population
+        TextView friendName = (TextView) convertView.findViewById(R.id.friendName);
+        CheckBox friendCB   = (CheckBox) convertView.findViewById(R.id.friendCB);
+
+        // String that is displayed.
+        String name = "(" + user.getUser().getUserNmae() + ") " + user.getUser().getFirstName() + " " + user.getUser().getLastName();
+
+
+        // Populate the data into the template view using the data object
+        friendName.setText(name);
+        friendCB.setChecked(false);
+
+        // Register the onClick. To check the box.
+        friendCB.setOnClickListener(
+            new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    user.setChecked(!user.isChecked());
+                }
+            }
+        );
+
+        // Return the completed view to render on screen
+        return convertView;
+    }
+
+    // This gets the id for a given item.
+    @Override
+    public long getItemId(int position) {
+        Friend user = getItem(position);
+        return user.getUser().getUserID();
+    }
+
+    @Override
+    public boolean hasStableIds() {
+        return true;
+    }
+}
+\end{lstlisting}
+
+\subsubsection*{Miscellaneous}
+
+
+
+\section{Server side}
+
+
+\subsection{Libraries}
+
+\subsubsection*{HAPI.js}
+
+\subsubsection*{Sequelize}
+
+
+\subsection{Code Snippets}
+
+\subsubsection*{JSON 2 SQL}
+
+\lstsql
+\begin{lstlisting}
+
+/*
+ * This is a method taken from Stack Overflow, it converts JSON objects directly into records within tables and inserts them into the table.
+ * Taken from http://stackoverflow.com/a/28573007 
+ * All credit goes to user "beldaz".
+ */
+create or replace function jsoninsert(relname text, reljson text) returns record 
+as
+  $body$declare
+  ret record;
+  inputstring text;
+begin
+
+  select string_agg(quote_ident(key),',') 
+  into   inputstring
+  from   json_object_keys(reljson::json) as x (key);
+
+  execute 'insert into '|| quote_ident(relname) 
+    || '(' || inputstring || ') select ' ||  inputstring 
+    || ' from json_populate_record( null::' || quote_ident(relname) || ' , json_in($1)) returning *'
+    into ret using reljson::cstring;
+
+  return ret;
+end;
+$body$
+language plpgsql volatile;
+
+\end{lstlisting}
+
+
+\subsubsection*{RouteLoader.js}
+
+\lstjavascript
+\begin{lstlisting}
+ // Resources used to create this dynamic loader.
+// https://stackoverflow.com/questions/10914751/loading-node-js-modules-dynamically-based-on-route
+// https://gist.github.com/kethinov/6658166
+// https://github.com/XeTK/JSBot/blob/master/loader.js
+
+// Import some stuff todo with file management and building paths.
+var fs          = require('fs');
+var path_module = require('path');
+
+// Store for all the routes we load.
+var route_holder = {};
+
+// Build the path to the routes directory, making it not OS dependent.
+var path = path_module.join(__dirname, 'routes');
+
+// Post the path to the console that everyone knows where it is.
+console.log('Routes path: ' + path.yellow);
+
+// Function to read the whole directory tree from a specific part.
+var walkSync = function(dir, filelist) {
+
+    // Read all the files in the current directory we are working on.
+    var files = fs.readdirSync(dir);
+
+    // Add a new array onto the file list ready to add the next bunch of files.
+    filelist = filelist || [];
+
+    // For all the items we find in the directory.
+    files.forEach(
+        function(file) {
+
+            // Build the whole path for a given file.
+            var iPath = path_module.join(dir, file);
+
+            // Check if the item is a directory.
+            if (fs.statSync(iPath).isDirectory()) {
+                // We start this all over again and get all the files in the directory.
+                filelist = walkSync(iPath + '/', filelist);
+            } else {
+                // Push the files onto the file list.
+                filelist.push(iPath);
+            }
+        }
+    );
+
+    // Return the file list that we just built.
+    return filelist;
+}; 
+
+// Start reading the files in the routes directory.
+var files = walkSync(path + '/');
+
+// For each file we need to load them dynamically.
+files.forEach(
+    function(file) {
+        
+        // Regex we need to check the files are valid for loading.
+        var regex = /\.js$/g;
+
+        // If the file is valid and we can load it then we do.
+        if (regex.test(file)) {
+            // Give some dialog to the user so they can see what file has been loaded.
+            console.log(('Loading route: ' + file).green);
+            // Load the file using require into the application.
+            require(file)(route_holder);
+        } else {
+            // If its not valid we discard it.
+            console.log(('Not route: ' + file).red);
+        }
+    }
+);
+
+// Return the list of plugin's that have been loaded.
+exports.route_holder = route_holder;
+\end{lstlisting}

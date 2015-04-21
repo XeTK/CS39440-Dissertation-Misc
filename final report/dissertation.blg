@@ -19,9 +19,6 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: References/references.bib
-Warning--I didn't find a database entry for "apache_poi"
-Warning--I didn't find a database entry for "apache_license"
-Warning--I didn't find a database entry for "NumericalRecipes"
 -- IEEEtranS.bst version 1.11 (2003/04/02) by Michael Shell.
 -- http://www.ctan.org/tex-archive/macros/latex/contrib/supported/IEEEtran/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
@@ -30,7 +27,7 @@ Warning--I didn't find a database entry for "NumericalRecipes"
 Done.
 You've used 91 entries,
             4538 wiz_defined-function locations,
-            1356 strings with 30503 characters,
+            1352 strings with 30447 characters,
 and the built_in function-call counts, 39842 in all, are:
 = -- 3640
 > -- 637
@@ -69,4 +66,3 @@ warning$ -- 0
 while$ -- 182
 width$ -- 93
 write$ -- 1005
-(There were 3 warnings)
