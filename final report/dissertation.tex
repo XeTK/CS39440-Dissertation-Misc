@@ -20,6 +20,8 @@
 % you will end up with dissertation.pdf 
 \usepackage{mmp}
 
+
+
 % the following packages are used for citations - You only need to include one. 
 %
 % Use the cite package if you are using the numeric style (e.g. IEEEannot). 
@@ -29,6 +31,7 @@
 %\usepackage{natbib}
 
 \usepackage{titlesec}
+\usepackage[none]{hyphenat}
 
 %\usepackage{color}
 \usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
@@ -118,8 +121,10 @@
 % Use the following to selectively exclude chapters
 %\includeonly{cover,abstract,acknowledge,declare,chapter1,chapter2}
 
-\begin{document}
 
+
+\begin{document}
+\noindent
 % all of the include directives below refer to tex files
 % so \include{cover} includes cover.tex - to change the content,
 % edit the tex file

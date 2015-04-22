@@ -1,31 +1,34 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Application home page}}{3}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Adding Friend activity}}{3}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Adding a tag activity}}{4}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Viewing a message}}{4}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Giving friends ability to view message}}{5}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Login Activity for the application}}{5}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces This is the activity for registering to use the application}}{6}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Notification that there is a tag near by.}}{6}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces This is the url endpoints for the REST API}}{7}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces This is the database design for the application}}{9}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Original design of the application}}{4}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Application home page}}{5}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Adding a tag activity}}{5}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Giving friends ability to view message}}{6}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Adding Friend activity}}{6}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Viewing a message}}{7}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Login Activity for the application}}{7}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces This is the activity for registering to use the application}}{8}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Notification that there is a tag near by}}{8}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Very simple block diagram of the final architecture}}{8}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Very simple block diagram of the final architecture}}{9}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces These are the endpoints for the REST API}}{10}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces This is the database design for the application}}{11}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Sublime Text 3.0}}{11}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Android Studio 1.1.0}}{11}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces PGAdmin 1.20.0}}{12}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Postman 2.0.19}}{12}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Opera 28.0}}{13}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Chrome 43.0}}{13}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Android Emulator SDK 22}}{14}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Android Development Bridge}}{14}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Android SDK Updater}}{15}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces PG SQL Command line 9.3.6}}{15}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Sublime Text 3.0}}{13}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Android Studio 1.1.0}}{14}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces PGAdmin 1.20.0}}{15}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Postman 2.0.19}}{16}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Opera 28.0}}{16}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Chrome 43.0}}{17}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Android Emulator SDK 22}}{18}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Android Development Bridge}}{18}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Android SDK Updater}}{19}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces PG SQL Command line 9.3.6}}{19}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Home activity on different devices}}{18}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Post message activity on different devices}}{18}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Viewing message on activity on different devices}}{19}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Setting visibility to friends on different devices}}{19}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Home activity on different devices}}{20}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Post message activity on different devices}}{21}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Viewing message on activity on different devices}}{22}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Setting visibility to friends on different devices}}{22}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
