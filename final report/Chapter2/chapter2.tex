@@ -1,7 +1,7 @@
 %\addcontentsline{toc}{chapter}{Development Process}
 \chapter{Design}
 
-This chapter describes the design stage of developing Location Sensitive Social Notifier it also covers in depth the final design that was implemented in the final version of the application.
+This chapter describes the design stage of developing Location Sensitive Social Notifier and it also covers in depth the final design that was implemented in the final version of the application.
 
 \section{Overview of architecture}
 
@@ -11,13 +11,13 @@ This section will cover the design of the applications at key stages of developm
 
 \subsubsection*{Background}
 
-As the project was done in a iterative and evolutionary style of development there was not much up front planning in the way of initial design, I sketched out a few initial sketches of the block design of the application with all the major parts of the frame work including front end, middle tier and database without any fine details.
-The original plan was to use a Oracle APEX backend which would handle all of the REST requests and SQL side of things, but due to licensing and the fact I wanted to learn new technologies this idea fell by the way side and it was decided to try and use a middle ware along with a SQL database. \\
+As the project was done in a iterative and evolutionary style of development there was not much up front planning in the way of initial design. I sketched out a few initial ideas of the block design of the application with all the major parts of the framework including front end, middle tier and database, without any fine details.
+The original plan was to use an Oracle APEX backend which would handle all of the REST requests and SQL side of things, but due to licensing and the fact I wanted to learn new technologies this idea fell by the wayside and it was decided to try and use a middle-ware along with a SQL database. \\
 \\
-It was unclear at the start of the project what platform the application would be developed for with the choice being between Apple iOS, Google Android or Phone Gapp so in the early design this left some ambiguity to how various features and UI design should be implemented this means in early diagrams the design is very generic and not platform specific.
-Theses early sketches were formulated of the ideas that had been stewing since I had first envisioned the idea the prior year, the next step was to break the application as a whole and break it down into its functional requirements.\\
+It was unclear at the start of the project what platform the application would be developed for, with the choice being between Apple iOS, Google Android or Phone Gapp. So in the early design this left some ambiguity as to how various features and UI design should be implemented. This means in early diagrams the design is very generic and not platform specific.
+Theses early sketches were devised from the ideas that had been formulating since I had first envisioned the idea the previous year. The next step was to break the application as a whole and break it down into its functional requirements.\\
 
-\begin{figure}[h!]
+\begin{figure}[htb!]
     \centering
     \includegraphics[width=0.5\textwidth]{diagrams/initialblockdiagram}
     \caption{Original design of the application}
@@ -26,7 +26,7 @@ Theses early sketches were formulated of the ideas that had been stewing since I
 
 \subsubsection*{Functionality}
 
-Assessing the functional requirements, required breaking down the concept into parts mainly posting, viewing and being notified about tags were the main parts to the functionality for the application.\\
+Assessing the functional requirements required breaking down the concept into parts. Mainly posting, viewing and being notified about tags were the main parts to the functionality for the application.\\
 
 %TODO:
 %TALK ABOUT FUNCTIONALITY
@@ -36,17 +36,17 @@ Assessing the functional requirements, required breaking down the concept into p
 
 \subsubsection*{UI mock-ups}
 
-Once the application had been broken down into the various functional areas I started to do some rough user interface layouts on paper, once they were to a satisfactory level they were converted into digital mock-ups using Balsamiq which created the figures \ref{fig:application_home_page_image}, \ref{fig:add_friend_activity_image}, \ref{fig:add_tag_activity_image}, \ref{fig:viewing_message_image}, \ref{fig:giving_friends_visability_image}, \ref{fig:login_activity_image}, \ref{fig:registration_activity_image} and \ref{fig:notification_image}. \\
+Once the application had been broken down into the various functional areas I started to do some rough user interface layouts on paper. Once they were to a satisfactory level they were converted into digital mock-ups using Balsamiq which created the figures \ref{fig:application_home_page_image}, \ref{fig:add_friend_activity_image}, \ref{fig:add_tag_activity_image}, \ref{fig:viewing_message_image}, \ref{fig:giving_friends_visability_image}, \ref{fig:login_activity_image}, \ref{fig:registration_activity_image} and \ref{fig:notification_image}. \\
 \\
-The UI design takes some inspiration from other phone applications in particular Snap Chat with the way of quickly sharing messages and Facebook with the quickly accessible stacked menu's, The main reason I took to take inspiration from Snap Chat is because there applications is very quick to use and post messages and the general concept of Lo Se Sono is almost the same bar we are using locations rather than pictures and there is no set timeout on the tags.\\
+The UI design takes some inspiration from other phone applications, in particular Snap Chat with the way of quickly sharing messages and Facebook with the quickly accessible stacked menus. The main reason I took inspiration from Snap Chat is because their application is very quick to use and post messages and the general concept of Lo Se Sono is almost the same bar and locations are used rather than pictures and there is no set timeout on the tags.\\
 \\
-At the time of creating the mock ups it was not clear at what platform the application was going to be implemented for, so the designs have remained very generic without being OS specific.\\
+At the time of creating the mock ups it was not clear for which platform the application was going to be implemented, so the designs have remained very generic without being OS specific.\\
 \\
-These UI mock-ups were used to create the final application, the designs may have been slightly modified between the original design and the implementation in the final designs within the application.\\
+These UI mock-ups were used to create the final application. The designs may have been slightly modified between the original design and the final implementation within the application.\\
 \\
-Figure \ref{fig:application_home_page_image} is the design for the main page of the application and what the users arrive on when the application launches so it is of up most important that this page is easy to navigate and informative to the user, the UI design has been intentionally designed to show the tags that are most relevant to the user at the time they have opened the application showing the tags in there immediate vicinity, theses can be either the users own tags or there friends who have left them there.\\
+Figure \ref{fig:application_home_page_image} is the design for the main page of the application and where the users arrive when the application launches, so it is of utmost importance that this page is easy to navigate and informative to the user. The UI has been intentionally designed to show the tags that are most relevant to the user at the time they have opened the application, showing the tags in their immediate vicinity. These can be either the user's own tags or their friends who have left them there.\\
 
-\begin{figure}[h!]
+\begin{figure}[htb!]
     \centering
     \includegraphics[width=0.25\textwidth]{uimockups/homepage}
     \caption{Application home page}
@@ -54,9 +54,9 @@ Figure \ref{fig:application_home_page_image} is the design for the main page of 
 \end{figure}
 
 \noindent
-In figure \ref{fig:add_tag_activity_image} we are showing the initial design for adding a tag to the map, the key idea is to make it quick and easy to add a tag to the map and make it quickly accessible to the users friends so they can be promptly notified about the tag there friend has added.\\
+In figure \ref{fig:add_tag_activity_image} we are showing the initial design for adding a tag to the map. The key idea is to make it quick and easy to add a tag to the map and make it quickly accessible to the user's friends so they can be promptly notified about the tag their friend has added.\\
 
-\begin{figure}[h!]
+\begin{figure}[htb!]
     \centering
     \includegraphics[width=0.25\textwidth]{uimockups/addtag}
     \caption{Adding a tag activity}
@@ -64,9 +64,9 @@ In figure \ref{fig:add_tag_activity_image} we are showing the initial design for
 \end{figure}
 
 \noindent
-Pictured below in figure \ref{fig:giving_friends_visability_image} this is the screen that enables users friends to view a message that has been left, it should be relatively straight forward and easy to intemperate, the design has changed ever so slightly in the final implementation to try and make it fit in better with the Android design principles.\\
+Pictured in figure \ref{fig:giving_friends_visability_image} is the screen that enables user's friends to view a message that has been left. It should be relatively straight forward and easy to interpret. The design has changed ever so slightly in the final implementation to try and make it fit in better with the Android design principles.\\
 
-\begin{figure}[h!]
+\begin{figure}[htb!]
     \centering
     \includegraphics[width=0.25\textwidth]{uimockups/friendsvisability}
     \caption{Giving friends ability to view message}
@@ -74,9 +74,11 @@ Pictured below in figure \ref{fig:giving_friends_visability_image} this is the s
 \end{figure} 
 
 \noindent
-This is the UI in figure \ref{fig:add_friend_activity_image} to add a new user to the users friends list it gives the user the ability to search for there friends using there names, in the final version of the application the search functionality remains unfinished within the UI but was partially completed within the server side application. When this functionality is implemented it should make it very easy for the user to add new friends within the application thus expanding the audience of the application.\\
+This is the UI in figure \ref{fig:add_friend_activity_image}. To add a new user to the user's friends list it gives the user the ability to search for their friends using their names. In the final version of the application the search functionality remains unfinished within the UI, but was partially completed within the server side application. When this functionality is implemented it should make it very easy for the user to add new friends within the application, thus expanding the audience of the application.\\
 
-\begin{figure}[h!]
+%Alison got to here.
+
+\begin{figure}[htb!]
     \centering
     \includegraphics[width=0.25\textwidth]{uimockups/addfriend}
     \caption{Adding Friend activity}
@@ -86,7 +88,7 @@ This is the UI in figure \ref{fig:add_friend_activity_image} to add a new user t
 \noindent
 In this figure \ref{fig:viewing_message_image} we are show the viewing of a message, this is the screen that has changed the most from the original UI mock ups, where the icons and location of the voting section has been moved to be above the commenting area, there is also now a fixed area at the bottom for adding a comment along with each comment section now including there own voting sections, but again the changes to the initial designs intentionally have been very minor.\\
 
-\begin{figure}[h!]
+\begin{figure}[htb!]
     \centering
     \includegraphics[width=0.25\textwidth]{uimockups/viewmessage}
     \caption{Viewing a message}
@@ -96,7 +98,7 @@ In this figure \ref{fig:viewing_message_image} we are show the viewing of a mess
 \noindent
 The image below in figure \ref{fig:login_activity_image} shows the login screen for the application, this was intentionally kept simplistic to ensure that it is easy for the user to intemperate and should make it fairly secure against attacks as there are less fields to attack.\\
 
-\begin{figure}[h!]
+\begin{figure}[htb!]
     \centering
     \includegraphics[width=0.25\textwidth]{uimockups/login}
     \caption{Login Activity for the application}
@@ -106,7 +108,7 @@ The image below in figure \ref{fig:login_activity_image} shows the login screen 
 \noindent
 Screenshot pictured in figure \ref{fig:registration_activity_image} describes the registration page within the application that enables the user to register to use the application, again it has been kept simple to avoid confuse and ensure that the user can navigate it easily, this should easy annoyance when people are using the application for the first time.\\
 
-\begin{figure}[h!]
+\begin{figure}[htb!]
     \centering
     \includegraphics[width=0.25\textwidth]{uimockups/register}
     \caption{This is the activity for registering to use the application}
@@ -114,30 +116,37 @@ Screenshot pictured in figure \ref{fig:registration_activity_image} describes th
 \end{figure} 
 
 \noindent
-This screenshot in figure \ref{fig:notificiation_image} is an example notification for the application, in the final application this does not look anything like this due to the fact we are using the Google Android notification API and notifications do not appear in this way.
+This screenshot in figure \ref{fig:notification_image} is an example notification for the application, in the final application this does not look anything like this due to the fact we are using the Google Android notification API and notifications do not appear in this way.\\
 
-\begin{figure}[h!]
+\begin{figure}[htb!]
     \centering
     \includegraphics[width=0.25\textwidth]{uimockups/notification}
     \caption{Notification that there is a tag near by}
     \label{fig:notification_image}
 \end{figure} 
-\noindent
 
+\noindent
+Theses designs were used as reference to build the applications UI for the final design, they have intentionally kept similar to the original mock-ups as it was felt that the designs would be easy for users to interpret and a good starting point.\\
 
 \subsection{Final Implementation}
 
-{TODO}
+As the project was developed in a eXtream programing style there was not much design done up front, the major design that was done up front was a list of the main functionality within the application and the final implementation of those features were done in an iterative form. There was a very initial block diagram done showing the different main sections of the application this is showing in figure \ref{fig:initial_diagram_image} this is the basic design of the application without any of the specifics e.g not detailing the libraries that have been used to implement the full application.\\
 
-\begin{figure}[h!]
+\begin{figure}[htb!]
     \centering
     \includegraphics[width=\textwidth]{diagrams/blockdiagram}
-    \caption{Very simple block diagram of the final architecture}
-    \label{fig:final_block_diagram_image}
+    \caption{Very simple block diagram from the start of development}
+    \label{fig:initial_diagram_image}
 \end{figure} 
-\noindent
 
-\begin{figure}[h!]
+\noindent
+The final implementation started with spike work into different frameworks that could be used for the development of the project, we started with the Phone side of the application where there was research into weather to use Phone Gapp or to go for a native application the reasoning and decision to use an exclusively Google Android are covered in section "\ref{sec:android_choice_of_tech} Choice of Technologies".\\
+\\
+Next the focus moved onto the server side application, the focus for the choice of server side environment was focused on looking at cutting edge but also fairly mature server side platforms, the choice was between Node.js with express, Node.js with HAPI.js, Node.js with StrongLoop, Python Flask or Java TomCat please refer to "\ref{sec:node_choice_of_tech} Choice Of Technologies" for more in detail discussion about the rational between the choice of server side frameworks.\\
+\\
+
+
+\begin{figure}[htb!]
     \centering
     \includegraphics[width=\textwidth]{diagrams/finalblockdiagram}
     \caption{Very simple block diagram of the final architecture}
@@ -166,8 +175,14 @@ This screenshot in figure \ref{fig:notificiation_image} is an example notificati
 {TODO}
 
 \subsubsection*{Choice of Technologies}
+\label{sec:android_choice_of_tech}
 
-{TODO}
+The spike work / research that was carried out in the design stage started out by reading about the development experiences of various teams Phone Gapp vs Native to develop there various phone application and the reviews that I got seemed to be very mixed they ranged from saying to avoid or this is the best thing ever, with no clear way to move forward it the next stage was to research the API's that would be essential to the application working this being the Mapping API's and the GPS location. It quickly came apparent although Phone Gapp its fairly mature it could not compare to the libraries that were offered by the native solution.\\
+\\
+One of the benefits of using Phone Gapp over native is that it uses standard web technologies for example HTML, JavaScript \& CSS which I as the developer already knew fairly well and would not need to learn a new language to work on the application but this would still require learning a new framework to work on the application. Another benefit of using Phone Gapp is that the application will run on a multitude of devices from Apple iOS, Google Android and Microsoft Windows Phone where as choosing to go native means that application will only work on the framework and device it is programmed for.\\
+\\
+One of the major downsides of using Phone Gapp is that if there is not a library that exists for a given problem within the application then the developer is required to write in native code a library to couple the Phone Gapp application to the function provided by the phone. Due to this it was decided it would be best to just develop the application in native code as it eliminates theses coupling issues if they do arise. Along with the extra performance given by running within the native framework and not having another interpretive layer between the user and the phones hardware gives the developer and ultimately a better experience with the application
+
 
 \subsubsection*{Initial Design}
 
@@ -194,6 +209,7 @@ This screenshot in figure \ref{fig:notificiation_image} is an example notificati
 {TODO}
 
 \subsubsection*{Choice of Technologies}
+\label{sec:node_choice_of_tech}
 
 {TODO}
 
@@ -201,7 +217,7 @@ This screenshot in figure \ref{fig:notificiation_image} is an example notificati
 
 {TODO}
 
-\begin{figure}[h!]
+\begin{figure}[htb!]
     \centering
     \includegraphics[width=\textwidth]{diagrams/restinterface}
     \caption{These are the endpoints for the REST API}
@@ -229,7 +245,7 @@ This screenshot in figure \ref{fig:notificiation_image} is an example notificati
 
 {TODO}
 
-\begin{figure}[h!]
+\begin{figure}[htb!]
     \centering
     \includegraphics[width=\textwidth]{diagrams/database}
     \caption{This is the database design for the application}

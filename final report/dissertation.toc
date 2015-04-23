@@ -1,61 +1,60 @@
-\contentsline {chapter}{\numberline {1}Background \& Objectives}{1}
-\contentsline {section}{\numberline {1.1}Background}{1}
-\contentsline {subsection}{\numberline {1.1.1}Origin}{1}
-\contentsline {subsection}{\numberline {1.1.2}Research}{1}
-\contentsline {section}{\numberline {1.2}Analysis}{1}
-\contentsline {subsection}{\numberline {1.2.1}Functional Requirements}{1}
-\contentsline {subsection}{\numberline {1.2.2}Technical Requirements}{1}
-\contentsline {section}{\numberline {1.3}Process}{2}
-\contentsline {subsection}{\numberline {1.3.1}Agile}{2}
-\contentsline {subsection}{\numberline {1.3.2}Feature Driven Development}{2}
-\contentsline {subsection}{\numberline {1.3.3}eXtream Programming}{2}
-\contentsline {chapter}{\numberline {2}Design}{3}
-\contentsline {section}{\numberline {2.1}Overview of architecture}{3}
-\contentsline {subsection}{\numberline {2.1.1}Initial Design}{3}
-\contentsline {subsection}{\numberline {2.1.2}Final Implementation}{7}
-\contentsline {subsection}{\numberline {2.1.3}Future Development}{8}
-\contentsline {section}{\numberline {2.2}Client Side}{9}
-\contentsline {subsection}{\numberline {2.2.1}Android Application}{9}
-\contentsline {section}{\numberline {2.3}Server Side}{9}
-\contentsline {subsection}{\numberline {2.3.1}Middle Tier}{9}
-\contentsline {subsection}{\numberline {2.3.2}Database level}{11}
-\contentsline {chapter}{\numberline {3}Implementation}{13}
-\contentsline {section}{\numberline {3.1}Tools used}{13}
-\contentsline {section}{\numberline {3.2}Android application}{15}
-\contentsline {subsection}{\numberline {3.2.1}Development Hardware}{15}
-\contentsline {subsection}{\numberline {3.2.2}Environment}{15}
-\contentsline {subsection}{\numberline {3.2.3}Features}{15}
-\contentsline {section}{\numberline {3.3}Server side application}{15}
-\contentsline {subsection}{\numberline {3.3.1}Environment}{15}
-\contentsline {subsubsection}{\numberline {3.3.1.1}Debian based Linux}{15}
-\contentsline {subsubsection}{\numberline {3.3.1.2}Postgres Database}{15}
-\contentsline {subsubsection}{\numberline {3.3.1.3}Node.js environment}{15}
-\contentsline {subsection}{\numberline {3.3.2}Middle tier application}{15}
-\contentsline {subsubsection}{\numberline {3.3.2.1}Core functionality}{15}
-\contentsline {subsubsection}{\numberline {3.3.2.2}Rest Interface}{15}
-\contentsline {subsubsection}{\numberline {3.3.2.3}Database Connector}{15}
-\contentsline {subsection}{\numberline {3.3.3}Database level}{15}
-\contentsline {subsubsection}{\numberline {3.3.3.1}Tables}{15}
-\contentsline {subsubsection}{\numberline {3.3.3.2}Functions}{15}
-\contentsline {section}{\numberline {3.4}Review of implementation}{15}
-\contentsline {chapter}{\numberline {4}Testing}{20}
-\contentsline {section}{\numberline {4.1}User Testing}{20}
-\contentsline {subsection}{\numberline {4.1.1}Testing community}{20}
-\contentsline {subsection}{\numberline {4.1.2}Test Devices}{20}
-\contentsline {section}{\numberline {4.2}Unit Testing}{20}
-\contentsline {section}{\numberline {4.3}UI Testing}{20}
-\contentsline {section}{\numberline {4.4}Functionality Testing}{21}
-\contentsline {section}{\numberline {4.5}Stress Testing}{21}
-\contentsline {chapter}{\numberline {5}Evaluation}{23}
-\contentsline {chapter}{Appendices}{24}
-\contentsline {chapter}{\numberline {A}Third-Party Code and Libraries}{25}
-\contentsline {section}{\numberline {1.1}Android application}{25}
-\contentsline {subsection}{\numberline {1.1.1}Libraries}{25}
-\contentsline {subsection}{\numberline {1.1.2}Code Snippets}{25}
-\contentsline {section}{\numberline {1.2}Server side}{40}
-\contentsline {subsection}{\numberline {1.2.1}Libraries}{40}
-\contentsline {subsection}{\numberline {1.2.2}Code Snippets}{40}
-\contentsline {chapter}{\numberline {B}Code samples}{43}
-\contentsline {section}{\numberline {2.1}Android Application}{43}
-\contentsline {section}{\numberline {2.2}Server Side}{43}
-\contentsline {chapter}{Annotated Bibliography}{44}
+\contentsline {chapter}{\numberline {1}Background \& Objectives}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Background}{1}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Origin}{1}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Research}{1}{subsection.1.1.2}
+\contentsline {section}{\numberline {1.2}Analysis}{1}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Functional Requirements}{1}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Technical Requirements}{1}{subsection.1.2.2}
+\contentsline {section}{\numberline {1.3}Process}{2}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Agile}{2}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Feature Driven Development}{2}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}eXtream Programming}{2}{subsection.1.3.3}
+\contentsline {chapter}{\numberline {2}Design}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Overview of architecture}{3}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Initial Design}{3}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Final Implementation}{8}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Future Development}{9}{subsection.2.1.3}
+\contentsline {section}{\numberline {2.2}Client Side}{9}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Android Application}{9}{subsection.2.2.1}
+\contentsline {section}{\numberline {2.3}Server Side}{10}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Middle Tier}{10}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Database level}{11}{subsection.2.3.2}
+\contentsline {chapter}{\numberline {3}Implementation}{13}{chapter.3}
+\contentsline {section}{\numberline {3.1}Tools used}{13}{section.3.1}
+\contentsline {section}{\numberline {3.2}Android application}{15}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Development Hardware}{15}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Environment}{15}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Features}{15}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}Server side application}{15}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Environment}{15}{subsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.1.1}Debian based Linux}{15}{subsubsection.3.3.1.1}
+\contentsline {subsubsection}{\numberline {3.3.1.2}Postgres Database}{15}{subsubsection.3.3.1.2}
+\contentsline {subsubsection}{\numberline {3.3.1.3}Node.js environment}{15}{subsubsection.3.3.1.3}
+\contentsline {subsection}{\numberline {3.3.2}Middle tier application}{15}{subsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.2.1}Core functionality}{15}{subsubsection.3.3.2.1}
+\contentsline {subsubsection}{\numberline {3.3.2.2}Rest Interface}{15}{subsubsection.3.3.2.2}
+\contentsline {subsubsection}{\numberline {3.3.2.3}Database Connector}{15}{subsubsection.3.3.2.3}
+\contentsline {subsection}{\numberline {3.3.3}Database level}{15}{subsection.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.3.1}Tables}{15}{subsubsection.3.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.3.2}Functions}{15}{subsubsection.3.3.3.2}
+\contentsline {section}{\numberline {3.4}Review of implementation}{15}{section.3.4}
+\contentsline {chapter}{\numberline {4}Testing}{21}{chapter.4}
+\contentsline {section}{\numberline {4.1}User Testing}{21}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Testing community}{21}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Test Devices}{21}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Unit Testing}{21}{section.4.2}
+\contentsline {section}{\numberline {4.3}UI Testing}{21}{section.4.3}
+\contentsline {section}{\numberline {4.4}Functionality Testing}{22}{section.4.4}
+\contentsline {section}{\numberline {4.5}Stress Testing}{22}{section.4.5}
+\contentsline {chapter}{\numberline {5}Evaluation}{24}{chapter.5}
+\contentsline {chapter}{Appendices}{25}{chapter.5}
+\contentsline {chapter}{\numberline {A}Third-Party Code and Libraries}{26}{appendix.A}
+\contentsline {section}{\numberline {1.1}Android application}{26}{section.A.1}
+\contentsline {subsection}{\numberline {1.1.1}Libraries}{26}{subsection.A.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Code Snippets}{26}{subsection.A.1.2}
+\contentsline {section}{\numberline {1.2}Server side}{41}{section.A.2}
+\contentsline {subsection}{\numberline {1.2.1}Libraries}{41}{subsection.A.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Code Snippets}{41}{subsection.A.2.2}
+\contentsline {chapter}{\numberline {B}Code samples}{44}{appendix.B}
+\contentsline {section}{\numberline {2.1}Android Application}{44}{section.B.1}
+\contentsline {section}{\numberline {2.2}Server Side}{44}{section.B.2}
