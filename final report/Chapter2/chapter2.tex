@@ -167,14 +167,13 @@ Standing on the shoulders of giants springs to mind as it would not be possible 
 \subsection{Future Development}
 \label{sec:development_future_dev}
 
-{TODO}
-
-%Power considerations
-
-%Scalability for different screen resolutions.
-
-%Robust error handling.
-
+Due to the time consternates and time line of the project it was only possible to complete the application to a proof of concept stage. This section aims to cover the development that would need to take place to make the application viable for release in to the consumer space, firstly the current prototype does not have any consideration taken to preserving power with the current prototype it very rapidly drains the battery of the devices that it is on and leads to the phone being critically low on battery after a few hours. This will be resolved in further development which would be smart about when it turns on the GPS, and will use the accelerometers in the phone to gage if it has moved any considerable distance since the GPS was last turned on and then also changing the duration between the checks to ensure if the phone hasn't moved very often then the duration that we check should decrease thus helping save the battery on the phone. But in cases where the phone is constantly on the move it is very likely that application will remain very high power due to the nature of GPS, some effort can be put into the wastage as well if the device can't get a fix then we should not keep trying as this just drains the battery.\\
+\\
+Again to time constants and how large catalog of devices are within Android there has been limited optimisations of the getting the UI to work perfectly on all devices, and for the development stage the application has only been designed \& tested on a 1080p device due to being the main device that I have access to but with more time more consideration and multiple layouts could be made to make the application scale and work correction on different sized devices.\\
+\\
+The other point that needs to be raised is due to it being a proof of concept the application does not fail gracefully and an exception in how the application is used will cause the whole thing to come crashing down around its self without giving any dialog to the user about what has happened, before the application can be released into the consumer marketplace it will need to have the error catching and handling clearly and robustly implemented so the application can handle any unusual events or unexpected situation. Along with this it is advised to create a full testing suite for the application to ensure that any changes made within the application do not break the whole application and that the operations all complete in the way that they are intended to complete.\\
+\\
+With theses changes I can see the application being a well use and popular application that will make it an interesting concept that people will pickup and use. I would not consider releasing the application until theses changes have been done as it would not reflect well on the developers to have theses issues within the early releases of the code.\\
 
 \section{Client Side}
 
