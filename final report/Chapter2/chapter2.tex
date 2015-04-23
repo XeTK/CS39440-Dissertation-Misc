@@ -17,7 +17,7 @@ The original plan was to use an Oracle APEX backend which would handle all of th
 It was unclear at the start of the project what platform the application would be developed for, with the choice being between Apple iOS, Google Android or Phone Gapp. So in the early design this left some ambiguity as to how various features and UI design should be implemented. This means in early diagrams the design is very generic and not platform specific.
 Theses early sketches were devised from the ideas that had been formulating since I had first envisioned the idea the previous year. The next step was to break the application as a whole and break it down into its functional requirements.\\
 
-\begin{figure}[htb!]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{diagrams/initialblockdiagram}
     \caption{Original design of the application}
@@ -46,7 +46,7 @@ These UI mock-ups were used to create the final application. The designs may hav
 \\
 Figure \ref{fig:application_home_page_image} is the design for the main page of the application and where the users arrive when the application launches, so it is of utmost importance that this page is easy to navigate and informative to the user. The UI has been intentionally designed to show the tags that are most relevant to the user at the time they have opened the application, showing the tags in their immediate vicinity. These can be either the user's own tags or their friends who have left them there.\\
 
-\begin{figure}[htb!]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.25\textwidth]{uimockups/homepage}
     \caption{Application home page}
@@ -56,7 +56,7 @@ Figure \ref{fig:application_home_page_image} is the design for the main page of 
 \noindent
 In figure \ref{fig:add_tag_activity_image} we are showing the initial design for adding a tag to the map. The key idea is to make it quick and easy to add a tag to the map and make it quickly accessible to the user's friends so they can be promptly notified about the tag their friend has added.\\
 
-\begin{figure}[htb!]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.25\textwidth]{uimockups/addtag}
     \caption{Adding a tag activity}
@@ -66,7 +66,7 @@ In figure \ref{fig:add_tag_activity_image} we are showing the initial design for
 \noindent
 Pictured in figure \ref{fig:giving_friends_visability_image} is the screen that enables user's friends to view a message that has been left. It should be relatively straight forward and easy to interpret. The design has changed ever so slightly in the final implementation to try and make it fit in better with the Android design principles.\\
 
-\begin{figure}[htb!]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.25\textwidth]{uimockups/friendsvisability}
     \caption{Giving friends ability to view message}
@@ -78,7 +78,7 @@ This is the UI in figure \ref{fig:add_friend_activity_image}. To add a new user 
 
 %Alison got to here.
 
-\begin{figure}[htb!]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.25\textwidth]{uimockups/addfriend}
     \caption{Adding Friend activity}
@@ -88,7 +88,7 @@ This is the UI in figure \ref{fig:add_friend_activity_image}. To add a new user 
 \noindent
 In this figure \ref{fig:viewing_message_image} we are show the viewing of a message, this is the screen that has changed the most from the original UI mock ups, where the icons and location of the voting section has been moved to be above the commenting area, there is also now a fixed area at the bottom for adding a comment along with each comment section now including there own voting sections, but again the changes to the initial designs intentionally have been very minor.\\
 
-\begin{figure}[htb!]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.25\textwidth]{uimockups/viewmessage}
     \caption{Viewing a message}
@@ -98,7 +98,7 @@ In this figure \ref{fig:viewing_message_image} we are show the viewing of a mess
 \noindent
 The image below in figure \ref{fig:login_activity_image} shows the login screen for the application, this was intentionally kept simplistic to ensure that it is easy for the user to intemperate and should make it fairly secure against attacks as there are less fields to attack.\\
 
-\begin{figure}[htb!]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.25\textwidth]{uimockups/login}
     \caption{Login Activity for the application}
@@ -108,7 +108,7 @@ The image below in figure \ref{fig:login_activity_image} shows the login screen 
 \noindent
 Screenshot pictured in figure \ref{fig:registration_activity_image} describes the registration page within the application that enables the user to register to use the application, again it has been kept simple to avoid confuse and ensure that the user can navigate it easily, this should easy annoyance when people are using the application for the first time.\\
 
-\begin{figure}[htb!]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.25\textwidth]{uimockups/register}
     \caption{This is the activity for registering to use the application}
@@ -118,7 +118,7 @@ Screenshot pictured in figure \ref{fig:registration_activity_image} describes th
 \noindent
 This screenshot in figure \ref{fig:notification_image} is an example notification for the application, in the final application this does not look anything like this due to the fact we are using the Google Android notification API and notifications do not appear in this way.\\
 
-\begin{figure}[htb!]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.25\textwidth]{uimockups/notification}
     \caption{Notification that there is a tag near by}
@@ -132,7 +132,7 @@ Theses designs were used as reference to build the applications UI for the final
 
 As the project was developed in a eXtream programing style there was not much design done up front, the major design that was done up front was a list of the main functionality within the application and the final implementation of those features were done in an iterative form. There was a very initial block diagram done showing the different main sections of the application this is showing in figure \ref{fig:initial_diagram_image} this is the basic design of the application without any of the specifics e.g not detailing the libraries that have been used to implement the full application.\\
 
-\begin{figure}[htb!]
+\begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{diagrams/blockdiagram}
     \caption{Very simple block diagram from the start of development}
@@ -140,22 +140,26 @@ As the project was developed in a eXtream programing style there was not much de
 \end{figure} 
 
 \noindent
-The final implementation started with spike work into different frameworks that could be used for the development of the project, we started with the Phone side of the application where there was research into weather to use Phone Gapp or to go for a native application the reasoning and decision to use an exclusively Google Android are covered in section "\ref{sec:android_choice_of_tech} Choice of Technologies".\\
+The final implementation started with spike work into different frameworks that could be used for the development of the project, we started with the Phone side of the application where there was research into weather to use Phone Gapp or to go for a native application the reasoning and decision to use an exclusively Google Android are covered in section "\ref{sec:android_choice_of_tech} Choice of technologies".\\
 \\
-Next the focus moved onto the server side application, the focus for the choice of server side environment was focused on looking at cutting edge but also fairly mature server side platforms, the choice was between Node.js with express, Node.js with HAPI.js, Node.js with StrongLoop, Python Flask or Java TomCat please refer to "\ref{sec:node_choice_of_tech} Choice Of Technologies" for more in detail discussion about the rational between the choice of server side frameworks.\\
+Next the focus moved onto the server side application, the focus for the choice of server side environment was focused on looking at cutting edge but also fairly mature server side platforms, the choice was between Node.js with express, Node.js with HAPI.js, Node.js with StrongLoop, Python Flask or Java TomCat please refer to "\ref{sec:node_choice_of_tech} Choice of technologies" for more in detail discussion about the rational between the choice of server side frameworks.\\
 \\
+Finally the decision turned to how the data would be stored within the application the first decision was between a SQL or NOSQL solution, after some consideration it was considered that even though NOSQL is a interesting new area it was decided to stick with the skills already learn as taking on to many new frameworks could compromise the success of the project. The final decision was to decide between what type of SQL engine to use to hold and process the data within the application the decision was between PostgresSQL, My-SQL and SQLite. The pro's and con's are covered in detail in section "\ref{sec:database_choice_of_tech} Choice of technologies".\\
+\\
+The diagram in figure \ref{fig:final_block_diagram_image} shows the finished architecture with the joins between each different technology that is needed to make the application work correctly and as desired in the way decided within the functional requirements. It is fairly obvious from the diagram that the application requires a lot of 3rd party libraries to work as intended heavily relying on the Google Maps API, Android Asynchronous HTTP Client API, HAPI.js \& Sequelize to provide the major components within the project.\\
 
-
-\begin{figure}[htb!]
+\begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{diagrams/finalblockdiagram}
     \caption{Very simple block diagram of the final architecture}
     \label{fig:final_block_diagram_image}
-\end{figure} 
-\noindent
+\end{figure}
 
+\noindent
+Standing on the shoulders of giants springs to mind as it would not be possible without all of theses 3rd party libraries for the application work in a usable and robust manner, even with the use of all these 3rd party libraries there is still a fair bit of custom code to act as a aggregate all the various parts of the functionality within the project together. The core functionally of the application is complete, but I would currently classify the application as a proof of concept due to the fact the robustness of the application and stability are currently questionable how these issues will be overcome in the future will be covered in section \ref{sec:development_future_dev}.\\
 
 \subsection{Future Development}
+\label{sec:development_future_dev}
 
 {TODO}
 
@@ -217,7 +221,7 @@ One of the major downsides of using Phone Gapp is that if there is not a library
 
 {TODO}
 
-\begin{figure}[htb!]
+\begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{diagrams/restinterface}
     \caption{These are the endpoints for the REST API}
@@ -238,6 +242,7 @@ One of the major downsides of using Phone Gapp is that if there is not a library
 {TODO}
 
 \subsubsection*{Choice of Technologies}
+\label{sec:database_choice_of_tech}
 
 {TODO}
 
@@ -245,7 +250,7 @@ One of the major downsides of using Phone Gapp is that if there is not a library
 
 {TODO}
 
-\begin{figure}[htb!]
+\begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{diagrams/database}
     \caption{This is the database design for the application}
