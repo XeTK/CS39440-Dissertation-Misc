@@ -178,7 +178,7 @@ With theses changes I can see the application being a well used and popular appl
 
 The client side part of the application is the part that user actually sees and interacts with, for this project it was elected to use a Google Android phone application to be the main focus for the end user. It needs to act as a way to draw users into using the concept and illustrating the benefits of the ideas behind the application as a whole, it needs to be robust and usable for it to gain wide adoption within the consumer space. If users find the application fun and easy to use it is highly likely they will recommend the application to there friends and it will gain widespread adoption within the popular culture which would be a ideal situation and would mean that project has been successful.\\
 
-\subsection{Android Application}
+\subsection{Why A Android Application}
 
 Android is a cutting edge mobile platform that is used by many millions of people it is statistically speaking the most popular mobile platform out there with over 50\% market cover \cite{statista:devicestats:2015:online}. To get near blanket market coverage it would be best to develop for Apple iOS as well as it has a market share of over 40\% but due to the time constraints of the project it is only possible to target one of theses platforms, due to have a multitude of Android devices close to hand it only seemed sensible to develop for Android over its competitors, for more detailed explanation of why the choice was to use Android refer to this section \ref{sec:android_choice_of_tech}.\\
 \\
@@ -188,7 +188,7 @@ For this project it was decided to target the application at API level 14 which 
 \\
 The Android developers hub provides a very comprehensive set of API documentation along with tutorials on how to develop for Android with best practice documentation on the best way to design the application to make it fit in with the style of the Android ecosystem, some of the early research done for the project was based on reading the Android material design manual to ensure the application had a consistent theme and would be accessible to all sorts of different devices and users which would ultimately help with the adoption and usability of the final application.\\
 
-\subsubsection*{Choice of Technologies}
+\subsection{Choice of Technologies}
 \label{sec:android_choice_of_tech}
 
 The spike work / research that was carried out in the design stage started out by reading about the development experiences of various teams Phone Gapp vs Native to develop there various phone application and the reviews that I got seemed to be very mixed they ranged from saying to avoid or this is the best thing ever, with no clear way to move forward it the next stage was to research the API's that would be essential to the application working this being the Mapping API's and the GPS location. It quickly came apparent although Phone Gapp its fairly mature it could not compare to the libraries that were offered by the native solution.\\
@@ -203,26 +203,29 @@ For the choice in Mapping API's there was only two solutions using official Goog
 \\
 For dealing with rest requests it was decided to use Asynchronous HTTP Client for Android \cite{nknj:AndroidAsynchronousHttpClientloopjandthePersistentCookieStore:2013:online} as this was a well documented API with all the functionality that was needed to deal with all of the requests that needed to be carried out within the application, it gives a good flexibility for processing JSON objects that are returned from the server along with doing it all asynchronously to which will improve the snappiness of the application while dealing with requests.\\
 
-\subsubsection*{Initial Design}
+\subsection{Initial Design}
 
 As mentioned previously the application was developed in a evolutionary way, with functionality only being added when it was essential to proceed with the application this mean there was not much in the way of up front design. For the Android side of the application the the way in upfront of design was to create a list of the functional requirements of the application detailing what the application needed to achieve to be a successful project these theses are listed within section \ref{sec:global_initial_design} and was mostly orientated towards the UI design of the application rather than the background architecture the architecture will be covered in detail in section \ref{sec:android_application_structure}.\\
 \\
 In the early thoughts about the layout and design of the application it was apparent that a model view controller approach should be taken to the design of each parts of the application, meaning that data structures, and viewing of the data are segregated out and there is a interconnecting layer between them to create a structure that is decoupled meaning that code is not written specifically to do one job and can be reused in many places to do many jobs which simplifies duplicated code and should ensure that code only has to be debugged in one place and is not copied to multiple locations throughout the application which should ensure that bugs are not encroached into the code base which could compromise the robustness of the application as a whole.\\
 \\
+Most of the initial design for the application was to investigate the frameworks that would be used within the application ensuring that they would suite the functionality requirements for the application, at first it was fairly hard to find a well documented and robust framework for dealing with HTTP requests to the background services to get the information that will be displayed within the application. The first framework that was tried seemed to have some stability issues and deal with all requests synchronously which mean the application would stutter while trying to retrieve data along with having stability issues which made the application unstable in real world operations. Another chunk of the early design stage was trying to get the Google Maps API to respond in a way that was usable for the needs of the project, which included the ability to tag locations and show robust labeling with the custom messages left by the user.\\
 
-
-\subsubsection*{Application Structure}
+\subsection{Application Structure}
 \label{sec:android_application_structure}
 
 {TODO}
 
-\subsubsection*{Caveats}
+\subsection{Caveats}
 
-{TODO}
-
-% Talk about first time using android.
-
-
+This section is dedicated to some of the shortcoming in the design of the Android Application and explanation of the issues. As Fred Brooks said in the Mythical Man Month \cite{fredbrooks:throwoneaway:1995:online} "Plan to throw one away; you will anyway" and it is fairly true in this situation, developing a application in a totally new framework to the developer means that some of the design choices can be misguided which results in the applications overall stability and design being hurt. Overall the design of the application as a whole is not bad but there are places where it is a little patchy and not designed to the best standard.\\
+\\
+The application will need some refactoring and design tweaking to make it a rewarding code base to work on as it stands if more functionality was added to some of the activities it would quickly become very difficult to work on with Spagetti code being the only way forward to patch on the new functionality. This will ultimately lead to a bad customer experience which will alienate users of the application and make them not want to use the application which would kill any representation that the application gains.\\
+\\
+As mentioned previously the fact that the application is only available for Android means that the audience for the application is limited to only half of the potential users out in the world due to the other users using Apple iOS, As part of the further development of the application it would be advised to develop an Apple iOS version of the application or scrap the current code base and move to Phone Gapp based application which would mean the application will work on any of the major smart phone operating systems.\\
+\\
+More research could of been done in implementing the various background services that are used within the application as they are in the version included with this a bit temperamental, this is somewhat down to the very limited documentation offered by Google on how to implement features that have provided by the Android Operating System its self. This was also not aided by the fact that some of the documentation for the various API's most notably the Google Maps API is heavily out of date and will not actually work on the device with the instructions given in the API documentation.\\
+\\
 
 \section{Server Side}
 

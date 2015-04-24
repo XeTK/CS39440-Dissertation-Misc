@@ -57,6 +57,13 @@ S.~E. bneupaane. (2010, November) Self-signed certificate and loopj for
 \BIBentrySTDinterwordspacing
 
 
+\bibitem{fredbrooks:throwoneaway:1995:online}
+\BIBentryALTinterwordspacing
+F.~Brooks. (1995, August) Plan to throw one away. [Online]. Available:
+  \url{http://c2.com/cgi/wiki/wiki?PlanToThrowOneAway}
+\BIBentrySTDinterwordspacing
+
+
 \bibitem{EspenDallokken:TLSHapi:2014:online}
 \BIBentryALTinterwordspacing
 E.~Dall{\o}kken. (2014, July) Configuring tls for hapi using convict. [Online].
@@ -123,13 +130,6 @@ G.~G. (2014, May) Android restful webservice tutorial -- how to call restful
 \BIBentryALTinterwordspacing
 Google. Android developers. [Online]. Available:
   \url{https://developer.android.com/index.html}
-\BIBentrySTDinterwordspacing
-
-
-\bibitem{google:osstats:2015:online}
-\BIBentryALTinterwordspacing
-------. Dashboards. [Online]. Available:
-  \url{https://developer.android.com/about/dashboards/index.html?utm_source=suzunone}
 \BIBentrySTDinterwordspacing
 
 
