@@ -8,6 +8,7 @@ This chapter describes the design stage of developing Location Sensitive Social 
 This section will cover the design of the applications at key stages of development, covering the initial design at the beginning of the project and how it matured to the version that we have today. This section will also cover the future development that will needed to be done to make the application a viable fully fledged application that can be released to the general public.
 
 \subsection{Initial Design}
+\label{sec:global_initial_design}
 
 \subsubsection*{Background}
 
@@ -25,8 +26,6 @@ Theses early sketches were devised from the ideas that had been formulating sinc
 \end{figure} 
 
 \subsubsection*{Functionality}
-
-%ALISON READ THIS.
 
 Assessing the functional requirements required breaking down the concept into its core components. Most noticeably posting, viewing and being notified about tags were the core functionality for the application. Without these features the application could not achieve the goals set out in the original specification, thus undermining the usefulness of the finished application.\\
 \\
@@ -181,8 +180,8 @@ The client side part of the application is the part that user actually sees and 
 
 \subsection{Android Application}
 
-Android is a cutting edge mobile platform that is used by many millions of people it is statistically speaking the most popular mobile platform out there with over 50\% market cover \cite{statista:devicestats:2015:online}. To get near blanket market coverage it would be best to develop for Apple iOS as well as it has a market share of over 40\% but due to the time constraints of the project it is only possible to target one of theses platforms, due to have a multitude of Android devices close to hand it only seemed sensible to develop for Android over its competitors, for more detailed explanation of why the choice was to use Android refer to this section \ref{sec:android_choice_of_tech}.
-
+Android is a cutting edge mobile platform that is used by many millions of people it is statistically speaking the most popular mobile platform out there with over 50\% market cover \cite{statista:devicestats:2015:online}. To get near blanket market coverage it would be best to develop for Apple iOS as well as it has a market share of over 40\% but due to the time constraints of the project it is only possible to target one of theses platforms, due to have a multitude of Android devices close to hand it only seemed sensible to develop for Android over its competitors, for more detailed explanation of why the choice was to use Android refer to this section \ref{sec:android_choice_of_tech}.\\
+\\
 Android has is a very diverse selection of devices it will run on, as Google does not limit what devices that it can be run on so any hardware manufacture can decide to create an Android device meaning that they can vary massively between devices there is almost an infinite array of screen sizes and screen resolutions that Android will run on along with a large array of different processors that it will run on due in part to Androids open sourced routes and its deep origins from Linux it gives it a very strong versatility and this means its very popular with the computer science community and users that like to tinker. Although one of the main drawbacks to Android is that ecosystem is fairly fragmented with many different versions of the operating system out in the public domain which means its difficult to get applications developed on Android to work on all of the devices out in the public domain either due to there form factors or due to the fact they are running a out dated version of the operating system which leads to incomparability with the newer code libraries. Luckily 93\% of devices \cite{google:osstats:2015:online} out in the wild are running fairly recent versions with the majority of theses devices running a API level between 15 and 22 which means that most code will run on the majority of devices as long as the developer is not seeking the most bleeding edge API's for there application.\\
 \\
 For this project it was decided to target the application at API level 14 which is known as 'Ice Cream Sandwich' and higher as this would give the ability to use fairly recent API's but also covering the mass majority of the devices out in the wild. API level 14 dates back to 2011 with the launch of Android 4.0 which means that we can support nearly all devices that were released in the last 5 years as flag ship phones from 2009 \& 2010 are fairly likely to still receive updates to 'Ice Create Sandwich'. Due to the user community that goes with Android it is fairly likely that theses old devices will have been updated via 3rd parties to run newer versions of Android than the original manufactures intended.\\
@@ -206,9 +205,14 @@ For dealing with rest requests it was decided to use Asynchronous HTTP Client fo
 
 \subsubsection*{Initial Design}
 
-{TODO}
+As mentioned previously the application was developed in a evolutionary way, with functionality only being added when it was essential to proceed with the application this mean there was not much in the way of up front design. For the Android side of the application the the way in upfront of design was to create a list of the functional requirements of the application detailing what the application needed to achieve to be a successful project these theses are listed within section \ref{sec:global_initial_design} and was mostly orientated towards the UI design of the application rather than the background architecture the architecture will be covered in detail in section \ref{sec:android_application_structure}.\\
+\\
+In the early thoughts about the layout and design of the application it was apparent that a model view controller approach should be taken to the design of each parts of the application, meaning that data structures, and viewing of the data are segregated out and there is a interconnecting layer between them to create a structure that is decoupled meaning that code is not written specifically to do one job and can be reused in many places to do many jobs which simplifies duplicated code and should ensure that code only has to be debugged in one place and is not copied to multiple locations throughout the application which should ensure that bugs are not encroached into the code base which could compromise the robustness of the application as a whole.\\
+\\
+
 
 \subsubsection*{Application Structure}
+\label{sec:android_application_structure}
 
 {TODO}
 
