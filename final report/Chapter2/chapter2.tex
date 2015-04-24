@@ -16,7 +16,7 @@ As the project was done in a iterative and evolutionary style of development the
 The original plan was to use an Oracle APEX backend which would handle all of the REST requests and SQL side of things, but due to licensing and the fact I wanted to learn new technologies this idea fell by the wayside and it was decided to try and use a middle-ware along with a SQL database. \\
 \\
 It was unclear at the start of the project what platform the application would be developed for, with the choice being between Apple iOS, Google Android or Phone Gapp. So in the early design this left some ambiguity as to how various features and UI design should be implemented. This means in early diagrams the design is very generic and not platform specific.
-Theses early sketches were devised from the ideas that had been formulating since I had first envisioned the idea the previous year. The next step was to break the application as a whole and break it down into its functional requirements.\\
+Theses early sketches were devised from the ideas that had been formulating since I had first envisioned the idea the previous year. The next step was to break the application as a whole and break it down into its functional requirements.
 
 \begin{figure}[H]
     \centering
@@ -26,6 +26,7 @@ Theses early sketches were devised from the ideas that had been formulating sinc
 \end{figure} 
 
 \subsubsection*{Functionality}
+\label{sec:functionality}
 
 Assessing the functional requirements required breaking down the concept into its core components. Most noticeably posting, viewing and being notified about tags were the core functionality for the application. Without these features the application could not achieve the goals set out in the original specification, thus undermining the usefulness of the finished application.\\
 \\
@@ -37,7 +38,7 @@ The final core functionality that is integral to get the application to work as 
 \\
 More minor functionality is dealing with friends within the application, so adding the user's friends so that they can interact with them within the application. Adding friends to their account should be straightforward with a search that enables them to find and add them to their account. This should also not be a cluttered page with the bare minimum UI elements to get the job done correctly as this should minimise the confusion from using the application and means it should be more likely that users user the application and recommend it on to their friends to actually use it. Continuation of the friends theme is that it should be very easy for users to add viability to messages for their friends to view it. Giving a user viability should mean that they will get notified of the message when they are close by to it.\\
 \\
-The application will also require having some operations for dealing with authentication with the server. So it is essential for the application to have screens to register and login to these screens should be as simple as possible, only asking the true essentials to get the job done, with clear and simple forms that will not lead to confusion and frustration that would lead to them being put off using the application. Keeping the forms simple should also improve security as it's less fields to protect from attack and thus being compromised by a potential malicious user.\\
+The application will also require having some operations for dealing with authentication with the server. So it is essential for the application to have screens to register and login to these screens should be as simple as possible, only asking the true essentials to get the job done, with clear and simple forms that will not lead to confusion and frustration that would lead to them being put off using the application. Keeping the forms simple should also improve security as it's less fields to protect from attack and thus being compromised by a potential malicious user.
 
 \subsubsection*{UI mock-ups}
 
@@ -129,7 +130,7 @@ This screenshot in figure \ref{fig:notification_image} is an example notificatio
 \end{figure} 
 
 \noindent
-These designs were used as reference to build the applications UI for the final design. They have intentionally kept similar to the original mock-ups as it was felt that the designs would be easy for users to interpret and a good starting point.\\
+These designs were used as reference to build the applications UI for the final design. They have intentionally kept similar to the original mock-ups as it was felt that the designs would be easy for users to interpret and a good starting point.
 
 \subsection{Final Implementation}
 
@@ -159,7 +160,7 @@ The diagram in figure \ref{fig:final_block_diagram_image} shows the finished arc
 \end{figure}
 
 \noindent
-Standing on the shoulders of giants springs to mind as it would not be possible without all of these 3rd party libraries for the application to work in a usable and robust manner. Even with the use of all these 3rd party libraries there is still a fair bit of custom code to act as an aggregate for all the various parts of the functionality within the project together. The core functionally of the application is complete, but I would currently classify the application as a proof of concept due to the fact the robustness of the application and stability are currently questionable. How these issues will be overcome in the future will be covered in section \ref{sec:development_future_dev}.\\
+Standing on the shoulders of giants springs to mind as it would not be possible without all of these 3rd party libraries for the application to work in a usable and robust manner. Even with the use of all these 3rd party libraries there is still a fair bit of custom code to act as an aggregate for all the various parts of the functionality within the project together. The core functionally of the application is complete, but I would currently classify the application as a proof of concept due to the fact the robustness of the application and stability are currently questionable. How these issues will be overcome in the future will be covered in section \ref{sec:development_future_dev}.
 
 \subsection{Future Development}
 \label{sec:development_future_dev}
@@ -170,13 +171,13 @@ Again due to time constraints and how large the catalogue of devices are within 
 \\
 The other point that needs to be raised is due to it being a proof of concept. The application does not fail gracefully and an exception in how the application is used will cause the whole thing to come crashing down around itself without giving any dialog to the user about what has happened. Before the application can be released into the consumer marketplace it will need to have the error catching and handling clearly and robustly implemented so the application can handle any unusual events or unexpected situation. Along with this it is advised to create a full testing suite for the application to ensure that any changes made within the application do not break the whole application and that the operations all complete in the way that they are intended to complete.\\
 \\
-With theses changes I can see the application being a well used and popular application that will make it an interesting concept that people will pickup and use. I would not consider releasing the application until these changes have been done, as it would not reflect well on the developers to have these issues within the early releases of the code.\\
+With theses changes I can see the application being a well used and popular application that will make it an interesting concept that people will pickup and use. I would not consider releasing the application until these changes have been done, as it would not reflect well on the developers to have these issues within the early releases of the code.
 
 \section{Client Side}
 
 %Alison got to here.
 
-The client side part of the application is the part that user actually sees and interacts with, for this project it was elected to use a Google Android phone application to be the main focus for the end user. It needs to act as a way to draw users into using the concept and illustrating the benefits of the ideas behind the application as a whole, it needs to be robust and usable for it to gain wide adoption within the consumer space. If users find the application fun and easy to use it is highly likely they will recommend the application to there friends and it will gain widespread adoption within the popular culture which would be a ideal situation and would mean that project has been successful.\\
+The client side part of the application is the part that user actually sees and interacts with, for this project it was elected to use a Google Android phone application to be the main focus for the end user. It needs to act as a way to draw users into using the concept and illustrating the benefits of the ideas behind the application as a whole, it needs to be robust and usable for it to gain wide adoption within the consumer space. If users find the application fun and easy to use it is highly likely they will recommend the application to there friends and it will gain widespread adoption within the popular culture which would be a ideal situation and would mean that project has been successful.
 
 \subsection{Why A Android Application}
 
@@ -186,7 +187,7 @@ Android has is a very diverse selection of devices it will run on, as Google doe
 \\
 For this project it was decided to target the application at API level 14 which is known as 'Ice Cream Sandwich' and higher as this would give the ability to use fairly recent API's but also covering the mass majority of the devices out in the wild. API level 14 dates back to 2011 with the launch of Android 4.0 which means that we can support nearly all devices that were released in the last 5 years as flag ship phones from 2009 \& 2010 are fairly likely to still receive updates to 'Ice Create Sandwich'. Due to the user community that goes with Android it is fairly likely that theses old devices will have been updated via 3rd parties to run newer versions of Android than the original manufactures intended.\\
 \\
-The Android developers hub provides a very comprehensive set of API documentation along with tutorials on how to develop for Android with best practice documentation on the best way to design the application to make it fit in with the style of the Android ecosystem, some of the early research done for the project was based on reading the Android material design manual to ensure the application had a consistent theme and would be accessible to all sorts of different devices and users which would ultimately help with the adoption and usability of the final application.\\
+The Android developers hub provides a very comprehensive set of API documentation along with tutorials on how to develop for Android with best practice documentation on the best way to design the application to make it fit in with the style of the Android ecosystem, some of the early research done for the project was based on reading the Android material design manual to ensure the application had a consistent theme and would be accessible to all sorts of different devices and users which would ultimately help with the adoption and usability of the final application.
 
 \subsection{Choice of Technologies}
 \label{sec:android_choice_of_tech}
@@ -202,6 +203,8 @@ It was clear the best way forward was to use native development, my choice was t
 For the choice in Mapping API's there was only two solutions using official Google Maps API or Nutiteq Maps SDK, after some consideration it was apparent that Nutiteq was not as mature or well supported as the official Google Maps but did offer some nice additional features that the Google Maps API did not like the ability to have offline maps and the use of custom perspectives. It was decided to use the Google Mapping API as it had a mature community and is well supported, but if the decision was made at the end of the project the use of the Nutiteq API may have been a better choice due to the very limited and outdated documentation for the Google API which was a big disappointment.\\
 \\
 For dealing with rest requests it was decided to use Asynchronous HTTP Client for Android \cite{nknj:AndroidAsynchronousHttpClientloopjandthePersistentCookieStore:2013:online} as this was a well documented API with all the functionality that was needed to deal with all of the requests that needed to be carried out within the application, it gives a good flexibility for processing JSON objects that are returned from the server along with doing it all asynchronously to which will improve the snappiness of the application while dealing with requests.\\
+\\
+The interaction between the server and the Android Application is provided by an HTTP RESTful interface which enables robust and reliable standard for sending transmitting data, the ability to send JSON objects directly back and forth between the server and client makes data manipulation easy and means that the interface between the client and server is not platform or language specific which means it should be easy to add in another client that can use the API provided by for the application.
 
 \subsection{Initial Design}
 
@@ -209,12 +212,26 @@ As mentioned previously the application was developed in a evolutionary way, wit
 \\
 In the early thoughts about the layout and design of the application it was apparent that a model view controller approach should be taken to the design of each parts of the application, meaning that data structures, and viewing of the data are segregated out and there is a interconnecting layer between them to create a structure that is decoupled meaning that code is not written specifically to do one job and can be reused in many places to do many jobs which simplifies duplicated code and should ensure that code only has to be debugged in one place and is not copied to multiple locations throughout the application which should ensure that bugs are not encroached into the code base which could compromise the robustness of the application as a whole.\\
 \\
-Most of the initial design for the application was to investigate the frameworks that would be used within the application ensuring that they would suite the functionality requirements for the application, at first it was fairly hard to find a well documented and robust framework for dealing with HTTP requests to the background services to get the information that will be displayed within the application. The first framework that was tried seemed to have some stability issues and deal with all requests synchronously which mean the application would stutter while trying to retrieve data along with having stability issues which made the application unstable in real world operations. Another chunk of the early design stage was trying to get the Google Maps API to respond in a way that was usable for the needs of the project, which included the ability to tag locations and show robust labeling with the custom messages left by the user.\\
+Most of the initial design for the application was to investigate the frameworks that would be used within the application ensuring that they would suite the functionality requirements for the application, at first it was fairly hard to find a well documented and robust framework for dealing with HTTP requests to the background services to get the information that will be displayed within the application. The first framework that was tried seemed to have some stability issues and deal with all requests synchronously which mean the application would stutter while trying to retrieve data along with having stability issues which made the application unstable in real world operations. Another chunk of the early design stage was trying to get the Google Maps API to respond in a way that was usable for the needs of the project, which included the ability to tag locations and show robust labeling with the custom messages left by the user.
 
 \subsection{Application Structure}
 \label{sec:android_application_structure}
 
-{TODO}
+The structure of the application is based around it activities which is Android's name for screens, each activity has its own job to fill a place within the functional requirements of the application theses requirements can be found in section \ref{sec:functionality}. Usually it is a activity for each of the function so for example creating a new tag would have its own activity with its own supporting classes. An example of how the code is structured for each of the activities can be seen in figure \ref{fig:activity_interation_image}, data flows two and from the screens back and forth to the rest client part of the application that deals with interaction with the server either retrieving or sending data back to enable the functionality within the application.\\
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{diagrams/activityinteraction}
+    \caption{This is the simplified interaction between activities}
+    \label{fig:activity_interation_image}
+\end{figure} 
+
+\noindent
+Model and REST client layers of the structure are shared between larger parts of the functionality and may encapsulate everything to do with for example sending and receiving messages, along with all the other permutation of this format being contained within the same class to group them together functionality and make them easy to access and work with. They have tried to be kept as uniform and repetition kept to a bare minimum which should help with creating a easy to work on easy to maintain application that is an enjoyable code base to work on.\\
+\\
+The main point of entry for the application is the Navigation Activity which is the screen that shows all of the tags that are close by to the current user and there relevant to them, all of the application is ran from this point from this screen it is possible to reach all of the other activities and is the home page that the users land on when the execution begins it is the focal point of the application and is a return point after every operation has finished.\\
+\\
+There are other services that are run along side the activities one example of this is the notification service that enables the user to receive notifications that are relevant to them without viewing the application, they are push notifications the end user can view outside of the application and they add an extra bit to the user experience of the application.
 
 \subsection{Caveats}
 
@@ -224,8 +241,7 @@ The application will need some refactoring and design tweaking to make it a rewa
 \\
 As mentioned previously the fact that the application is only available for Android means that the audience for the application is limited to only half of the potential users out in the world due to the other users using Apple iOS, As part of the further development of the application it would be advised to develop an Apple iOS version of the application or scrap the current code base and move to Phone Gapp based application which would mean the application will work on any of the major smart phone operating systems.\\
 \\
-More research could of been done in implementing the various background services that are used within the application as they are in the version included with this a bit temperamental, this is somewhat down to the very limited documentation offered by Google on how to implement features that have provided by the Android Operating System its self. This was also not aided by the fact that some of the documentation for the various API's most notably the Google Maps API is heavily out of date and will not actually work on the device with the instructions given in the API documentation.\\
-\\
+More research could of been done in implementing the various background services that are used within the application as they are in the version included with this a bit temperamental, this is somewhat down to the very limited documentation offered by Google on how to implement features that have provided by the Android Operating System its self. This was also not aided by the fact that some of the documentation for the various API's most notably the Google Maps API is heavily out of date and will not actually work on the device with the instructions given in the API documentation.
 
 \section{Server Side}
 
