@@ -126,6 +126,13 @@ Google. Android developers. [Online]. Available:
 \BIBentrySTDinterwordspacing
 
 
+\bibitem{google:osstats:2015:online}
+\BIBentryALTinterwordspacing
+------. Dashboards. [Online]. Available:
+  \url{https://developer.android.com/about/dashboards/index.html?utm_source=suzunone}
+\BIBentrySTDinterwordspacing
+
+
 \bibitem{Google:MappingAPI:2015:online}
 \BIBentryALTinterwordspacing
 ------. Quick start with the google maps android api. [Online]. Available:
@@ -659,6 +666,14 @@ stackoverflow User:~Yebach. (2013, January) postgres case compare string to
 stackoverflow User: Ziyan~Junaideen. (2012, May) Android - periodic background
   service - advice. [Online]. Available:
   \url{http://stackoverflow.com/questions/10420358/android-periodic-background-service-advice}
+\BIBentrySTDinterwordspacing
+
+
+\bibitem{statista:devicestats:2015:online}
+\BIBentryALTinterwordspacing
+Statista. Market share held by smartphone platforms in the united states from
+  january 2012 to january 2015. [Online]. Available:
+  \url{http://www.statista.com/statistics/266572/market-share-held-by-smartphone-platforms-in-the-united-states/}
 \BIBentrySTDinterwordspacing
 
 
