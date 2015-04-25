@@ -227,7 +227,7 @@ The structure of the application is based around it activities which is Android'
 \end{figure} 
 
 \noindent
-Model and REST client layers of the structure are shared between larger parts of the functionality and may encapsulate everything to do with for example sending and receiving messages, along with all the other permutation of this format being contained within the same class to group them together functionality and make them easy to access and work with. They have tried to be kept as uniform and repetition kept to a bare minimum which should help with creating a easy to work on easy to maintain application that is an enjoyable code base to work on.\\
+Model and RESTful client layers of the structure are shared between larger parts of the functionality and may encapsulate everything to do with for example sending and receiving messages, along with all the other permutation of this format being contained within the same class to group them together functionality and make them easy to access and work with. They have tried to be kept as uniform and repetition kept to a bare minimum which should help with creating a easy to work on easy to maintain application that is an enjoyable code base to work on.\\
 \\
 The main point of entry for the application is the Navigation Activity which is the screen that shows all of the tags that are close by to the current user and there relevant to them, all of the application is ran from this point from this screen it is possible to reach all of the other activities and is the home page that the users land on when the execution begins it is the focal point of the application and is a return point after every operation has finished.\\
 \\
@@ -255,7 +255,7 @@ The middle tier is the connective tissue of the application acting as a intermed
 \\
 For this important task it was decided to use enterprise level frameworks and technologies, it was integral that the platform and the frameworks that were used to provide the functionality were robust, flexible and easy to work with I concluded to use Node.js \cite{nodeteam:node:2015:online} with the HAPI.js \cite{hapiteam:hapti:2015:online} was the best route to go down as it is fairly cutting edge but also has big supporters and a good support community, HAPI.js provided a robust and usable framework that was not overly complicated for the scenario that it would be used. It was also felt that the platform that the system is run on is not platform specific and can be run on any of the three main operating systems, thus the background services although have not been tested theoretically will run on a Linux Server along with an Apple OSX Server and Windows Server which means that if a platform change was needed in the future it should be easily possible to move the application's backend over to a different platform. More in depth reasons to why theses platforms / frameworks were chosen can be found in \ref{sec:node_choice_of_tech}.\\
 \\
-The user of a HTTP RESTful interface between the middle tier and the Android application seemed the most modern and best way of providing an link between the client and the background API that handles the data for the users of the application, it is also not platform specific which means it should be possible to add in other platforms that use the service at later points which can make use of the platform that already exists. This also translates over to the backend of the application because if the backend was ever replaced with another platform and services aslong as the API end points returned the same data and the authentication worked in the same way then any client side application will work in the same way and the users would not see any different in the service.\\
+The user of a HTTP RESTful interface between the middle tier and the Android application seemed the most modern and best way of providing an link between the client and the background API that handles the data for the users of the application, it is also not platform specific which means it should be possible to add in other platforms that use the service at later points which can make use of the platform that already exists. This also translates over to the backend of the application because if the backend was ever replaced with another platform and services as long as the API end points returned the same data and the authentication worked in the same way then any client side application will work in the same way and the users would not see any different in the service.\\
 \\
 For the design of the backend application it was key to make it as modular as possible to ensure that it is fairly easy to add new functionality in as it was decided it would be best to use dynamic loading where possible, the application takes a list of route files which are for each part of the functionality given for the application for example there may be a route dedicated to all things messaging and if there was a need for a new bit of functionality not seen at the start of development then another route can be loaded in to add functionality needed within the backend application to handle the new functional requirement without the need to redesign the whole application and potentially damage the integrate of the application.\\
 \\
@@ -274,9 +274,11 @@ After deciding that Node.js was the way forward the next major decision was to c
 \\
 Next we will talk about the two frameworks that were in the top two, after throwing out Express.js my attention was drawn to StrongLoop after browsing there API documentation and marveling how clean and pretty the code looked I was pretty set on using it, I setup a development environment for the framework and immediately hit a brick wall with the learning curb presented by StrongLoop. StrongLoop is a Model View Control(MVC) based framework and requires lots of configuration to work correctly and relies on Object Relation Mapping to interact with its database. After couple days of going know-where it was best to reassess the decision after finding that the strict MVC to restrictive getting in the way of getting work actually completed the conclusion was to re-investigate the option at this point HAPI.js popped up as an option after further some investigation. HAPI.js seemed to have everything going for it it had big name supporters Disney, Yahoo, PayPal, Mozilla and Walmart just to name a few along with a strong development community and very useful Internet Relay Chat channel that could be used when extra support was needed. With some small spike work it was clear to see that HAPI.js with its simple but very powerful API was the way forward, within a few hours the progress with HAPI.js was impressive and with many examples and extra that can be used to speed up development it was the right decision for this project.
 
-\subsubsection*{Rest interface}
+\subsubsection*{RESTful interface}
 
-{TODO}
+The RESTful interface provides communication between the front end application and the backend services, they should be able to carry out all of the functions that are important to the application for filling the functional requirements. RESTful services provide an uniform interface between applications over the HTTP protocol and use standardised HTTP request types for example POST and GET. As it is reasonably likely that the application will be turned into a web application at a later point it was desirable that only POST and GET methods were used to post information back and forth as theses are the only two requests that are allowed by most web browsers, this will ease porting the application to a web application at the later point.\\
+\\
+The diagram in figure \ref{fig:rest_pai_diagram_image} gives an explanation of all the RESTful end points and there request types that are needed to carry out the operation that is intended of them. The POST options will have extra parameters passed within the HTTP request that will be important to the functionality of the application. 
 
 \begin{figure}[H]
     \centering
@@ -284,15 +286,25 @@ Next we will talk about the two frameworks that were in the top two, after throw
     \caption{These are the endpoints for the REST API}
     \label{fig:rest_pai_diagram_image}
 \end{figure} 
-\noindent
 
 \subsubsection*{Structure of application}
 
-{TODO}
+The structure of the application is detailed within figure \ref{fig:middle_tier_code}, it has a very simple structure for the main part of the application comprising of the main deployment layer that is statically loaded code which sets up the configuration for the database \& HAPI.js server, the objects that support them are then passed to the route loader that loads the routes code dynamically that allow the application to perform its functional requirements.\\
+\\
+Each of the dynamically loaded modules is passed the shared object contains the references to the HAPI.js server object and to the database connector, which makes them easily accessible within the dynamically loaded code, each of the routes that are loaded dynamically loaded has its own database connector to enable a somewhat like Model View Controller type of approach to how the classes are structured, the route can call the database connector directly to get the information that is related to its various RESTful API end points that the route services. It has been on purposely done this way to ensure that to ensure flexibility within the application and enable the application to be easily extended without the need to change the main structure of the application to make the new functionality work.\\
+\\
+More critical parts of the application are statically loaded for example the code that deals with authenticating the user is statically loaded at the begging of authentication to ensure that it is robust and cant be tamped with once it has been loaded. For authentication it is felt that it should be a core part of the design and should be taken with up most respect and should be reasonably well engineered to ensure that the security of the application is not compromised.
+ 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{diagrams/middletier}
+    \caption{Detailed structure of middle tier code}
+    \label{fig:middle_tier_code}
+\end{figure} 
 
 \subsubsection*{Authentication}
 
-The authentication procedure for the application is to used a mixed approach to authenticating the user to use the application, the user must first authenticate them selfs with basic authentication to the server which creates a session for the user and returns a cookie to them, from here the user must the cookie to authenticate them selfs against the API. HAPI.js's handles most of the background tasks for the authentication using some extra modules HAPI-Auth-Basic \& HAPI-Auth-Cookie the hook into the standard configuration to give the extra functionality that is needed for the authentication services, the code that authenticates the users is spread between the HAPI.js application and the database and has been linked together by my own development.\\
+The authentication procedure for the application is to used a mixed approach to authenticating the user to use the application, the user must first authenticate them selfs with basic authentication to the server which creates a session for the user and returns a cookie to them, from here the user must the cookie to authenticate them selfs against the API. HAPI.js's handles most of the background tasks for the authentication using some extra modules HAPI-Auth-Basic \& HAPI-Auth-Cookie the hook into the standard configuration to give the extra functionality that is needed for the authentication services, the code that authenticates the users is spread between the HAPI.js application and the database and has been linked together by my own development. More details about the database side of the authentication can be found in section \ref{sec:database_security}.
 \\
 This way of authenticating the user will replaced in the further development that will take place with a better standard for securing the user the use of oauth would be a much more desirable way of authenticating the user to use the middle tier services that the current method of authenticating them, at the time it was implemented into the project the current security was only there as a temporary measure for making the development secure and if time constrains had not be so tight the authentication procedure would of been upgraded to use oauth and a full review of the security procedures would be taken.
 
@@ -302,7 +314,7 @@ This way of authenticating the user will replaced in the further development tha
 
 \subsubsection*{Choice of Technologies}
 \label{sec:database_choice_of_tech}
-
+ 
 {TODO}
 
 \subsubsection*{Database structure}
@@ -322,5 +334,6 @@ This way of authenticating the user will replaced in the further development tha
 {TODO}
 
 \subsubsection*{Protecting secrets}
+\label{sec:database_security}
 
 {TODO}
