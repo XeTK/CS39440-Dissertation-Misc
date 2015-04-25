@@ -26,45 +26,45 @@ Warning--I didn't find a database entry for "google:osstats:2015:online"
 ** Sorting version - not for use with work to be submitted to the IEEE.
 
 Done.
-You've used 93 entries,
+You've used 95 entries,
             4538 wiz_defined-function locations,
-            1362 strings with 30832 characters,
-and the built_in function-call counts, 40690 in all, are:
-= -- 3716
-> -- 651
+            1370 strings with 31108 characters,
+and the built_in function-call counts, 41502 in all, are:
+= -- 3786
+> -- 665
 < -- 0
-+ -- 281
-- -- 186
-* -- 1423
-:= -- 7519
-add.period$ -- 186
-call.type$ -- 93
-change.case$ -- 372
++ -- 288
+- -- 190
+* -- 1445
+:= -- 7666
+add.period$ -- 190
+call.type$ -- 95
+change.case$ -- 380
 chr.to.int$ -- 0
-cite$ -- 93
-duplicate$ -- 2758
-empty$ -- 3596
-format.name$ -- 186
-if$ -- 8438
+cite$ -- 95
+duplicate$ -- 2814
+empty$ -- 3670
+format.name$ -- 190
+if$ -- 8607
 int.to.chr$ -- 0
-int.to.str$ -- 93
-missing$ -- 651
-newline$ -- 578
-num.names$ -- 186
-pop$ -- 2033
+int.to.str$ -- 95
+missing$ -- 665
+newline$ -- 590
+num.names$ -- 190
+pop$ -- 2085
 preamble$ -- 1
-purify$ -- 279
+purify$ -- 285
 quote$ -- 2
-skip$ -- 3158
+skip$ -- 3216
 stack$ -- 0
-substring$ -- 467
-swap$ -- 1594
+substring$ -- 478
+swap$ -- 1620
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 6
-type$ -- 837
+type$ -- 855
 warning$ -- 0
-while$ -- 186
-width$ -- 95
-write$ -- 1026
+while$ -- 190
+width$ -- 97
+write$ -- 1046
 (There was 1 warning)

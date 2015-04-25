@@ -706,6 +706,21 @@ H.~Team. Hapi authentication basic. [Online]. Available:
 \BIBentrySTDinterwordspacing
 
 
+\bibitem{hapiteam:hapti:2015:online}
+\BIBentryALTinterwordspacing
+------. A rich framework for building applications and services. [Online].
+  Available: \url{http://hapijs.com}
+\BIBentrySTDinterwordspacing
+
+
+\bibitem{nodeteam:node:2015:online}
+\BIBentryALTinterwordspacing
+N.~Team. Node.js is a platform built on chrome's javascript runtime for easily
+  building fast, scalable network applications. [Online]. Available:
+  \url{https://nodejs.org}
+\BIBentrySTDinterwordspacing
+
+
 \bibitem{UMAR:HowToPassDataBetweenActivities:2010:online}
 \BIBentryALTinterwordspacing
 S.~E. UMAR. (2010, January) How do i pass data between activities in android?
