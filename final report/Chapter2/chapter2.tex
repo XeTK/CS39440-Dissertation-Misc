@@ -292,7 +292,9 @@ Next we will talk about the two frameworks that were in the top two, after throw
 
 \subsubsection*{Authentication}
 
-{TODO}
+The authentication procedure for the application is to used a mixed approach to authenticating the user to use the application, the user must first authenticate them selfs with basic authentication to the server which creates a session for the user and returns a cookie to them, from here the user must the cookie to authenticate them selfs against the API. HAPI.js's handles most of the background tasks for the authentication using some extra modules HAPI-Auth-Basic \& HAPI-Auth-Cookie the hook into the standard configuration to give the extra functionality that is needed for the authentication services, the code that authenticates the users is spread between the HAPI.js application and the database and has been linked together by my own development.\\
+\\
+This way of authenticating the user will replaced in the further development that will take place with a better standard for securing the user the use of oauth would be a much more desirable way of authenticating the user to use the middle tier services that the current method of authenticating them, at the time it was implemented into the project the current security was only there as a temporary measure for making the development secure and if time constrains had not be so tight the authentication procedure would of been upgraded to use oauth and a full review of the security procedures would be taken.
 
 \subsection{Database level}
 
