@@ -310,12 +310,24 @@ This way of authenticating the user will replaced in the further development tha
 
 \subsection{Database level}
 
-{TODO}
+The database level of the application is responsible for creating a persistent store for the data that is created by the users, and making it easy to create links between the data that has been stored. In essence the database does most of the work for the application linking the various data sources together and processing it to give the application all of the its functionality that is needed to make the application work in the way specified by the functional requirements.\\
+\\
+It is much more efficient to get the database to process the data rather than making the middle tier do the processing work, database engines are very good at processing large amounts of data and creating links between the different types of data that are stored within the database. A database is perfect for storing large amounts of data that needs to be processed quickly and efficiently.\\
+\\
+It was decided that a SQL based database would be the best way of keeping and linking data together quickly efficiently behind the scenes to give the application the robust and enterprise level feel that is needed for managing and storing data. One of the more advanced features of a database is to allow robust contains to be applied to the data and ensure the data is valid for use within the application.
 
 \subsubsection*{Choice of Technologies}
 \label{sec:database_choice_of_tech}
  
-{TODO}
+It was quite straight forward decision to decide that a SQL based database was the best way forward due to its flexibility and I as a developer have a strong prior knowledge of SQL database's from working for one of the leading database experts Oracle. This was weighed up with learning a new technology the other possible choice was to go with a noSQL type database but due to the complexity of the project it was best to stick with a technology that was already known. Most of the comparison for deciding which platform to use came from Digital Oceans blog post on comparing relational database management systems \ref{OSTezer:sqlframeworks:2014:online}.\\
+\\
+The next decision was to decide what database platform the application would be developed on there was a couple of choices for this MySQL, SQLite and PostgeSQL. SQLite was disregarded very quickly in the investigations as it is meant for much more simplistic applications and would only server an application with a max of 300 users before it would not be able to scale correctly, this is mostly down to the fact that SQLite is intended to be very simple to implement so that it can be used within embedded situations, its main benefit over the other databases is that it is highly portable and does not require large configuration to get it working correctly and would be something that could be a possible to use for caching requests on the client side application to help speed up the Android application.\\
+\\
+MySQL was the next on the list of platforms to research this would seem a good choice for a small to medium sized project with plenty of flexibility, it gives more advanced features than SQLite with the ability to create database functions to carry out more complicated of tasks, it offers high security features unlike SQLite as it is a custom solution it is highly customisable and can be adapted to work for any given job. Downsides is that it is not fully compliant to the SQL standard it is also missing some more advanced features that are offered by other database engines.\\
+\\
+The final option that was consider is PostgreSQL it offers a very advanced database engine with advanced features not offered by the other offerings and its main goal is to be standards compliant, it is well known for its data integrity capabilities. PostgresSQL is known for working well with large designs and has better integration than other solutions and rivals some propriety solutions on this matter. Some of the downsides of using PostgreSQL is that it is not very portable it is hard to configure and setup correctly along with being difficult to replicate without spending alot of time ensuring that everything is the same between the two different databases. It also has slower performance compared to some of the other solutions mentioned previously as it is not optimised for exclusively read operations from the database like for example SQLite.\\
+\\
+Some of the reasons PostgreSQL was chosen for this project were the advanced security features that are offered within expansions, the mature and flexible database functions offered. Probably the most important was the ability to dynamically import JSON objects directly into the database which should simplify working with the RESTful API that we are using within the middle tier as the objects that deals with specifically are all JSON objects and being to directly inject them into the database without manipulation is a very nice feature. 
 
 \subsubsection*{Database structure}
 
