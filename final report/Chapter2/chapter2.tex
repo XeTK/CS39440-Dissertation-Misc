@@ -304,7 +304,7 @@ More critical parts of the application are statically loaded for example the cod
 
 \subsubsection*{Authentication}
 
-The authentication procedure for the application is to used a mixed approach to authenticating the user to use the application, the user must first authenticate them selfs with basic authentication to the server which creates a session for the user and returns a cookie to them, from here the user must the cookie to authenticate them selfs against the API. HAPI.js's handles most of the background tasks for the authentication using some extra modules HAPI-Auth-Basic \& HAPI-Auth-Cookie the hook into the standard configuration to give the extra functionality that is needed for the authentication services, the code that authenticates the users is spread between the HAPI.js application and the database and has been linked together by my own development. More details about the database side of the authentication can be found in section \ref{sec:database_security}.
+The authentication procedure for the application is to used a mixed approach to authenticating the user to use the application, the user must first authenticate them selfs with basic authentication to the server which creates a session for the user and returns a cookie to them, from here the user must the cookie to authenticate them selfs against the API. HAPI.js's handles most of the background tasks for the authentication using some extra modules HAPI-Auth-Basic \& HAPI-Auth-Cookie the hook into the standard configuration to give the extra functionality that is needed for the authentication services, the code that authenticates the users is spread between the HAPI.js application and the database and has been linked together by my own development. More details about the database side of the authentication can be found in section \ref{sec:database_security}.\\
 \\
 This way of authenticating the user will replaced in the further development that will take place with a better standard for securing the user the use of oauth would be a much more desirable way of authenticating the user to use the middle tier services that the current method of authenticating them, at the time it was implemented into the project the current security was only there as a temporary measure for making the development secure and if time constrains had not be so tight the authentication procedure would of been upgraded to use oauth and a full review of the security procedures would be taken.
 
@@ -319,7 +319,7 @@ It was decided that a SQL based database would be the best way of keeping and li
 \subsubsection*{Choice of Technologies}
 \label{sec:database_choice_of_tech}
  
-It was quite straight forward decision to decide that a SQL based database was the best way forward due to its flexibility and I as a developer have a strong prior knowledge of SQL database's from working for one of the leading database experts Oracle. This was weighed up with learning a new technology the other possible choice was to go with a noSQL type database but due to the complexity of the project it was best to stick with a technology that was already known. Most of the comparison for deciding which platform to use came from Digital Oceans blog post on comparing relational database management systems \ref{OSTezer:sqlframeworks:2014:online}.\\
+It was quite straight forward decision to decide that a SQL based database was the best way forward due to its flexibility and I as a developer have a strong prior knowledge of SQL database's from working for one of the leading database experts Oracle. This was weighed up with learning a new technology the other possible choice was to go with a noSQL type database but due to the complexity of the project it was best to stick with a technology that was already known. Most of the comparison for deciding which platform to use came from Digital Oceans blog post on comparing relational database management systems \ref{ostezer:sqlframeworks:2014:online}.\\
 \\
 The next decision was to decide what database platform the application would be developed on there was a couple of choices for this MySQL, SQLite and PostgeSQL. SQLite was disregarded very quickly in the investigations as it is meant for much more simplistic applications and would only server an application with a max of 300 users before it would not be able to scale correctly, this is mostly down to the fact that SQLite is intended to be very simple to implement so that it can be used within embedded situations, its main benefit over the other databases is that it is highly portable and does not require large configuration to get it working correctly and would be something that could be a possible to use for caching requests on the client side application to help speed up the Android application.\\
 \\
@@ -327,11 +327,15 @@ MySQL was the next on the list of platforms to research this would seem a good c
 \\
 The final option that was consider is PostgreSQL it offers a very advanced database engine with advanced features not offered by the other offerings and its main goal is to be standards compliant, it is well known for its data integrity capabilities. PostgresSQL is known for working well with large designs and has better integration than other solutions and rivals some propriety solutions on this matter. Some of the downsides of using PostgreSQL is that it is not very portable it is hard to configure and setup correctly along with being difficult to replicate without spending alot of time ensuring that everything is the same between the two different databases. It also has slower performance compared to some of the other solutions mentioned previously as it is not optimised for exclusively read operations from the database like for example SQLite.\\
 \\
-Some of the reasons PostgreSQL was chosen for this project were the advanced security features that are offered within expansions, the mature and flexible database functions offered. Probably the most important was the ability to dynamically import JSON objects directly into the database which should simplify working with the RESTful API that we are using within the middle tier as the objects that deals with specifically are all JSON objects and being to directly inject them into the database without manipulation is a very nice feature. 
+Some of the reasons PostgreSQL was chosen for this project were the advanced security features that are offered within expansions, the mature and flexible database functions offered. Probably the most important was the ability to dynamically import JSON objects directly into the database which should simplify working with the RESTful API that we are using within the middle tier as the objects that deals with specifically are all JSON objects and being to directly inject them into the database without manipulation is a very useful feature. 
 
 \subsubsection*{Database structure}
 
-{TODO}
+The structure of the database has been designed around the types of data that needed to be stored for the functional requirements of the application to be for filled, the origin of the design was to store the information of the users in a secure and effective manor the focus then moved to on how messages would be stored will all the relevant fields.\\
+\\
+Next the biggest priority was to ensure that the messages were viewable by the persons friends so the friends section of the database was developed, after this all the auxiliary parts of the application were added this includes the comments and voting sections of the database. The design of the database grew evolutionary style to ensure that all parts were covered for the most part the design was done upfront and then morphed as the development continued.\\
+\\
+The figure \ref{fig:diagram_database_image} shows the connections between all of the classes and the fields held within each table, looking at this diagram it would appear that user\_id is a very commonly used field within the database which may cause issues in the future as the users table will be the table that will take the most number of requests and this data may need to be de-centralised at some point in the future as it may become a bottleneck in future, intelligent use of indexing and caching may help to prevent issues with this though. One shortcomming in the current design is there no way for there to be pending friends request for users so they will automatically come friends at the current moment the second a request is sent.
 
 \begin{figure}[H]
     \centering
@@ -339,13 +343,23 @@ Some of the reasons PostgreSQL was chosen for this project were the advanced sec
     \caption{This is the database design for the application}
     \label{fig:diagram_database_image}
 \end{figure} 
-\noindent
 
 \subsubsection*{Alterations}
 
-{TODO}
+The design had to be modified during the implementation of the project, it was mostly to ensure that the database contained all of the relevant data needed to for fill the functional requirements of the project, A later addition to the design was the ability to vote and add comments to messages. The constraints on the tables were added as the project proceeded to ensure that only correct data was entered into the database.\\
+\\
+One further alteration that will need to be made before the database can be used within a production environment is to add in indexing for the most important columns within the application, indexing them should help improve the performance of the database and ensure than most regularly accessed data is easy to access and is quickly indexed.\\
+\\
+There will need to be the ability to audit the data as well and this will also be added before the application goes into a full production, this should ensure if there are any issues then they can be traced to where it originates.
 
 \subsubsection*{Protecting secrets}
 \label{sec:database_security}
 
-{TODO}
+There has careful consideration taken to how sensitive data is stored within the database, the most primitive of the steps taken to help protect the users data was to separate the users data into levels of sensitivity, with the users email address and social media account id's stored away in a separate table to the main users details and there password hashes also kept in a completely different table to the rest of the users data.\\
+\\
+All actions to do with the users password is processed by the database engine its self, the functions that process to ensure the password is valid are kept within the database and return a status back to the middle tier to tell that the users credentials are valid so there is no chance of of sensitive data being leaked into the middle tier application.\\
+\\
+The users password is not stored in anyway, a MD5 of the users password is encrypted with an random encryption key which is stored along side the password this should help prevent rainbow attacks on the data left within the database and adds a extra layer of security against the possibility of compromising the data contained within the database.\\
+\\
+When the application is placed into the public domain steps will be made to improve the security of the data to ensure that no sensitive user data is leaked into the logs or the public domain. Currently the application uses a mixture of blowfish and MD5 to generate the salt and encryption keys that are used to protect the secrets in the application, the use of SHA-2 would be a much better hashing algorithm to use to protect the users data and will be reviewed and implemented in further development.
+

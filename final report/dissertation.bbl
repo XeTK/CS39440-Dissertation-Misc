@@ -721,6 +721,14 @@ N.~Team. Node.js is a platform built on chrome's javascript runtime for easily
 \BIBentrySTDinterwordspacing
 
 
+\bibitem{ostezer:sqlframeworks:2014:online}
+\BIBentryALTinterwordspacing
+O.~Tezer. (2014, February) Sqlite vs mysql vs postgresql: A comparison of
+  relational database management systems. [Online]. Available:
+  \url{https://www.digitalocean.com/community/tutorials/sqlite-vs-mysql-vs-postgresql-a-comparison-of-relational-database-management-systems}
+\BIBentrySTDinterwordspacing
+
+
 \bibitem{UMAR:HowToPassDataBetweenActivities:2010:online}
 \BIBentryALTinterwordspacing
 S.~E. UMAR. (2010, January) How do i pass data between activities in android?
