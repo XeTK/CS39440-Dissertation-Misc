@@ -29,38 +29,38 @@
 \contentsline {subsection}{\numberline {3.2.1}Development Hardware}{36}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Environment}{37}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}Features}{38}{subsection.3.2.3}
-\contentsline {section}{\numberline {3.3}Server side application}{39}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Environment}{40}{subsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.1.1}Debian based Linux}{40}{subsubsection.3.3.1.1}
-\contentsline {subsubsection}{\numberline {3.3.1.2}PostgreSQL Database}{40}{subsubsection.3.3.1.2}
-\contentsline {subsubsection}{\numberline {3.3.1.3}Node.js environment}{41}{subsubsection.3.3.1.3}
-\contentsline {subsubsection}{\numberline {3.3.1.4}Digital Ocean Droplets}{41}{subsubsection.3.3.1.4}
-\contentsline {subsection}{\numberline {3.3.2}Middle tier application}{42}{subsection.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.2.1}Core functionality}{42}{subsubsection.3.3.2.1}
-\contentsline {subsubsection}{\numberline {3.3.2.2}RESTful Interface}{42}{subsubsection.3.3.2.2}
-\contentsline {subsubsection}{\numberline {3.3.2.3}Database Connector}{43}{subsubsection.3.3.2.3}
-\contentsline {subsection}{\numberline {3.3.3}Database level}{43}{subsection.3.3.3}
-\contentsline {subsubsection}{\numberline {3.3.3.1}Tables}{43}{subsubsection.3.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.3.2}Functions}{44}{subsubsection.3.3.3.2}
-\contentsline {section}{\numberline {3.4}Review of implementation}{44}{section.3.4}
-\contentsline {chapter}{\numberline {4}Testing}{45}{chapter.4}
-\contentsline {section}{\numberline {4.1}User Testing}{45}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Testing community}{45}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Test Devices}{45}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Unit Testing}{45}{section.4.2}
-\contentsline {section}{\numberline {4.3}UI Testing}{45}{section.4.3}
-\contentsline {section}{\numberline {4.4}Functionality Testing}{46}{section.4.4}
-\contentsline {section}{\numberline {4.5}Stress Testing}{46}{section.4.5}
-\contentsline {chapter}{\numberline {5}Evaluation}{48}{chapter.5}
-\contentsline {chapter}{Appendices}{49}{chapter.5}
-\contentsline {chapter}{\numberline {A}Third-Party Code and Libraries}{50}{appendix.A}
-\contentsline {section}{\numberline {1.1}Android application}{50}{section.A.1}
-\contentsline {subsection}{\numberline {1.1.1}Libraries}{50}{subsection.A.1.1}
-\contentsline {subsection}{\numberline {1.1.2}Code Snippets}{50}{subsection.A.1.2}
-\contentsline {section}{\numberline {1.2}Server side}{65}{section.A.2}
-\contentsline {subsection}{\numberline {1.2.1}Libraries}{65}{subsection.A.2.1}
-\contentsline {subsection}{\numberline {1.2.2}Code Snippets}{65}{subsection.A.2.2}
-\contentsline {chapter}{\numberline {B}Code samples}{68}{appendix.B}
-\contentsline {section}{\numberline {2.1}Android Application}{68}{section.B.1}
-\contentsline {section}{\numberline {2.2}Server Side}{68}{section.B.2}
-\contentsline {chapter}{Annotated Bibliography}{69}{section.B.2}
+\contentsline {section}{\numberline {3.3}Server side application}{41}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Environment}{41}{subsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.1.1}Debian based Linux}{42}{subsubsection.3.3.1.1}
+\contentsline {subsubsection}{\numberline {3.3.1.2}PostgreSQL Database}{42}{subsubsection.3.3.1.2}
+\contentsline {subsubsection}{\numberline {3.3.1.3}Node.js environment}{43}{subsubsection.3.3.1.3}
+\contentsline {subsubsection}{\numberline {3.3.1.4}Digital Ocean Droplets}{43}{subsubsection.3.3.1.4}
+\contentsline {subsection}{\numberline {3.3.2}Middle tier application}{43}{subsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.2.1}Core functionality}{44}{subsubsection.3.3.2.1}
+\contentsline {subsubsection}{\numberline {3.3.2.2}RESTful Interface}{44}{subsubsection.3.3.2.2}
+\contentsline {subsubsection}{\numberline {3.3.2.3}Database Connector}{45}{subsubsection.3.3.2.3}
+\contentsline {subsection}{\numberline {3.3.3}Database level}{45}{subsection.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.3.1}Tables}{45}{subsubsection.3.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.3.2}Functions}{46}{subsubsection.3.3.3.2}
+\contentsline {section}{\numberline {3.4}Review of implementation}{46}{section.3.4}
+\contentsline {chapter}{\numberline {4}Testing}{47}{chapter.4}
+\contentsline {section}{\numberline {4.1}User Testing}{47}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Testing community}{47}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Test Devices}{47}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Unit Testing}{47}{section.4.2}
+\contentsline {section}{\numberline {4.3}UI Testing}{47}{section.4.3}
+\contentsline {section}{\numberline {4.4}Functionality Testing}{48}{section.4.4}
+\contentsline {section}{\numberline {4.5}Stress Testing}{48}{section.4.5}
+\contentsline {chapter}{\numberline {5}Evaluation}{50}{chapter.5}
+\contentsline {chapter}{Appendices}{51}{chapter.5}
+\contentsline {chapter}{\numberline {A}Third-Party Code and Libraries}{52}{appendix.A}
+\contentsline {section}{\numberline {1.1}Android application}{52}{section.A.1}
+\contentsline {subsection}{\numberline {1.1.1}Libraries}{52}{subsection.A.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Code Snippets}{52}{subsection.A.1.2}
+\contentsline {section}{\numberline {1.2}Server side}{67}{section.A.2}
+\contentsline {subsection}{\numberline {1.2.1}Libraries}{67}{subsection.A.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Code Snippets}{67}{subsection.A.2.2}
+\contentsline {chapter}{\numberline {B}Code samples}{70}{appendix.B}
+\contentsline {section}{\numberline {2.1}Android Application}{70}{section.B.1}
+\contentsline {section}{\numberline {2.2}Server Side}{70}{section.B.2}
+\contentsline {chapter}{Annotated Bibliography}{71}{section.B.2}
