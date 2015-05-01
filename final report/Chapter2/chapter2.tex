@@ -349,20 +349,20 @@ Figure \ref{fig:diagram_database_image} shows the connections between all of the
 
 \subsubsection{Alterations}
 
-The design had to be modified during the implementation of the project, it was mostly to ensure that the database contained all of the relevant data needed to for fill the functional requirements of the project, A later addition to the design was the ability to vote and add comments to messages. The constraints on the tables were added as the project proceeded to ensure that only correct data was entered into the database.\\
+The design had to be modified during the implementation of the project. This was mostly to ensure that the database contained all of the relevant data needed to for fill the functional requirements of the project, A later addition to the design was the ability to vote and add comments to messages. The constraints on the tables were added as the project proceeded to ensure that only correct data was entered into the database.\\
 \\
-One further alteration that will need to be made before the database can be used within a production environment is to add in indexing for the most important columns within the application, indexing them should help improve the performance of the database and ensure than most regularly accessed data is easy to access and is quickly indexed.\\
+One further alteration that will need to be made before the database can be used within a production environment is to add in indexing for the most important columns within the application. Indexing them should help improve the performance of the database and ensure that the most regularly accessed data is easy to access and is quickly indexed.\\
 \\
-There will need to be the ability to audit the data as well and this will also be added before the application goes into a full production, this should ensure if there are any issues then they can be traced to where it originates.
+There will need to be the ability to audit the data as well and this will also be added before the application goes into a full production. This should ensure that if there are any issues then they can be traced to where it originates.
 
 \subsubsection{Protecting secrets}
 \label{sec:database_security}
 
-There has careful consideration taken to how sensitive data is stored within the database, the most primitive of the steps taken to help protect the users data was to separate the users data into levels of sensitivity, with the users email address and social media account id's stored away in a separate table to the main users details and there password hashes also kept in a completely different table to the rest of the users data.\\
+There has been careful consideration taken to how sensitive data is stored within the database. The most primitive of the steps taken to help protect the user's data was to separate the user's data into levels of sensitivity, with the user's email address and social media account id's stored away in a separate table to the main user's details and their password hashes also kept in a completely different table to the rest of the user's data.\\
 \\
-All actions to do with the users password is processed by the database engine its self, the functions that process to ensure the password is valid are kept within the database and return a status back to the middle tier to tell that the users credentials are valid so there is no chance of of sensitive data being leaked into the middle tier application.\\
+All actions to do with the user's password are processed by the database engine itself. The functions that process to ensure the password is valid are kept within the database and return a status back to the middle tier to tell that the user's credentials are valid so there is no chance of sensitive data being leaked into the middle tier application.\\
 \\
-The users password is not stored in anyway, a MD5 of the users password is encrypted with an random encryption key which is stored along side the password this should help prevent rainbow attacks on the data left within the database and adds a extra layer of security against the possibility of compromising the data contained within the database.\\
+The user's password is not stored in any way. A MD5 of the user's password is encrypted with a random encryption key which is stored along side the password. This should help prevent rainbow attacks on the data left within the database and adds an extra layer of security against the possibility of compromising the data contained within the database.\\
 \\
-When the application is placed into the public domain steps will be made to improve the security of the data to ensure that no sensitive user data is leaked into the logs or the public domain. Currently the application uses a mixture of blowfish and MD5 to generate the salt and encryption keys that are used to protect the secrets in the application, the use of SHA-2 would be a much better hashing algorithm to use to protect the users data and will be reviewed and implemented in further development.
+When the application is placed into the public domain steps will be taken to improve the security of the data to ensure that no sensitive user data is leaked into the logs or the public domain. Currently the application uses a mixture of blowfish and MD5 to generate the salt and encryption keys that are used to protect the secrets in the application. The use of SHA-2 would be a much better hashing algorithm to use to protect the user's data and will be reviewed and implemented in further development.
 
