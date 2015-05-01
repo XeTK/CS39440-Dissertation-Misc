@@ -1,0 +1,587 @@
+<html><head>
+  <title>Swagger UI</title>
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
+  <link href="./Swagger UI_files/typography.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="./Swagger UI_files/reset.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="./Swagger UI_files/screen.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="./Swagger UI_files/reset.css" media="print" rel="stylesheet" type="text/css">
+  <link href="./Swagger UI_files/print.css" media="print" rel="stylesheet" type="text/css">
+  <script src="./Swagger UI_files/jquery-1.8.0.min.js" type="text/javascript"></script>
+  <script src="./Swagger UI_files/jquery.slideto.min.js" type="text/javascript"></script>
+  <script src="./Swagger UI_files/jquery.wiggle.min.js" type="text/javascript"></script>
+  <script src="./Swagger UI_files/jquery.ba-bbq.min.js" type="text/javascript"></script>
+  <script src="./Swagger UI_files/handlebars-2.0.0.js" type="text/javascript"></script>
+  <script src="./Swagger UI_files/underscore-min.js" type="text/javascript"></script>
+  <script src="./Swagger UI_files/backbone-min.js" type="text/javascript"></script>
+  <script src="./Swagger UI_files/swagger-ui.js" type="text/javascript"></script>
+  <script src="./Swagger UI_files/highlight.7.3.pack.js" type="text/javascript"></script>
+  <script src="./Swagger UI_files/marked.js" type="text/javascript"></script>
+
+  <script type="text/javascript">
+    $(function () {
+      var url = window.location.search.match(/url=([^&]+)/);
+      if (url && url.length > 1) {
+        url = decodeURIComponent(url[1]);
+      } else {
+        url = "http://petstore.swagger.io/v2/swagger.json";
+      }
+      window.swaggerUi = new SwaggerUi({
+        url: url,
+        dom_id: "swagger-ui-container",
+        supportedSubmitMethods: ['get', 'post', 'put', 'delete', 'patch'],
+        onComplete: function(swaggerApi, swaggerUi){
+          if(typeof initOAuth == "function") {
+            initOAuth({
+              clientId: "your-client-id",
+              realm: "your-realms",
+              appName: "your-app-name"
+            });
+          }
+          $('pre code').each(function(i, e) {
+            hljs.highlightBlock(e)
+          });
+          addApiKeyAuthorization();
+        },
+        onFailure: function(data) {
+          log("Unable to Load SwaggerUI");
+        },
+        docExpansion: "none",
+        sorter : "alpha"
+      });
+
+      function addApiKeyAuthorization() {
+        var key = encodeURIComponent($('#input_apiKey')[0].value);
+        log("key: " + key);
+        if(key && key.trim() != "") {
+            var apiKeyAuth = new SwaggerClient.ApiKeyAuthorization("api_key", key, "query");
+            window.swaggerUi.api.clientAuthorizations.add("api_key", apiKeyAuth);
+            log("added key " + key);
+        }
+      }
+
+      $('#input_apiKey').change(addApiKeyAuthorization);
+
+      // if you have an apiKey you would like to pre-populate on the page for demonstration purposes...
+      /*
+        var apiKey = "myApiKeyXXXX123456789";
+        $('#input_apiKey').val(apiKey);
+        addApiKeyAuthorization();
+      */
+
+      //window.swaggerUi.load();
+
+      function log() {
+        if ('console' in window) {
+          console.log.apply(console, arguments);
+        }
+      }
+  });
+  </script>
+<style type="text/css"></style></head>
+
+<body class="swagger-section">
+
+<div id="message-bar" class="swagger-ui-wrap message-success"></div>
+<div id="swagger-ui-container" class="swagger-ui-wrap">
+<div class="container" id="resources_container">
+  <ul id="resources"><li id="resource_pet" class="resource active">
+<ul class="endpoints" id="pet_endpoint_list">
+
+
+
+
+
+<li class="endpoint">
+  <ul class="operations">
+    <li class="get operation" id="pet_findPetsByStatus">
+      <div class="heading">
+        <h3>
+          <span class="http_method">
+          <a href="#!/pet/findPetsByStatus" class="toggleOperation">get</a>
+          </span>
+          <span class="path">
+          <a href="#!/pet/findPetsByStatus" class="toggleOperation ">/login</a>
+          </span>
+        </h3>
+        <ul class="options">
+          <li>
+          <a href="#!/pet/findPetsByStatus" class="toggleOperation">Logs the user into the application</a>
+          </li>
+        </ul>
+      </div>
+      
+    </li>
+  </ul>
+</li>
+
+<li class="endpoint">
+  <ul class="operations">
+    <li class="post operation" id="pet_addPet">
+      <div class="heading">
+        <h3>
+          <span class="http_method">
+          <a href="#!/pet/addPet" class="toggleOperation">post</a>
+          </span>
+          <span class="path">
+          <a href="#!/pet/addPet" class="toggleOperation ">/login</a>
+          </span>
+        </h3>
+        <ul class="options">
+          <li>
+          <a href="#!/pet/addPet" class="toggleOperation">Login Operation</a>
+          </li>
+        </ul>
+      </div>
+      
+    </li>
+  </ul>
+</li>
+
+<li class="endpoint">
+  <ul class="operations">
+    <li class="post operation" id="pet_addPet">
+      <div class="heading">
+        <h3>
+          <span class="http_method">
+          <a href="#!/pet/addPet" class="toggleOperation">post</a>
+          </span>
+          <span class="path">
+          <a href="#!/pet/addPet" class="toggleOperation ">/register</a>
+          </span>
+        </h3>
+        <ul class="options">
+          <li>
+          <a href="#!/pet/addPet" class="toggleOperation">This is registering the user</a>
+          </li>
+        </ul>
+      </div>
+      
+    </li>
+  </ul>
+</li>
+
+<li class="endpoint">
+  <ul class="operations">
+    <li class="get operation" id="pet_findPetsByStatus">
+      <div class="heading">
+        <h3>
+          <span class="http_method">
+          <a href="#!/pet/findPetsByStatus" class="toggleOperation">get</a>
+          </span>
+          <span class="path">
+          <a href="#!/pet/findPetsByStatus" class="toggleOperation ">/logout</a>
+          </span>
+        </h3>
+        <ul class="options">
+          <li>
+          <a href="#!/pet/findPetsByStatus" class="toggleOperation">This destroys the users session</a>
+          </li>
+        </ul>
+      </div>
+      
+    </li>
+  </ul>
+</li>
+
+<li class="endpoint">
+  <ul class="operations">
+    <li class="get operation" id="pet_findPetsByStatus">
+      <div class="heading">
+        <h3>
+          <span class="http_method">
+          <a href="#!/pet/findPetsByStatus" class="toggleOperation">get</a>
+          </span>
+          <span class="path">
+          <a href="#!/pet/findPetsByStatus" class="toggleOperation ">/user</a>
+          </span>
+        </h3>
+        <ul class="options">
+          <li>
+          <a href="#!/pet/findPetsByStatus" class="toggleOperation">Returns the user object for the current user</a>
+          </li>
+        </ul>
+      </div>
+      
+    </li>
+  </ul>
+</li>
+
+<li class="endpoint">
+  <ul class="operations">
+    <li class="get operation" id="pet_findPetsByStatus">
+      <div class="heading">
+        <h3>
+          <span class="http_method">
+          <a href="#!/pet/findPetsByStatus" class="toggleOperation">get</a>
+          </span>
+          <span class="path">
+          <a href="#!/pet/findPetsByStatus" class="toggleOperation ">/user/id/{user}</a>
+          </span>
+        </h3>
+        <ul class="options">
+          <li>
+          <a href="#!/pet/findPetsByStatus" class="toggleOperation">Return user for given user_id</a>
+          </li>
+        </ul>
+      </div>
+      
+    </li>
+  </ul>
+</li>
+
+<li class="endpoint">
+  <ul class="operations">
+    <li class="get operation" id="pet_findPetsByStatus">
+      <div class="heading">
+        <h3>
+          <span class="http_method">
+          <a href="#!/pet/findPetsByStatus" class="toggleOperation">get</a>
+          </span>
+          <span class="path">
+          <a href="#!/pet/findPetsByStatus" class="toggleOperation ">/user/username/{user}</a>
+          </span>
+        </h3>
+        <ul class="options">
+          <li>
+          <a href="#!/pet/findPetsByStatus" class="toggleOperation">Returns user object by users username</a>
+          </li>
+        </ul>
+      </div>
+      
+    </li>
+  </ul>
+</li>
+
+<li class="endpoint">
+  <ul class="operations">
+    <li class="get operation" id="pet_findPetsByStatus">
+      <div class="heading">
+        <h3>
+          <span class="http_method">
+          <a href="#!/pet/findPetsByStatus" class="toggleOperation">get</a>
+          </span>
+          <span class="path">
+          <a href="#!/pet/findPetsByStatus" class="toggleOperation ">/friends</a>
+          </span>
+        </h3>
+        <ul class="options">
+          <li>
+          <a href="#!/pet/findPetsByStatus" class="toggleOperation">Returns a list of the users friends</a>
+          </li>
+        </ul>
+      </div>
+      
+    </li>
+  </ul>
+</li>
+
+<li class="endpoint">
+  <ul class="operations">
+    <li class="post operation" id="pet_addPet">
+      <div class="heading">
+        <h3>
+          <span class="http_method">
+          <a href="#!/pet/addPet" class="toggleOperation">post</a>
+          </span>
+          <span class="path">
+          <a href="#!/pet/addPet" class="toggleOperation ">/friend/add</a>
+          </span>
+        </h3>
+        <ul class="options">
+          <li>
+          <a href="#!/pet/addPet" class="toggleOperation">This is adding a new friend</a>
+          </li>
+        </ul>
+      </div>
+      
+    </li>
+  </ul>
+</li>
+
+<li class="endpoint">
+  <ul class="operations">
+    <li class="post operation" id="pet_addPet">
+      <div class="heading">
+        <h3>
+          <span class="http_method">
+          <a href="#!/pet/addPet" class="toggleOperation">post</a>
+          </span>
+          <span class="path">
+          <a href="#!/pet/addPet" class="toggleOperation ">/friend/remove</a>
+          </span>
+        </h3>
+        <ul class="options">
+          <li>
+          <a href="#!/pet/addPet" class="toggleOperation">This is removing a new friend</a>
+          </li>
+        </ul>
+      </div>
+      
+    </li>
+  </ul>
+</li>
+
+<li class="endpoint">
+  <ul class="operations">
+    <li class="get operation" id="pet_findPetsByStatus">
+      <div class="heading">
+        <h3>
+          <span class="http_method">
+          <a href="#!/pet/findPetsByStatus" class="toggleOperation">get</a>
+          </span>
+          <span class="path">
+          <a href="#!/pet/findPetsByStatus" class="toggleOperation ">/comments/{message_id}</a>
+          </span>
+        </h3>
+        <ul class="options">
+          <li>
+          <a href="#!/pet/findPetsByStatus" class="toggleOperation">Get the votes for messages or comments</a>
+          </li>
+        </ul>
+      </div>
+      
+    </li>
+  </ul>
+</li>
+
+<li class="endpoint">
+  <ul class="operations">
+    <li class="post operation" id="pet_addPet">
+      <div class="heading">
+        <h3>
+          <span class="http_method">
+          <a href="#!/pet/addPet" class="toggleOperation">post</a>
+          </span>
+          <span class="path">
+          <a href="#!/pet/addPet" class="toggleOperation ">/comments/add</a>
+          </span>
+        </h3>
+        <ul class="options">
+          <li>
+          <a href="#!/pet/addPet" class="toggleOperation">This is adding a new comment</a>
+          </li>
+        </ul>
+      </div>
+      
+    </li>
+  </ul>
+</li>
+
+<li class="endpoint">
+  <ul class="operations">
+    <li class="get operation" id="pet_findPetsByStatus">
+      <div class="heading">
+        <h3>
+          <span class="http_method">
+          <a href="#!/pet/findPetsByStatus" class="toggleOperation">get</a>
+          </span>
+          <span class="path">
+          <a href="#!/pet/findPetsByStatus" class="toggleOperation ">/message/{id}</a>
+          </span>
+        </h3>
+        <ul class="options">
+          <li>
+          <a href="#!/pet/findPetsByStatus" class="toggleOperation">Get message by id</a>
+          </li>
+        </ul>
+      </div>
+      
+    </li>
+  </ul>
+</li>
+
+<li class="endpoint">
+  <ul class="operations">
+    <li class="get operation" id="pet_findPetsByStatus">
+      <div class="heading">
+        <h3>
+          <span class="http_method">
+          <a href="#!/pet/findPetsByStatus" class="toggleOperation">get</a>
+          </span>
+          <span class="path">
+          <a href="#!/pet/findPetsByStatus" class="toggleOperation ">/message/friends</a>
+          </span>
+        </h3>
+        <ul class="options">
+          <li>
+          <a href="#!/pet/findPetsByStatus" class="toggleOperation">Get messages for current user left by friends</a>
+          </li>
+        </ul>
+      </div>
+      
+    </li>
+  </ul>
+</li>
+
+<li class="endpoint">
+  <ul class="operations">
+    <li class="get operation" id="pet_findPetsByStatus">
+      <div class="heading">
+        <h3>
+          <span class="http_method">
+          <a href="#!/pet/findPetsByStatus" class="toggleOperation">get</a>
+          </span>
+          <span class="path">
+          <a href="#!/pet/findPetsByStatus" class="toggleOperation ">/messages/notifications</a>
+          </span>
+        </h3>
+        <ul class="options">
+          <li>
+          <a href="#!/pet/findPetsByStatus" class="toggleOperation">Return a list of the messages that haven not been read</a>
+          </li>
+        </ul>
+      </div>
+      
+    </li>
+  </ul>
+</li>
+
+<li class="endpoint">
+  <ul class="operations">
+    <li class="get operation" id="pet_findPetsByStatus">
+      <div class="heading">
+        <h3>
+          <span class="http_method">
+          <a href="#!/pet/findPetsByStatus" class="toggleOperation">get</a>
+          </span>
+          <span class="path">
+          <a href="#!/pet/findPetsByStatus" class="toggleOperation ">/messages/user</a>
+          </span>
+        </h3>
+        <ul class="options">
+          <li>
+          <a href="#!/pet/findPetsByStatus" class="toggleOperation">Return a list of the messages for the current user</a>
+          </li>
+        </ul>
+      </div>
+      
+    </li>
+  </ul>
+</li>
+
+<li class="endpoint">
+  <ul class="operations">
+    <li class="post operation" id="pet_addPet">
+      <div class="heading">
+        <h3>
+          <span class="http_method">
+          <a href="#!/pet/addPet" class="toggleOperation">post</a>
+          </span>
+          <span class="path">
+          <a href="#!/pet/addPet" class="toggleOperation ">/message/read</a>
+          </span>
+        </h3>
+        <ul class="options">
+          <li>
+          <a href="#!/pet/addPet" class="toggleOperation">Marking a message as read</a>
+          </li>
+        </ul>
+      </div>
+      
+    </li>
+  </ul>
+</li>
+
+<li class="endpoint">
+  <ul class="operations">
+    <li class="post operation" id="pet_addPet">
+      <div class="heading">
+        <h3>
+          <span class="http_method">
+          <a href="#!/pet/addPet" class="toggleOperation">post</a>
+          </span>
+          <span class="path">
+          <a href="#!/pet/addPet" class="toggleOperation ">/message/add/message</a>
+          </span>
+        </h3>
+        <ul class="options">
+          <li>
+          <a href="#!/pet/addPet" class="toggleOperation">Adding a new message</a>
+          </li>
+        </ul>
+      </div>
+      
+    </li>
+  </ul>
+</li>
+
+<li class="endpoint">
+  <ul class="operations">
+    <li class="post operation" id="pet_addPet">
+      <div class="heading">
+        <h3>
+          <span class="http_method">
+          <a href="#!/pet/addPet" class="toggleOperation">post</a>
+          </span>
+          <span class="path">
+          <a href="#!/pet/addPet" class="toggleOperation ">/message/add/user</a>
+          </span>
+        </h3>
+        <ul class="options">
+          <li>
+          <a href="#!/pet/addPet" class="toggleOperation">Adding visibility to a message to a user</a>
+          </li>
+        </ul>
+      </div>
+      
+    </li>
+  </ul>
+</li>
+
+<li class="endpoint">
+  <ul class="operations">
+    <li class="post operation" id="pet_addPet">
+      <div class="heading">
+        <h3>
+          <span class="http_method">
+          <a href="#!/pet/addPet" class="toggleOperation">post</a>
+          </span>
+          <span class="path">
+          <a href="#!/pet/addPet" class="toggleOperation ">/vote/{type}/add</a>
+          </span>
+        </h3>
+        <ul class="options">
+          <li>
+          <a href="#!/pet/addPet" class="toggleOperation">This adds a vote to a message or a comment</a>
+          </li>
+        </ul>
+      </div>
+      
+    </li>
+  </ul>
+</li>
+
+<li class="endpoint">
+  <ul class="operations">
+    <li class="get operation" id="pet_findPetsByStatus">
+      <div class="heading">
+        <h3>
+          <span class="http_method">
+          <a href="#!/pet/findPetsByStatus" class="toggleOperation">get</a>
+          </span>
+          <span class="path">
+          <a href="#!/pet/findPetsByStatus" class="toggleOperation ">/vote/{type}/{id}</a>
+          </span>
+        </h3>
+        <ul class="options">
+          <li>
+          <a href="#!/pet/findPetsByStatus" class="toggleOperation">Return the statistics for either a comment or message from votes</a>
+          </li>
+        </ul>
+      </div>
+      
+    </li>
+  </ul>
+</li>
+
+
+</ul>
+</li></ul>
+
+  
+</div>
+</div>
+
+
+</body></html>

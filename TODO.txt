@@ -1,0 +1,26 @@
+TODO:
+	APPLICATION:
+		BACKEND:
+			Removing Friends.
+			More validation on the registering users, and return a state when the registration fails.
+
+		DATABASE:
+
+		FRONTEND:
+			Removing Friends
+			Add the ranges to the posting of the messages.
+
+	DOCUMENTATION:
+		Feature & functions List
+		Database Diagrams
+		Rest Diagrams
+		UX Designs
+
+	GITHUB:
+		BACKEND:
+			ReadMe
+			License
+
+		FRONTEND:
+			ReadMe
+			License
