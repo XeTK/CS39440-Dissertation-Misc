@@ -1,42 +1,26 @@
 \chapter{Third-Party Code and Libraries}
 
+This appendix will detail 3rd party code and libraries used within the application, it will explain why they were used and will accredit the author.
+
 \lstjava
 
 \section{Android application}
-
 
 \subsection{Libraries}
 
 \subsubsection*{Google Maps API}
 
+This library \cite{Google:MappingAPI:2015:online} was integral for all of the maps within the application application and was very flexible in allowing modifications to be made to show details on the map. The Google Maps API is licensed under the Apache License v2.0.
+
 \subsubsection*{Android Asynchronous Http Client}
 
+James Smiths library \cite{JamesSmith:AjaxRestLib:2015:online} has been integral to all of the HTTP requests made from the Android application to the backend in a Asynchronous manner, this library is also licensed under the Apache License v2.0.
 
 \subsection{Code Snippets}
 
 \subsubsection*{GPS Code}
 
 \begin{lstlisting}
-
-package uk.co.tomrosier.xetk.losesono.prototype.prototype.utils;
-
-import android.app.AlertDialog;
-import android.app.Service;
-import android.content.Context;
-import android.content.DialogInterface;
-import android.content.Intent;
-import android.location.Location;
-import android.location.LocationListener;
-import android.location.LocationManager;
-import android.os.Bundle;
-import android.os.IBinder;
-import android.provider.Settings;
-import android.util.Log;
-
-/**
- * TODO: power saving needs to be implemented.
- * This handles interaction with the Android GPS and location services.
- */
 
 // Taken from http://stackoverflow.com/a/15757944
 
@@ -216,32 +200,6 @@ public class GPSTracker extends Service implements LocationListener {
         // Showing Alert Message
         alertDialog.show();
     }
-
-
-    @Override
-    public void onLocationChanged(Location location) {
-    }
-
-
-    @Override
-    public void onProviderDisabled(String provider) {
-    }
-
-
-    @Override
-    public void onProviderEnabled(String provider) {
-    }
-
-
-    @Override
-    public void onStatusChanged(String provider, int status, Bundle extras) {
-    }
-
-
-    @Override
-    public IBinder onBind(Intent arg0) {
-        return null;
-    }
 }
 
 \end{lstlisting}
@@ -394,17 +352,6 @@ NotificationActivity.java
 
 \begin{lstlisting}
 
-package uk.co.tomrosier.xetk.losesono.prototype.prototype.activities;
-
-import android.app.Activity;
-import android.app.NotificationManager;
-import android.app.PendingIntent;
-import android.app.TaskStackBuilder;
-import android.content.Context;
-import android.content.Intent;
-import android.os.Bundle;
-import android.widget.Toast;
-
 /**
  * This handles the dealing with notifications, as we decide if we want to either clear the notification or we go to the tag on the map.
  */
@@ -486,14 +433,6 @@ DiscoverService.java
 
 \begin{lstlisting}
 
-package uk.co.tomrosier.xetk.losesono.prototype.prototype.services;
-
-import android.app.AlarmManager;
-import android.app.PendingIntent;
-import android.app.Service;
-import android.content.Intent;
-import android.os.IBinder;
-
 /**
  * This is the service that runs every so often to check if the user is close by to a specific message.
  */
@@ -501,11 +440,6 @@ public class DiscoverService extends Service {
 
     // Set the delay in secounds between checking again for new notifications.
     private final static int delay = 30;
-
-    @Override
-    public IBinder onBind(Intent intent) {
-        return null;
-    }
 
     // Load up the service when the services are deployed.
     @Override
@@ -520,15 +454,6 @@ public class DiscoverService extends Service {
 
         stopSelf();
         return START_NOT_STICKY;
-    }
-
-    @Override
-    public void onCreate() {
-        super.onCreate();
-
-        // Needed to debug services.
-        // android.os.Debug.waitForDebugger();
-
     }
 
     @Override
@@ -551,12 +476,6 @@ public class DiscoverService extends Service {
 BootReceiver.java
 
 \begin{lstlisting}
-
-package uk.co.tomrosier.xetk.losesono.prototype.prototype.services;
-
-import android.content.BroadcastReceiver;
-import android.content.Context;
-import android.content.Intent;
 
 /**
  * This class detects when the application is started.
@@ -584,25 +503,6 @@ public class BootReceiver extends BroadcastReceiver {
 MessageFriendsActivity.java
 
 \begin{lstlisting}
-package uk.co.tomrosier.xetk.losesono.prototype.prototype.activities;
-
-import android.content.Intent;
-import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.ListView;
-
-import java.util.ArrayList;
-
-import uk.co.tomrosier.xetk.losesono.prototype.prototype.ArrayAdapters.FriendArrayAdapter;
-import uk.co.tomrosier.xetk.losesono.prototype.prototype.R;
-import uk.co.tomrosier.xetk.losesono.prototype.prototype.RestClient.FriendRestClient;
-import uk.co.tomrosier.xetk.losesono.prototype.prototype.RestClient.MessageRestClient;
-import uk.co.tomrosier.xetk.losesono.prototype.prototype.entities.Friend;
-import uk.co.tomrosier.xetk.losesono.prototype.prototype.utils.AjaxCompleteHandler;
 
 /**
  * This is the activity for adding the visibility to friends for a given message.
@@ -657,96 +557,13 @@ public class MessageFriendsActivity extends ActionBarActivity {
                     }
                 }
             );
-
-            // Get the button for submitting the data.
-            Button BtnSelectFriends = (Button) findViewById(R.id.BtnSelectFriends);
-
-            // Process the selected friends on the button press.
-            BtnSelectFriends.setOnClickListener(
-                    new View.OnClickListener() {
-
-                        @Override
-                        public void onClick(View arg0) {
-                            // For each of the friends, in the list view.
-                            for (int i = 0; i < adapter.getCount(); i++) {
-                                // Get the friend object from the adapter view.
-                                Friend fi = adapter.getItem(i);
-
-                                if (fi.isChecked()) {
-                                    // Get the message rest client ready to append the friend to the message.
-                                    MessageRestClient mRC = new MessageRestClient(getApplicationContext());
-
-                                    // Add the user to the message.
-                                    mRC.addUser(
-                                            new AjaxCompleteHandler() {
-                                                @Override
-                                                public void handleAction(Object someData) {
-                                                    int groupID = (int) someData;
-                                                    System.out.println("GroupID: " + groupID);
-                                                }
-                                            },
-                                            messageID,
-                                            fi.getLinkID()
-                                    );
-                                }
-                            }
-                            // Close the activity.
-                            finish();
-                            // Go back to the home activity.
-                            Intent intent = new Intent(getApplicationContext(), NavigationActivity.class);
-                            startActivity(intent);
-                        }
-
-                    }
-            );
         }
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_message_friends, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.add_friend) {
-
-            // Show the dialog for adding a new friends.
-            Intent myIntent = new Intent(MessageFriendsActivity.this, AddFriendActivity.class);
-            MessageFriendsActivity.this.startActivity(myIntent);
-
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
     }
 }
 \end{lstlisting}
 
 FriendArrayAdapter.java
 \begin{lstlisting}
-package uk.co.tomrosier.xetk.losesono.prototype.prototype.ArrayAdapters;
-
-import android.content.Context;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.CheckBox;
-import android.widget.TextView;
-
-import java.util.ArrayList;
-
-import uk.co.tomrosier.xetk.losesono.prototype.prototype.R;
-import uk.co.tomrosier.xetk.losesono.prototype.prototype.entities.Friend;
 
 /**
  * This is for the listview on the adding friends to a message page.
@@ -823,6 +640,8 @@ public class FriendArrayAdapter extends ArrayAdapter<Friend> {
 \subsection{Libraries}
 
 \subsubsection*{HAPI.js}
+
+HAPI.js \cite{hapiteam:hapti:2015:online} is the main framework used for the development of the backend services within the application it provides the HTTP routes for the RESTful services to take place. It uses its own propriety license written by Yahoo \& Walmart.
 
 \subsubsection*{Sequelize}
 

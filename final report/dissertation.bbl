@@ -735,6 +735,14 @@ N.~Team. Node.js is a platform built on chrome's javascript runtime for easily
 \BIBentrySTDinterwordspacing
 
 
+\bibitem{DevdattaTengshe:gpsacuracy:2012:online}
+\BIBentryALTinterwordspacing
+D.~Tengshe. What is the maximum theoretical accuracy of gps? [Online].
+  Available:
+  \url{https://gis.stackexchange.com/questions/43617/what-is-the-maximum-theoretical-accuracy-of-gps}
+\BIBentrySTDinterwordspacing
+
+
 \bibitem{ostezer:sqlframeworks:2014:online}
 \BIBentryALTinterwordspacing
 O.~Tezer. (2014, February) Sqlite vs mysql vs postgresql: A comparison of
