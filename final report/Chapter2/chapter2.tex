@@ -11,7 +11,7 @@ This section will cover the design of the applications at key stages of developm
 \subsection{Initial Design}
 \label{sec:global_initial_design}
 
-\subsubsection*{Background}
+\subsubsection{Background}
 
 As the project was done in a iterative and evolutionary style of development there was not much up front planning in the way of initial design. I sketched out a few initial ideas of the block design of the application with all the major parts of the framework including front end, middle tier and database, without any fine details.
 The original plan was to use an Oracle APEX backend which would handle all of the REST requests and SQL side of things, but due to licensing and the fact I wanted to learn new technologies this idea fell by the wayside and it was decided to try and use a middle-ware along with a SQL database. \\
@@ -26,7 +26,7 @@ Theses early sketches were devised from the ideas that had been formulating sinc
     \label{fig:apex_block_diagram_image}
 \end{figure} 
 
-\subsubsection*{Functionality}
+\subsubsection{Functionality}
 \label{sec:functionality}
 
 Assessing the functional requirements required breaking down the concept into its core components. Most noticeably posting, viewing and being notified about tags were the core functionality for the application. Without these features the application could not achieve the goals set out in the original specification, thus undermining the usefulness of the finished application.\\
@@ -41,7 +41,7 @@ More minor functionality is dealing with friends within the application, so addi
 \\
 The application will also require having some operations for dealing with authentication with the server. So it is essential for the application to have screens to register and login to these screens should be as simple as possible, only asking the true essentials to get the job done, with clear and simple forms that will not lead to confusion and frustration that would lead to them being put off using the application. Keeping the forms simple should also improve security as it's less fields to protect from attack and thus being compromised by a potential malicious user.
 
-\subsubsection*{UI mock-ups}
+\subsubsection{UI mock-ups}
 
 Once the application had been broken down into the various functional areas I started to do some rough user interface layouts on paper. Once they were to a satisfactory level they were converted into digital mock-ups using Balsamiq which created the figures \ref{fig:application_home_page_image}, \ref{fig:add_friend_activity_image}, \ref{fig:add_tag_activity_image}, \ref{fig:viewing_message_image}, \ref{fig:giving_friends_visability_image}, \ref{fig:login_activity_image}, \ref{fig:registration_activity_image} and \ref{fig:notification_image}. \\
 \\
@@ -263,7 +263,7 @@ Initial design for the backend of the application was to create a list of the co
 \\
 The backend is linked to the database through a database connector. The one that has been used is called Sequelize \cite{SaschaDepold:Sequelize:2015:online} and provides an Object Relational Mapping (ORM) which was originally going to be used within the application, but it was quickly decided to use the raw SQL functions provided by the connector. The ORM functionality may be implemented properly at some point in the future development of the application and it was personal preference to elect to use the raw SQL interface as it was what I was more comfortable with and allowed better control over the data that was being returned from the database. Sequelize had one very nice feature that meant that JSON objects could be returned directly from the database, which in some cases can be sent straight to the front end application without modification. This helps reduce the complexity within the application as a whole and makes it easier to debug in the long run.
 
-\subsubsection*{Choice of Technologies}
+\subsubsection{Choice of Technologies}
 \label{sec:node_choice_of_tech}
 
 There were many different choices that could have been made for the platform and framework on which to run the back end application. The 4 major platforms under consideration were Java, PHP, Python and Node.js. Java was quickly ruled out as it was felt that it was too heavy weight and clunky for the application, although it would be a better choice if the application became a large enterprise level application. Oracle offer very good support for Java-based applications with very comprehensive API documentation, along with the fact that the Android Side is developed in Java, meaning there would only be one programming language for the whole project. This would reduce the learning for the project as a whole, but it was felt it would not be a good fit for the project. Next the attention was turned to PHP. PHP is a well known language for doing web based API's and is a long standing contender for doing this type of work. My prior experience of PHP had not been a very rewarding experience as it was a horrible language to work with, which instantly gave me concerns as to where it would stand within this project. Additionally, there were some reports floating around at the time of starting the project about serious security issues with PHP, so it was dead in the water.\\
@@ -274,7 +274,7 @@ After deciding that Node.js was the way forward the next major decision was to c
 \\
 There were two frameworks in the top two. After throwing out Express.js my attention was drawn to StrongLoop after browsing their API documentation and marveling at how clean and pretty the code looked. I set up a development environment for the framework and immediately hit a brick wall with the learning curve presented by StrongLoop. StrongLoop is a Model View Control (MVC) based framework and requires lots of configuration to work correctly and relies on Object Relation Mapping to interact with its database. After a couple of days of going nowhere it was best to reassess the decision. After finding that the strict MVC was too restrictive and getting in the way of actually completing work, the conclusion was to re-investigate the option at this point. HAPI.js popped up as an option after some further investigation. HAPI.js seemed to have everything going for it. It had big name supporters, such as Walt Disney, Yahoo, PayPal, Mozilla and Walmart, just to name a few, along with a strong development community and a very useful Internet Relay Chat channel that could be used when extra support was needed. With some small spike work it was clear to see that HAPI.js with its simple but very powerful API was the way forward Within a few hours the progress with HAPI.js was impressive and with many examples and extra that can be used to speed up development it was the right decision for this project.
 
-\subsubsection*{RESTful interface}
+\subsubsection{RESTful interface}
 
 The RESTful interface provides communication between the front end application and the backend services. They should be able to carry out all of the functions that are important to the application for filling the functional requirements. RESTful services provide an uniform interface between applications over the HTTP protocol and use standardised HTTP request types; for example POST and GET. As it is reasonably likely that the application will be turned into a web application at a later point, it was desirable that only POST and GET methods were used to post information back and forth as these are the only two requests that are allowed by most web browsers. This will ease porting the application to a web application at the later point.\\
 \\
@@ -287,7 +287,7 @@ The diagram in figure \ref{fig:rest_pai_diagram_image} gives an explanation of a
     \label{fig:rest_pai_diagram_image}
 \end{figure} 
 
-\subsubsection*{Structure of application}
+\subsubsection{Structure of application}
 
 The structure of the application is detailed within figure \ref{fig:middle_tier_code} It has a very simple structure for the main part of the application, comprising of the main deployment layer that is statically loaded code which sets up the configuration for the database \& HAPI.js server. The objects that support them are then passed to the route loader, that loads the route's code dynamically, that allows the application to perform its functional requirements.\\
 \\
@@ -302,43 +302,41 @@ More critical parts of the application are statically loaded. For example the co
     \label{fig:middle_tier_code}
 \end{figure} 
 
-\subsubsection*{Authentication}
+\subsubsection{Authentication}
 
 The authentication procedure for the application uses a mixed approach to authenticating the user to use the application. The user must first authenticate themselves with basic authentication to the server, which creates a session for the user and returns a cookie to them. From here the user must the cookie to authenticate themselves against the API. HAPI.js's handles most of the background tasks for the authentication using some extra modules (HAPI-Auth-Basic \& HAPI-Auth-Cookie) to hook into the standard configuration to give the extra functionality that is needed for the authentication services. The code that authenticates the users is spread between the HAPI.js application and the database and has been linked together by my own development. More details about the database side of the authentication can be found in section \ref{sec:database_security}.\\
 \\
-This way of authenticating the user will be replaced in the further development that will take place with a better standard for securing the user. The use of oauth would be a much more desirable way of authenticating the user to use the middle tier services than the current method of authenticating them, but at the time it was implemented into the project the current security was only there as a temporary measure for making the development secure and if time constrains had not be so tight the authentication procedure would of been upgraded to use oauth and a full review of the security procedures would be taken.
-
-% ALison got here
+This way of authenticating the user will be replaced in the further development that will take place with a better standard for securing the user. The use of oauth would be a much more desirable way of authenticating the user to use the middle tier services than the current method of authenticating them, but at the time it was implemented into the project the current security was only there as a temporary measure for making the development secure. If time constrains had not be so tight the authentication procedure would of been upgraded to use oauth and a full review of the security procedures would have been taken.
 
 \subsection{Database level}
 
-The database level of the application is responsible for creating a persistent store for the data that is created by the users, and making it easy to create links between the data that has been stored. In essence the database does most of the work for the application linking the various data sources together and processing it to give the application all of the its functionality that is needed to make the application work in the way specified by the functional requirements.\\
+The database level of the application is responsible for creating a persistent store for the data that is created by the users, and making it easy to create links between the data that has been stored. In essence the database does most of the work for the application linking the various data sources together and processing it to give the application all of the functionality that is needed to make the application work in the way specified by the functional requirements.\\
 \\
-It is much more efficient to get the database to process the data rather than making the middle tier do the processing work, database engines are very good at processing large amounts of data and creating links between the different types of data that are stored within the database. A database is perfect for storing large amounts of data that needs to be processed quickly and efficiently.\\
+It is much more efficient to get the database to process the data rather than making the middle tier do the processing work. Database engines are very good at processing large amounts of data and creating links between the different types of data that are stored within the database. A database is perfect for storing large amounts of data that needs to be processed quickly and efficiently.\\
 \\
-It was decided that a SQL based database would be the best way of keeping and linking data together quickly efficiently behind the scenes to give the application the robust and enterprise level feel that is needed for managing and storing data. One of the more advanced features of a database is to allow robust contains to be applied to the data and ensure the data is valid for use within the application.
+It was decided that a SQL-based database would be the best way of keeping and linking data together quickly and efficiently behind the scenes to give the application the robust and enterprise level feel that is needed for managing and storing data. One of the more advanced features of a database is to allow robust contains to be applied to the data and ensure the data is valid for use within the application.
 
-\subsubsection*{Choice of Technologies}
+\subsubsection{Choice of Technologies}
 \label{sec:database_choice_of_tech}
  
-It was quite straight forward decision to decide that a SQL based database was the best way forward due to its flexibility and I as a developer have a strong prior knowledge of SQL database's from working for one of the leading database experts Oracle. This was weighed up with learning a new technology the other possible choice was to go with a noSQL type database but due to the complexity of the project it was best to stick with a technology that was already known. Most of the comparison for deciding which platform to use came from Digital Oceans blog post on comparing relational database management systems \ref{ostezer:sqlframeworks:2014:online}.\\
+It was quite a straight forward decision that a SQL-based database was the best way forward, due to its flexibility. Additionally I as a developer have a strong prior knowledge of SQL databases from working for one of the leading database experts Oracle. This was weighed up with learning a new technology. The other possible choice was to go with a noSQL type database, but due to the complexity of the project it was best to stick with a technology that was already known. Most of the comparison for deciding which platform to use came from Digital Oceans blog post on comparing relational database management systems \ref{ostezer:sqlframeworks:2014:online}.\\
 \\
-The next decision was to decide what database platform the application would be developed on there was a couple of choices for this MySQL, SQLite and PostgeSQL. SQLite was disregarded very quickly in the investigations as it is meant for much more simplistic applications and would only server an application with a max of 300 users before it would not be able to scale correctly, this is mostly down to the fact that SQLite is intended to be very simple to implement so that it can be used within embedded situations, its main benefit over the other databases is that it is highly portable and does not require large configuration to get it working correctly and would be something that could be a possible to use for caching requests on the client side application to help speed up the Android application.\\
+The next decision was to decide what database platform the application would be developed on. There was a couple of choices for this; MySQL, SQLite and PostgreSQL. SQLite was disregarded very quickly in the investigations as it is meant for much more simplistic applications and would only server an application with a max of 300 users before it would not be able to scale correctly. This is mostly down to the fact that SQLite is intended to be very simple to implement so that it can be used within embedded situations. Its main benefit over the other databases is that it is highly portable and does not require large configuration to get it working correctly and would be something that could be a possible to use for caching requests on the client side application to help speed up the Android application.\\
 \\
-MySQL was the next on the list of platforms to research this would seem a good choice for a small to medium sized project with plenty of flexibility, it gives more advanced features than SQLite with the ability to create database functions to carry out more complicated of tasks, it offers high security features unlike SQLite as it is a custom solution it is highly customisable and can be adapted to work for any given job. Downsides is that it is not fully compliant to the SQL standard it is also missing some more advanced features that are offered by other database engines.\\
+MySQL was the next on the list of platforms to research. This would seem a good choice for a small to medium sized project with plenty of flexibility. It gives more advanced features than SQLite with the ability to create database functions to carry out more complicated tasks. It offers high security features, unlike SQLite. As it is a custom solution it is highly customisable and can be adapted to work for any given job. Downsides are that it is not fully compliant to the SQL standard and it is also missing some more advanced features that are offered by other database engines.\\
 \\
-The final option that was consider is PostgreSQL it offers a very advanced database engine with advanced features not offered by the other offerings and its main goal is to be standards compliant, it is well known for its data integrity capabilities. PostgresSQL is known for working well with large designs and has better integration than other solutions and rivals some propriety solutions on this matter. Some of the downsides of using PostgreSQL is that it is not very portable it is hard to configure and setup correctly along with being difficult to replicate without spending alot of time ensuring that everything is the same between the two different databases. It also has slower performance compared to some of the other solutions mentioned previously as it is not optimised for exclusively read operations from the database like for example SQLite.\\
+The final option that was consider is PostgreSQL. This offers a very advanced database engine with advanced features not offered by the other contenders and its main goal is to be standards compliant. It is also well known for its data integrity capabilities. PostgreSQL is known for working well with large designs and has better integration than other solutions and rivals some propriety solutions on this matter. Some of the downsides of using PostgreSQL is that it is not very portable, it is hard to configure and setup correctly, along with being difficult to replicate without spending a lot of time ensuring that everything is the same between the two different databases. It also has slower performance compared to some of the other solutions mentioned previously as it is not optimised exclusively for read operations from the database, like for example SQLite.\\
 \\
-Some of the reasons PostgreSQL was chosen for this project were the advanced security features that are offered within expansions, the mature and flexible database functions offered. Probably the most important was the ability to dynamically import JSON objects directly into the database which should simplify working with the RESTful API that we are using within the middle tier as the objects that deals with specifically are all JSON objects and being to directly inject them into the database without manipulation is a very useful feature. 
+Some of the reasons PostgreSQL was chosen for this project were the advanced security features that are offered within expansions and the mature and flexible database functions offered. Probably the most important was the ability to dynamically import JSON objects directly into the database which should simplify working with the RESTful API that we are using within the middle tier as the objects that this deals with specifically are all JSON objects and being able to directly inject them into the database without manipulation is a very useful feature. 
 
-\subsubsection*{Database structure}
+\subsubsection{Database structure}
 \label{sec:database_strucutre}
 
-The structure of the database has been designed around the types of data that needed to be stored for the functional requirements of the application to be for filled, the origin of the design was to store the information of the users in a secure and effective manor the focus then moved to on how messages would be stored will all the relevant fields.\\
+The structure of the database has been designed around the types of data that needed to be stored for the functional requirements of the application to be fulfilled. The origin of the design was to store the information of the users in a secure and effective manor. The focus then moved to on how messages would be stored with all the relevant fields.\\
 \\
-Next the biggest priority was to ensure that the messages were viewable by the persons friends so the friends section of the database was developed, after this all the auxiliary parts of the application were added this includes the comments and voting sections of the database. The design of the database grew evolutionary style to ensure that all parts were covered for the most part the design was done upfront and then morphed as the development continued.\\
+Next the biggest priority was to ensure that the messages were viewable by the person's friends, so the friends section of the database was developed. After this all the auxiliary parts of the application were added. This includes the comments and voting sections of the database. The design of the database grew evolutionary style to ensure that all parts were covered. For the most part the design was done upfront and then morphed as the development continued.\\
 \\
-The figure \ref{fig:diagram_database_image} shows the connections between all of the classes and the fields held within each table, looking at this diagram it would appear that user\_id is a very commonly used field within the database which may cause issues in the future as the users table will be the table that will take the most number of requests and this data may need to be de-centralised at some point in the future as it may become a bottleneck in future, intelligent use of indexing and caching may help to prevent issues with this though. One shortcomming in the current design is there no way for there to be pending friends request for users so they will automatically come friends at the current moment the second a request is sent.
+Figure \ref{fig:diagram_database_image} shows the connections between all of the classes and the fields held within each table. Looking at this diagram it would appear that user\_id is a very commonly used field within the database. This may cause issues in the future as the users table will be the table that will take the most number of requests and this data may need to be de-centralised at some point in the future as it may become a bottleneck. However, intelligent use of indexing and caching may help to prevent issues with this. One shortcoming in the current design is there is no way for there to be pending friend requests for users, so they will automatically become friends at the moment a request is sent.
 
 \begin{figure}[H]
     \centering
@@ -347,7 +345,9 @@ The figure \ref{fig:diagram_database_image} shows the connections between all of
     \label{fig:diagram_database_image}
 \end{figure} 
 
-\subsubsection*{Alterations}
+% ALison got here
+
+\subsubsection{Alterations}
 
 The design had to be modified during the implementation of the project, it was mostly to ensure that the database contained all of the relevant data needed to for fill the functional requirements of the project, A later addition to the design was the ability to vote and add comments to messages. The constraints on the tables were added as the project proceeded to ensure that only correct data was entered into the database.\\
 \\
@@ -355,7 +355,7 @@ One further alteration that will need to be made before the database can be used
 \\
 There will need to be the ability to audit the data as well and this will also be added before the application goes into a full production, this should ensure if there are any issues then they can be traced to where it originates.
 
-\subsubsection*{Protecting secrets}
+\subsubsection{Protecting secrets}
 \label{sec:database_security}
 
 There has careful consideration taken to how sensitive data is stored within the database, the most primitive of the steps taken to help protect the users data was to separate the users data into levels of sensitivity, with the users email address and social media account id's stored away in a separate table to the main users details and there password hashes also kept in a completely different table to the rest of the users data.\\
