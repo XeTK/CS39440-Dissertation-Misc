@@ -73,7 +73,7 @@ Motorola G Gen 2 & 5.0.2 & 1280 x 720 & no & Daniel Brothers \\
 \hline
 LG G-Pad 8.3 & 5.0.2 & 1920 x 1200 & yes & Gideon Jones \\
 LG Nexus 4 & 5.1 & 1280 x 768 & no & Alex Stuart \\
-LG G3 & 5.1 & 2560 x 1440 & no & Joe Roberts \\
+LG G3 & 5.0 & 2560 x 1440 & no & Joe Roberts \\
 \hline
 Sony Xperia Z1 Compact & 4.4.2 & 1280 x 720 & no & Chris Marriott \\ 
 Sony Xperia Z3 & 5.0.2 & 1920 x 1080 & no & Alex Stuart \\
@@ -167,5 +167,16 @@ The UI as it stands currently is usable but it will need more work to get it to 
 
 \section{Functionality Testing}
 
+For each part of the application there is a degree of functionality testing needed to ensure that the application behaved in the correct manor, each part of the functionally was tested as it was implemented to ensure it would fit in with the requirements needed to make the application work as intended within the functional requirements that were detailed in chapter \ref{ch:design} section \ref{sec:functionality}, this testing was done by the developer of the application as it was developed and development would not move on till it was guaranteed that the application worked in the way expected by the developer to for fill the functional requirements given for a specific section of the application that is being tested.\\
+\\
+When the feature was deemed to have completed the testing procedure development would shift to the next feature in the list of items to develop, the use of user testing along with the testing done by developer would be enough to deem if the applications functional aspect has reached a level of maturity that suites the feature and if it would work correctly in a production environment. The use of unit testing on the backend application should ensure the robustness of the backend when modifications have occurred to the application to add new functionality into the application this should mean that the functionality in the backend does not get broken when changes are made.
+
 \section{Stress Testing}
 
+Limited stress testing has been carried out on the application at this point in time, at most there has been 15 users using the application at any given time which is unlikely to have put a major strain on the system but so far although there has been issues with the backend application this seems to originate in the Sequelize library but more work needs to be taken to diagnose where exactly the issue is coming from for now allocating more ram to the VPS solves the issue but it would be preferred to try and fix the issue fully but again this is a point to cover in future development and not at the current version that the application is in.\\
+\\
+The user testing as been used to stress out the application screens and ensure that they are robust and will take abuse from the users, some of the user that are testing the application are fairly technical and have tried various SQL attacks and Overflows to try and break the application. This may be a place where automated testing could be added to test the various parts of the user experience to see if they fall over from various types of attacks including buffer overflows and SQL injection attacks.\\
+\\
+Building up the testing suite for the application to ensure that all parts of the application are protected from various malicious attacks and a large amounts of data requests should ensure the application is robust within a production environment and will ensure that the users experience will be good and they should not be disappointed with the experience provided by the application as a whole.\\
+\\
+The use of stress testing should ensure the application will have robust error handling along with being robust which will ultimately lead to the application being readily available and up for all to use at any time that they want to use it, work needs to be continued to get the application to this stage but due to being a proof of concept application the robustness in the application is lacking and more work will be needed to turn the project into a robust product that user want to use.
