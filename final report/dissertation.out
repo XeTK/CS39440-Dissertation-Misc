@@ -24,38 +24,47 @@
 \BOOKMARK [2][-]{subsection.2.3.2}{2.3.2 Database level}{section.2.3}% 24
 \BOOKMARK [0][]{chapter.3}{3 Implementation}{}% 25
 \BOOKMARK [1][-]{section.3.1}{3.1 Tools used}{chapter.3}% 26
-\BOOKMARK [1][-]{section.3.2}{3.2 Android application}{chapter.3}% 27
-\BOOKMARK [2][-]{subsection.3.2.1}{3.2.1 Development Hardware}{section.3.2}% 28
-\BOOKMARK [2][-]{subsection.3.2.2}{3.2.2 Environment}{section.3.2}% 29
-\BOOKMARK [2][-]{subsection.3.2.3}{3.2.3 Features}{section.3.2}% 30
-\BOOKMARK [1][-]{section.3.3}{3.3 Server side application}{chapter.3}% 31
-\BOOKMARK [2][-]{subsection.3.3.1}{3.3.1 Environment}{section.3.3}% 32
-\BOOKMARK [2][-]{subsection.3.3.2}{3.3.2 Middle tier application}{section.3.3}% 33
-\BOOKMARK [2][-]{subsection.3.3.3}{3.3.3 Database level}{section.3.3}% 34
-\BOOKMARK [1][-]{section.3.4}{3.4 Review of implementation}{chapter.3}% 35
-\BOOKMARK [0][]{chapter.4}{4 Testing}{}% 36
-\BOOKMARK [1][-]{section.4.1}{4.1 User Testing}{chapter.4}% 37
-\BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 Testing community}{section.4.1}% 38
-\BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 Test Devices}{section.4.1}% 39
-\BOOKMARK [1][-]{section.4.2}{4.2 Unit Testing}{chapter.4}% 40
-\BOOKMARK [1][-]{section.4.3}{4.3 UI Testing}{chapter.4}% 41
-\BOOKMARK [1][-]{section.4.4}{4.4 Functionality Testing}{chapter.4}% 42
-\BOOKMARK [1][-]{section.4.5}{4.5 Stress Testing}{chapter.4}% 43
-\BOOKMARK [0][]{chapter.5}{5 Evaluation}{}% 44
-\BOOKMARK [1][-]{section.5.1}{5.1 Application}{chapter.5}% 45
-\BOOKMARK [2][-]{subsection.5.1.1}{5.1.1 Achievements - Good Bits}{section.5.1}% 46
-\BOOKMARK [2][-]{subsection.5.1.2}{5.1.2 Limitations \046 Potential improvements - Bad bits}{section.5.1}% 47
-\BOOKMARK [1][-]{section.5.2}{5.2 Developers performance}{chapter.5}% 48
-\BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 Positive - what was done well}{section.5.2}% 49
-\BOOKMARK [2][-]{subsection.5.2.2}{5.2.2 Negative - what could be improved}{section.5.2}% 50
-\BOOKMARK [0][]{subsection.5.2.2}{Appendices}{}% 51
-\BOOKMARK [0][]{appendix.A}{A Third-Party Code and Libraries}{}% 52
-\BOOKMARK [1][-]{section.A.1}{1.1 Android application}{appendix.A}% 53
-\BOOKMARK [2][-]{subsection.A.1.1}{1.1.1 Libraries}{section.A.1}% 54
-\BOOKMARK [2][-]{subsection.A.1.2}{1.1.2 Code Snippets}{section.A.1}% 55
-\BOOKMARK [1][-]{section.A.2}{1.2 Server side}{appendix.A}% 56
-\BOOKMARK [2][-]{subsection.A.2.1}{1.2.1 Libraries}{section.A.2}% 57
-\BOOKMARK [2][-]{subsection.A.2.2}{1.2.2 Code Snippets}{section.A.2}% 58
-\BOOKMARK [0][]{appendix.B}{B Testing}{}% 59
-\BOOKMARK [1][-]{section.B.1}{2.1 Test Tables}{appendix.B}% 60
-\BOOKMARK [0][]{section.B.1}{Annotated Bibliography}{}% 61
+\BOOKMARK [2][-]{subsection.3.1.1}{3.1.1 Sublime Text}{section.3.1}% 27
+\BOOKMARK [2][-]{subsection.3.1.2}{3.1.2 Android Studio}{section.3.1}% 28
+\BOOKMARK [2][-]{subsection.3.1.3}{3.1.3 PGAdmin3}{section.3.1}% 29
+\BOOKMARK [2][-]{subsection.3.1.4}{3.1.4 PGSQL command line}{section.3.1}% 30
+\BOOKMARK [2][-]{subsection.3.1.5}{3.1.5 Postman}{section.3.1}% 31
+\BOOKMARK [2][-]{subsection.3.1.6}{3.1.6 Web browsers}{section.3.1}% 32
+\BOOKMARK [2][-]{subsection.3.1.7}{3.1.7 Android SDK Tools}{section.3.1}% 33
+\BOOKMARK [2][-]{subsection.3.1.8}{3.1.8 Git Hub}{section.3.1}% 34
+\BOOKMARK [1][-]{section.3.2}{3.2 Android application}{chapter.3}% 35
+\BOOKMARK [2][-]{subsection.3.2.1}{3.2.1 Development Hardware}{section.3.2}% 36
+\BOOKMARK [2][-]{subsection.3.2.2}{3.2.2 Environment}{section.3.2}% 37
+\BOOKMARK [2][-]{subsection.3.2.3}{3.2.3 Features}{section.3.2}% 38
+\BOOKMARK [1][-]{section.3.3}{3.3 Server side application}{chapter.3}% 39
+\BOOKMARK [2][-]{subsection.3.3.1}{3.3.1 Environment}{section.3.3}% 40
+\BOOKMARK [2][-]{subsection.3.3.2}{3.3.2 Middle tier application}{section.3.3}% 41
+\BOOKMARK [2][-]{subsection.3.3.3}{3.3.3 Database level}{section.3.3}% 42
+\BOOKMARK [1][-]{section.3.4}{3.4 Review of implementation}{chapter.3}% 43
+\BOOKMARK [0][]{chapter.4}{4 Testing}{}% 44
+\BOOKMARK [1][-]{section.4.1}{4.1 User Testing}{chapter.4}% 45
+\BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 Testing community}{section.4.1}% 46
+\BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 Test Devices}{section.4.1}% 47
+\BOOKMARK [1][-]{section.4.2}{4.2 Unit Testing}{chapter.4}% 48
+\BOOKMARK [1][-]{section.4.3}{4.3 UI Testing}{chapter.4}% 49
+\BOOKMARK [1][-]{section.4.4}{4.4 Functionality Testing}{chapter.4}% 50
+\BOOKMARK [1][-]{section.4.5}{4.5 Stress Testing}{chapter.4}% 51
+\BOOKMARK [0][]{chapter.5}{5 Evaluation}{}% 52
+\BOOKMARK [1][-]{section.5.1}{5.1 Application}{chapter.5}% 53
+\BOOKMARK [2][-]{subsection.5.1.1}{5.1.1 Achievements - Good Bits}{section.5.1}% 54
+\BOOKMARK [2][-]{subsection.5.1.2}{5.1.2 Limitations \046 Potential improvements - Bad bits}{section.5.1}% 55
+\BOOKMARK [1][-]{section.5.2}{5.2 Developers performance}{chapter.5}% 56
+\BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 Positive - what was done well}{section.5.2}% 57
+\BOOKMARK [2][-]{subsection.5.2.2}{5.2.2 Negative - what could be improved}{section.5.2}% 58
+\BOOKMARK [1][-]{section.5.3}{5.3 Overview}{chapter.5}% 59
+\BOOKMARK [0][]{section.5.3}{Appendices}{}% 60
+\BOOKMARK [0][]{appendix.A}{A Third-Party Code and Libraries}{}% 61
+\BOOKMARK [1][-]{section.A.1}{1.1 Android application}{appendix.A}% 62
+\BOOKMARK [2][-]{subsection.A.1.1}{1.1.1 Libraries}{section.A.1}% 63
+\BOOKMARK [2][-]{subsection.A.1.2}{1.1.2 Code Snippets}{section.A.1}% 64
+\BOOKMARK [1][-]{section.A.2}{1.2 Server side}{appendix.A}% 65
+\BOOKMARK [2][-]{subsection.A.2.1}{1.2.1 Libraries}{section.A.2}% 66
+\BOOKMARK [2][-]{subsection.A.2.2}{1.2.2 Code Snippets}{section.A.2}% 67
+\BOOKMARK [0][]{appendix.B}{B Testing}{}% 68
+\BOOKMARK [1][-]{section.B.1}{2.1 Test Tables}{appendix.B}% 69
+\BOOKMARK [0][]{section.B.1}{Annotated Bibliography}{}% 70
