@@ -42,14 +42,20 @@
 \BOOKMARK [1][-]{section.4.4}{4.4 Functionality Testing}{chapter.4}% 42
 \BOOKMARK [1][-]{section.4.5}{4.5 Stress Testing}{chapter.4}% 43
 \BOOKMARK [0][]{chapter.5}{5 Evaluation}{}% 44
-\BOOKMARK [0][]{chapter.5}{Appendices}{}% 45
-\BOOKMARK [0][]{appendix.A}{A Third-Party Code and Libraries}{}% 46
-\BOOKMARK [1][-]{section.A.1}{1.1 Android application}{appendix.A}% 47
-\BOOKMARK [2][-]{subsection.A.1.1}{1.1.1 Libraries}{section.A.1}% 48
-\BOOKMARK [2][-]{subsection.A.1.2}{1.1.2 Code Snippets}{section.A.1}% 49
-\BOOKMARK [1][-]{section.A.2}{1.2 Server side}{appendix.A}% 50
-\BOOKMARK [2][-]{subsection.A.2.1}{1.2.1 Libraries}{section.A.2}% 51
-\BOOKMARK [2][-]{subsection.A.2.2}{1.2.2 Code Snippets}{section.A.2}% 52
-\BOOKMARK [0][]{appendix.B}{B Testing}{}% 53
-\BOOKMARK [1][-]{section.B.1}{2.1 Test Tables}{appendix.B}% 54
-\BOOKMARK [0][]{section.B.1}{Annotated Bibliography}{}% 55
+\BOOKMARK [1][-]{section.5.1}{5.1 Application}{chapter.5}% 45
+\BOOKMARK [2][-]{subsection.5.1.1}{5.1.1 Achievements - Good Bits}{section.5.1}% 46
+\BOOKMARK [2][-]{subsection.5.1.2}{5.1.2 Limitations \046 Potential improvements - Bad bits}{section.5.1}% 47
+\BOOKMARK [1][-]{section.5.2}{5.2 Developers performance}{chapter.5}% 48
+\BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 Positive - what was done well}{section.5.2}% 49
+\BOOKMARK [2][-]{subsection.5.2.2}{5.2.2 Negative - what could be improved}{section.5.2}% 50
+\BOOKMARK [0][]{subsection.5.2.2}{Appendices}{}% 51
+\BOOKMARK [0][]{appendix.A}{A Third-Party Code and Libraries}{}% 52
+\BOOKMARK [1][-]{section.A.1}{1.1 Android application}{appendix.A}% 53
+\BOOKMARK [2][-]{subsection.A.1.1}{1.1.1 Libraries}{section.A.1}% 54
+\BOOKMARK [2][-]{subsection.A.1.2}{1.1.2 Code Snippets}{section.A.1}% 55
+\BOOKMARK [1][-]{section.A.2}{1.2 Server side}{appendix.A}% 56
+\BOOKMARK [2][-]{subsection.A.2.1}{1.2.1 Libraries}{section.A.2}% 57
+\BOOKMARK [2][-]{subsection.A.2.2}{1.2.2 Code Snippets}{section.A.2}% 58
+\BOOKMARK [0][]{appendix.B}{B Testing}{}% 59
+\BOOKMARK [1][-]{section.B.1}{2.1 Test Tables}{appendix.B}% 60
+\BOOKMARK [0][]{section.B.1}{Annotated Bibliography}{}% 61
