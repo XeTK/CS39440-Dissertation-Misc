@@ -19,6 +19,10 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: References/references.bib
+Repeated entry---line 1162 of file References/references.bib
+ : @webpage{mudit:HowdoIgetthecurrentGPSlocationprogrammaticallyinAndroid:2009:online
+ :                                                                                   ,
+I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "google:osstats:2015:online"
 -- IEEEtranS.bst version 1.11 (2003/04/02) by Michael Shell.
 -- http://www.ctan.org/tex-archive/macros/latex/contrib/supported/IEEEtran/
@@ -26,45 +30,45 @@ Warning--I didn't find a database entry for "google:osstats:2015:online"
 ** Sorting version - not for use with work to be submitted to the IEEE.
 
 Done.
-You've used 99 entries,
+You've used 100 entries,
             4538 wiz_defined-function locations,
-            1387 strings with 31850 characters,
-and the built_in function-call counts, 43227 in all, are:
-= -- 3937
-> -- 700
+            1392 strings with 32052 characters,
+and the built_in function-call counts, 43634 in all, are:
+= -- 3972
+> -- 707
 < -- 0
-+ -- 304
-- -- 200
-* -- 1500
-:= -- 7976
-add.period$ -- 198
-call.type$ -- 99
-change.case$ -- 397
++ -- 307
+- -- 202
+* -- 1511
+:= -- 8052
+add.period$ -- 200
+call.type$ -- 100
+change.case$ -- 401
 chr.to.int$ -- 0
-cite$ -- 99
-duplicate$ -- 2931
-empty$ -- 3822
-format.name$ -- 201
-if$ -- 8965
+cite$ -- 100
+duplicate$ -- 2959
+empty$ -- 3859
+format.name$ -- 203
+if$ -- 9049
 int.to.chr$ -- 0
-int.to.str$ -- 99
-missing$ -- 694
-newline$ -- 614
-num.names$ -- 198
-pop$ -- 2189
+int.to.str$ -- 100
+missing$ -- 701
+newline$ -- 620
+num.names$ -- 200
+pop$ -- 2215
 preamble$ -- 1
-purify$ -- 298
+purify$ -- 301
 quote$ -- 2
-skip$ -- 3341
+skip$ -- 3369
 stack$ -- 0
-substring$ -- 499
-swap$ -- 1680
+substring$ -- 504
+swap$ -- 1693
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 6
-type$ -- 891
+type$ -- 900
 warning$ -- 0
-while$ -- 198
-width$ -- 101
-write$ -- 1087
-(There was 1 warning)
+while$ -- 200
+width$ -- 103
+write$ -- 1097
+(There was 1 error message)

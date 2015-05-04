@@ -6,19 +6,26 @@ This appendix will detail 3rd party code and libraries used within the applicati
 
 \section{Android application}
 
+Theses are supporting libraries needed to make the application work.
+
 \subsection{Libraries}
 
-\subsubsection*{Google Maps API}
+\subsubsection{Google Maps API}
 
 This library \cite{Google:MappingAPI:2015:online} was integral for all of the maps within the application application and was very flexible in allowing modifications to be made to show details on the map. The Google Maps API is licensed under the Apache License v2.0.
 
-\subsubsection*{Android Asynchronous Http Client}
+\subsubsection{Android Asynchronous Http Client}
 
 James Smiths library \cite{JamesSmith:AjaxRestLib:2015:online} has been integral to all of the HTTP requests made from the Android application to the backend in a Asynchronous manner, this library is also licensed under the Apache License v2.0.
 
 \subsection{Code Snippets}
 
-\subsubsection*{GPS Code}
+This section will detail significant code snippets taken to resolve issues within the application.
+
+\subsubsection{GPS Code}
+
+This code was integral to getting the GPS working correctly, and has been modified slightly to get it work within the grounds of the project, all credit should be given to Nirav Ranpara \& Anas Azeem\cite{mudit:HowdoIgetthecurrentGPSlocationprogrammaticallyinAndroid:2009:online
+} for writing the solution for interfacing with the GPS within an Android application.
 
 \begin{lstlisting}
 
@@ -205,7 +212,9 @@ public class GPSTracker extends Service implements LocationListener {
 \end{lstlisting}
 
 
-\subsubsection*{GPS Distance Calculation Code}
+\subsubsection{GPS Distance Calculation Code}
+
+This algorithm was constructed by Chris Veness\cite{ChrisVeness:GPSDistance:2010:online} it was original written in JavaScript and Developer of the project has converted it to Java. This algorithm gives the distance in meters between two different GPS coordinates and is integral to the notification code as it determines if the user is near by to a message thus trigging a notification if they are near by to it.
 
 \begin{lstlisting}
 
@@ -241,7 +250,9 @@ private static double calculateDistance(Double lat1, Double lon1, Double lat2, D
 \end{lstlisting}
 
 
-\subsubsection*{Google Maps API Code}
+\subsubsection{Google Maps API Code}
+
+Although this has been heavily modified the original core code originates from the Google API documentation and it must be accredited as it is a core part of the project and the mapping is used extensively throughout the application.
 
 \begin{lstlisting}
 
@@ -311,9 +322,13 @@ private static double calculateDistance(Double lat1, Double lon1, Double lat2, D
 \end{lstlisting}
 
 
-\subsubsection*{Notification Code}
+\subsubsection{Notification Code}
 
-GPSService.java
+The notification code was based of multiple sources and pieced together to create a working notification code.\\
+\\
+The code is based of examples found in two different StackOverflow Posts \cite{tofira:DetermineaddActionclickforAndroidnotifications:2013:online} \cite{FleshWound:HowtodismissAndroidnotificationafteractionhasbeenclicked:2012:online}\\
+\\
+File: GPSService.java
 \begin{lstlisting}
  
     // This creates a notification that can be viewable in the Android notification draw.
@@ -348,7 +363,7 @@ GPSService.java
     }
 \end{lstlisting}
 
-NotificationActivity.java
+File: NotificationActivity.java
 
 \begin{lstlisting}
 
@@ -425,11 +440,11 @@ public class NotificationActivity extends Activity {
 
 \end{lstlisting}
 
+\subsubsection{Background Services Code}
 
+Creating working background services required multiples sources and the credit goes to the following people Gopinath G \cite{GopinathG:AndroidRestFulServices:2014:online}, Nathan Esquenazi \cite{NathanEsquenazi:StartingBackgroundServices:2013:online} and Roger Hu \cite{RogerHu:StartingBackgroundServices:2015:online}.
 
-\subsubsection*{Background Services Code}
-
-DiscoverService.java
+File: DiscoverService.java
 
 \begin{lstlisting}
 
@@ -473,7 +488,7 @@ public class DiscoverService extends Service {
 
 \end{lstlisting}
 
-BootReceiver.java
+File: BootReceiver.java
 
 \begin{lstlisting}
 
@@ -498,9 +513,11 @@ public class BootReceiver extends BroadcastReceiver {
 
 \end{lstlisting}
 
-\subsubsection*{Listview Code}
+\subsubsection{Listview Code}
 
-MessageFriendsActivity.java
+The listview components within the application again are based of multiple sources as they are a fairly complicated framework for showing information, the credit should be given to following for there tutorials George Matthew \cite{GeorgeMatthew:AddingListItems:2012:online}, Paul Davies \cite{PaulDavies:AndroidListView:2014:online}, Lars Vogel \cite{LarsVogel:UsingLists:2014:online}, Nathan Esquenazi \cite{NathanEsquenazi:UsingArrayAdapter:2013:online}, Antonio Leiva \cite{AntonioLeiva:SwipeToRefreshLayout:2014:online}, Website MySampleCode \cite{MySampleCode:CheckboxExample:2012:online} along with the following StackOverflow posts by simplified \cite{simplified:AndroidListViewinFragment:2011:online}, kAnNaN \cite{kAnNaN:PopulatingaListViewusingArrayList:2011:online}, wei \cite{wei:AndroidIsitpossibletorefreshjustoneiteminalistview:2010:online}, Dunkey \cite{Dunkey:Androidsortlistviewalphabetically:2013:online} and UMAR \cite{UMAR:HowtorefreshAndroidlistview:2010:online}.\\
+\\
+File: MessageFriendsActivity.java
 
 \begin{lstlisting}
 
@@ -630,26 +647,26 @@ public class FriendArrayAdapter extends ArrayAdapter<Friend> {
 }
 \end{lstlisting}
 
-\subsubsection*{Miscellaneous}
+\subsubsection{Miscellaneous}
 
-
+There are miscellaneous code fragments taken from other sources throughout the project within the appendixes I as developer have indicated the main ones, any other code will be annotated within the bibliography.
 
 \section{Server side}
 
 
 \subsection{Libraries}
 
-\subsubsection*{HAPI.js}
+\subsubsection{HAPI.js}
 
 HAPI.js \cite{hapiteam:hapti:2015:online} is the main framework used for the development of the backend services within the application it provides the HTTP routes for the RESTful services to take place. It uses its own propriety license written by Yahoo \& Walmart.
 
-\subsubsection*{Sequelize}
+\subsubsection{Sequelize}
 
 Sequelize was a very important API that the backend application interfaced with it was there to deal with the interfacing between the middle tier application and the database connector. It also uses its own propriety license written by the developers of Sequelize.
 
 \subsection{Code Snippets}
 
-\subsubsection*{JSON 2 SQL}
+\subsubsection{JSON 2 SQL}
 
 \lstsql
 \begin{lstlisting}
@@ -683,7 +700,7 @@ language plpgsql volatile;
 \end{lstlisting}
 
 
-\subsubsection*{RouteLoader.js}
+\subsubsection{RouteLoader.js}
 
 \lstjavascript
 \begin{lstlisting}

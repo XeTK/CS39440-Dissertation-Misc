@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{100}
 \providecommand{\url}[1]{#1}
 \csname url@rmstyle\endcsname
 \providecommand{\newblock}{\relax}
@@ -756,6 +756,14 @@ O.~Tezer. (2014, February) Sqlite vs mysql vs postgresql: A comparison of
 S.~E. UMAR. (2010, January) How do i pass data between activities in android?
   [Online]. Available:
   \url{https://stackoverflow.com/questions/2091465/how-do-i-pass-data-between-activities-in-android}
+\BIBentrySTDinterwordspacing
+
+
+\bibitem{ChrisVeness:GPSDistance:2010:online}
+\BIBentryALTinterwordspacing
+C.~Veness. Calculate distance, bearing and more between latitude/longitude
+  points. [Online]. Available:
+  \url{http://www.movable-type.co.uk/scripts/latlong.html}
 \BIBentrySTDinterwordspacing
 
 
