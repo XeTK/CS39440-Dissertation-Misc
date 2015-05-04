@@ -6,7 +6,7 @@ This chapter describes the design stage of developing Location Sensitive Social 
 
 \section{Overview of architecture}
 
-This section will cover the design of the applications at key stages of development, covering the initial design at the beginning of the project and how it matured to the version that we have today. This section will also cover the future development that will needed to be done to make the application a viable fully fledged application that can be released to the general public.
+This section will cover the design of the applications at key stages of development, covering the initial design at the beginning of the project and how it matured to the current version. This section will also cover the future development that will need to be done to make the application a viable fully fledged application that can be released to the general public.
 
 \subsection{Initial Design} 
 \label{sec:global_initial_design}
@@ -61,7 +61,7 @@ Figure \ref{fig:application_home_page_image} is the design for the main page of 
 \end{figure}
 
 \noindent
-In figure \ref{fig:add_tag_activity_image} we are showing the initial design for adding a tag to the map. The key idea is to make it quick and easy to add a tag to the map and make it quickly accessible to the user's friends so they can be promptly notified about the tag their friend has added.\\
+In figure \ref{fig:add_tag_activity_image} the initial design is shown for adding a tag to the map. The key idea is to make it quick and easy to add a tag to the map and make it quickly accessible to the user's friends so they can be promptly notified about the tag their friend has added.\\
 
 \begin{figure}[H]
     \centering
@@ -121,12 +121,12 @@ Screenshot pictured in figure \ref{fig:registration_activity_image} describes th
 \end{figure} 
 
 \noindent
-This screenshot in figure \ref{fig:notification_image} is an example notification for the application. In the final application this does not look anything like this due to the fact we are using the Google Android notification API and notifications do not appear in this way.\\
+This screenshot in figure \ref{fig:notification_image} is an example notification for the application. In the final application this does not look anything like this, due to the fact that the Google Android notification API is being used and notifications do not appear in this way.\\
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.25\textwidth]{uimockups/notification}
-    \caption{Notification that there is a tag near by}
+    \caption{Notification that there is a tag nearby}
     \label{fig:notification_image}
 \end{figure} 
 
@@ -166,7 +166,7 @@ Standing on the shoulders of giants springs to mind as it would not be possible 
 \subsection{Future Development}
 \label{sec:development_future_dev}
 
-Due to the time constraints and time line of the project it was only possible to complete the application to a proof of concept stage. This section aims to cover the development that would need to take place to make the application viable for release into the consumer space. Firstly the current prototype does not have any consideration taken for preserving power. With the current prototype it very rapidly drains the battery of the devices that it is on and leads to the phone being critically low on battery after a few hours. This will be resolved in further development, which would be more intelligent about when it turns on the GPS, and will use the accelerometers in the phone to gauge if it has moved any considerable distance since the GPS was last turned on and then also changing the duration between the checks to ensure that the phone hasn't moved very often would mean that the duration that we check should decrease, thus helping save the battery on the phone. But in cases where the phone is constantly on the move it is very likely that application will remain very high power due to the nature of GPS. Some effort can be put into the wastage as well if the device can't get a fix, then we should not keep trying as this just drains the battery.\\
+Due to the time constraints and time line of the project it was only possible to complete the application to a proof of concept stage. This section aims to cover the development that would need to take place to make the application viable for release into the consumer space. Firstly the current prototype does not have any consideration taken for preserving power. With the current prototype it very rapidly drains the battery of the devices that it is on and leads to the phone being critically low on battery after a few hours. This will be resolved in further development, which would be more intelligent about when it turns on the GPS, and will use the accelerometers in the phone to gauge if it has moved any considerable distance since the GPS was last turned on. Then also changing the duration between the checks to ensure that the phone hasn't moved very often would mean that the duration of the checks should decrease, thus helping save the battery on the phone. But in cases where the phone is constantly on the move it is very likely that the application will remain very high power due to the nature of GPS. Some effort can be put into the wastage as well if the device can't get a fix, then the application should not keep trying as this just drains the battery.\\
 \\
 Again due to time constraints and how large the catalogue of devices are within Android, there has been limited optimisation of the getting the UI to work perfectly on all devices. Also for the development stage the application has only been designed \& tested on a 1080p device due to being the main device that I had access to, but with more time more consideration and multiple layouts could be made to make the application scale and work correctly on different sized devices.\\
 \\
@@ -184,7 +184,7 @@ Android is a cutting edge mobile platform that is used by many millions of peopl
 \\
 Android has a very diverse selection of devices it will run on. As Google does not limit what devices that it can be run on, any hardware manufacturer can decide to create an Android device, meaning that they can vary massively between devices. There is almost an infinite array of screen sizes and screen resolutions that Android will run on, along with a large array of different processors that it will run on, due in part to Android's open sourced routes and its deep origins from Linux. This gives it a very strong versatility and means its very popular with the computer science community and users that like to tinker. Although, one of the main drawbacks to Android is that the ecosystem is fairly fragmented, with many different versions of the operating system out in the public domain. This means its difficult to get applications developed on Android to work on all of the devices out in the public domain, either due to their form factors or due to the fact they are running an out-dated version of the operating system, which leads to incomparability with the newer code libraries. Luckily 93\% of devices \cite{google:osstats:2015:online} out in the wild are running fairly recent versions, with the majority of these devices running an API level between 15 and 22, which means that most code will run on the majority of devices as long as the developer is not seeking the most leading edge APIs for their application.\\
 \\
-For this project it was decided to target the application at API level 14 which is known as 'Ice Cream Sandwich' and higher, as this would give the ability to use fairly recent APIs, but also covering the mass majority of the devices out in the wild. API level 14 dates back to 2011 with the launch of Android 4.0 which means that we can support nearly all devices that were released in the last 5 years as flagship phones from 2009 \& 2010 are fairly likely to still receive updates to 'Ice Create Sandwich'. Due to the user community that goes with Android it is fairly likely that these old devices will have been updated via 3rd parties to run newer versions of Android than the original manufactures intended.\\
+For this project it was decided to target the application at API level 14, which is known as 'Ice Cream Sandwich', and higher, as this would give the ability to use fairly recent APIs, but also covering the mass majority of the devices out in the wild. API level 14 dates back to 2011 with the launch of Android 4.0 which means that the application can support nearly all devices that were released in the last 5 years as flagship phones from 2009 \& 2010 and are fairly likely to still receive updates to 'Ice Cream Sandwich'. Due to the user community that goes with Android it is fairly likely that these old devices will have been updated via 3rd parties to run newer versions of Android than the original manufactures intended.\\
 \\
 The Android developers hub provides a very comprehensive set of API documentation along with tutorials on how to develop for Android with best practice documentation on the best way to design the application to make it fit in with the style of the Android ecosystem. Some of the early research done for the project was based on reading the Android material design manual to ensure the application had a consistent theme and would be accessible to all sorts of different devices and users which would ultimately help with the adoption and usability of the final application.
 
@@ -327,7 +327,7 @@ MySQL was the next on the list of platforms to research. This would seem a good 
 \\
 The final option that was consider is PostgreSQL. This offers a very advanced database engine with advanced features not offered by the other contenders and its main goal is to be standards compliant. It is also well known for its data integrity capabilities. PostgreSQL is known for working well with large designs and has better integration than other solutions and rivals some propriety solutions on this matter. Some of the downsides of using PostgreSQL is that it is not very portable, it is hard to configure and setup correctly, along with being difficult to replicate without spending a lot of time ensuring that everything is the same between the two different databases. It also has slower performance compared to some of the other solutions mentioned previously as it is not optimised exclusively for read operations from the database, like for example SQLite.\\
 \\
-Some of the reasons PostgreSQL was chosen for this project were the advanced security features that are offered within expansions and the mature and flexible database functions offered. Probably the most important was the ability to dynamically import JSON objects directly into the database which should simplify working with the RESTful API that we are using within the middle tier as the objects that this deals with specifically are all JSON objects and being able to directly inject them into the database without manipulation is a very useful feature. 
+Some of the reasons PostgreSQL was chosen for this project were the advanced security features that are offered within expansions and the mature and flexible database functions offered. Probably the most important was the ability to dynamically import JSON objects directly into the database, which should simplify working with the RESTful API that are being used within the middle tier, as the objects that this deals with specifically are all JSON objects and being able to directly inject them into the database without manipulation is a very useful feature. 
 
 \subsubsection{Database structure}
 \label{sec:database_strucutre}
