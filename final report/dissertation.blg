@@ -21,53 +21,55 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: References/references.bib
 Warning--I didn't find a database entry for "google:osstats:2015:online"
 Warning--I didn't find a database entry for "se:howtoinstallpgcrypto:2011:online"
+Warning--I didn't find a database entry for "tofira:DetermineaddActionclickforAndroidnotifications:2013:online"
 Warning--I didn't find a database entry for "kAnNaN:PopulatingaListViewusingArrayList:2011:online"
 Warning--I didn't find a database entry for "wei:AndroidIsitpossibletorefreshjustoneiteminalistview:2010:online"
+Warning--I didn't find a database entry for "UMAR:HowtorefreshAndroidlistview:2010:online"
 -- IEEEtranS.bst version 1.11 (2003/04/02) by Michael Shell.
 -- http://www.ctan.org/tex-archive/macros/latex/contrib/supported/IEEEtran/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 ** Sorting version - not for use with work to be submitted to the IEEE.
 
 Done.
-You've used 57 entries,
+You've used 55 entries,
             4538 wiz_defined-function locations,
-            1232 strings with 25663 characters,
-and the built_in function-call counts, 24775 in all, are:
-= -- 2227
-> -- 406
+            1240 strings with 26824 characters,
+and the built_in function-call counts, 23917 in all, are:
+= -- 2145
+> -- 392
 < -- 0
-+ -- 176
-- -- 116
-* -- 920
-:= -- 4551
-add.period$ -- 114
-call.type$ -- 57
-change.case$ -- 229
++ -- 170
+- -- 112
+* -- 916
+:= -- 4387
+add.period$ -- 110
+call.type$ -- 55
+change.case$ -- 221
 chr.to.int$ -- 0
-cite$ -- 57
-duplicate$ -- 1675
-empty$ -- 2188
-format.name$ -- 117
-if$ -- 5114
+cite$ -- 55
+duplicate$ -- 1615
+empty$ -- 2110
+format.name$ -- 113
+if$ -- 4930
 int.to.chr$ -- 0
-int.to.str$ -- 57
-missing$ -- 400
-newline$ -- 362
-num.names$ -- 114
-pop$ -- 1297
+int.to.str$ -- 55
+missing$ -- 386
+newline$ -- 350
+num.names$ -- 110
+pop$ -- 1255
 preamble$ -- 1
-purify$ -- 172
+purify$ -- 166
 quote$ -- 2
-skip$ -- 1883
+skip$ -- 1813
 stack$ -- 0
-substring$ -- 287
-swap$ -- 934
+substring$ -- 277
+swap$ -- 898
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 6
-type$ -- 513
+type$ -- 495
 warning$ -- 0
-while$ -- 114
-width$ -- 59
-write$ -- 627
-(There were 4 warnings)
+while$ -- 110
+width$ -- 57
+write$ -- 605
+(There were 6 warnings)

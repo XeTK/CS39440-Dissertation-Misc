@@ -322,7 +322,9 @@ stackoverflow User: Seymour~Cakes. (2010, December) How to launch a android
   service when the app launches? [Online]. Available:
   \url{http://stackoverflow.com/questions/4467600/how-to-launch-a-android-service-when-the-app-launches}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent This was used for deploying a service when the
+  application was loaded, this was integral to getting notifications working.
+  \end{quotation}
 
 \bibitem{simplified:AndroidListViewinFragment:2011:online}
 \BIBentryALTinterwordspacing
@@ -330,23 +332,8 @@ stackoverflow User:~simplified. (2011, June) Android listview in fragment.
   [Online]. Available:
   \url{http://stackoverflow.com/questions/6510550/android-listview-in-fragment}
 \BIBentrySTDinterwordspacing
-
-
-\bibitem{tofira:DetermineaddActionclickforAndroidnotifications:2013:online}
-\BIBentryALTinterwordspacing
-stackoverflow User:~tofira. (2013, March) Determine addaction click for android
-  notifications. [Online]. Available:
-  \url{http://stackoverflow.com/questions/15350998/determine-addaction-click-for-android-notifications}
-\BIBentrySTDinterwordspacing
-
-
-\bibitem{UMAR:HowtorefreshAndroidlistview:2010:online}
-\BIBentryALTinterwordspacing
-stackoverflow User:~UMAR. (2010, February) How to refresh android listview?
-  [Online]. Available:
-  \url{http://stackoverflow.com/questions/2250770/how-to-refresh-android-listview}
-\BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent This was used in the design of implementing the
+  ability to have indervidual unique comment \end{quotation}
 
 \bibitem{user1198982:HowtodisablehidethreedotindicatorOptionmenuindicatoronICShandsets:2012:online}
 \BIBentryALTinterwordspacing
@@ -354,7 +341,8 @@ stackoverflow User:~user1198982. (2012, February) How to disable/hide three-dot
   indicator(option menu indicator) on ics handsets. [Online]. Available:
   \url{http://stackoverflow.com/questions/9206530/how-to-disable-hide-three-dot-indicatoroption-menu-indicator-on-ics-handsets}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent This was used to hide menu when it is not used.
+  \end{quotation}
 
 \bibitem{user1977908:AndroidGoogleMapClickedmarkeropensnewactivityorbiggerwindow:2013:online}
 \BIBentryALTinterwordspacing
@@ -362,7 +350,8 @@ stackoverflow User:~user1977908. (2013, May) Android google map - clicked
   marker opens new activity or bigger window. [Online]. Available:
   \url{http://stackoverflow.com/questions/16635530/android-google-map-clicked-marker-opens-new-activity-or-bigger-window}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent Used to override the default function that is run
+  when a map marker is clicked on. \end{quotation}
 
 \bibitem{user2627000:PostgreSQLinsertdataintotablefromjson:2013:online}
 \BIBentryALTinterwordspacing
@@ -370,7 +359,9 @@ stackoverflow User:~user2627000. (2013, July) Postgresql: insert data into
   table from json. [Online]. Available:
   \url{http://stackoverflow.com/questions/17905501/postgresql-insert-data-into-table-from-json}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent This post was used for the method that converts a
+  JSON object from a JSON object to a insert statement within the database.
+  \end{quotation}
 
 \bibitem{user2736022:ConvertJavascriptJsonDateStringtoJavaDateusingGson:2014:online}
 \BIBentryALTinterwordspacing
@@ -378,7 +369,9 @@ stackoverflow User:~user2736022. (2014, May) Convert javascript/json date
   string to java date using gson. [Online]. Available:
   \url{http://stackoverflow.com/questions/23811282/convert-javascript-json-date-string-to-java-date-using-gson}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent This was used in parsing the dates contained within
+  a JSON object back into a useable date object within the application.
+  \end{quotation}
 
 \bibitem{user3104719:AndroidSharedpreferencesexample:2014:online}
 \BIBentryALTinterwordspacing
@@ -386,7 +379,8 @@ stackoverflow User:~user3104719. (2014, April) Android shared preferences
   example. [Online]. Available:
   \url{http://stackoverflow.com/questions/23024831/android-shared-preferences-example}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent This is used for sharing prefrences between the
+  different activitires within the Android application. \end{quotation}
 
 \bibitem{user775171:LoadingNodejsmodulesdynamicallybasedonroute:2012:online}
 \BIBentryALTinterwordspacing
@@ -394,7 +388,9 @@ stackoverflow User:~user775171. (2012, June) Loading node.js modules
   dynamically based on route. [Online]. Available:
   \url{http://stackoverflow.com/questions/10914751/loading-node-js-modules-dynamically-based-on-route}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent Used to help develop the dynamic loading of code
+  within the node.js application used in the backend of the application.
+  \end{quotation}
 
 \bibitem{ZiyanJunaideen:AndroidPeriodicBackgroundServiceAdvice:2012:online}
 \BIBentryALTinterwordspacing
@@ -402,7 +398,8 @@ stackoverflow User: Ziyan~Junaideen. (2012, May) Android - periodic background
   service - advice. [Online]. Available:
   \url{http://stackoverflow.com/questions/10420358/android-periodic-background-service-advice}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent This was used for squeduling periodic checking of
+  the services used within the application. \end{quotation}
 
 \bibitem{statista:devicestats:2015:online}
 \BIBentryALTinterwordspacing
@@ -482,14 +479,17 @@ C.~Veness. Calculate distance, bearing and more between latitude/longitude
   points. [Online]. Available:
   \url{http://www.movable-type.co.uk/scripts/latlong.html}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent This was the base algorithm used for determining
+  how far away a gps co ordinate is away from another point on the map. This is
+  integral to the notification code. \end{quotation}
 
 \bibitem{LarsVogel:AndroidNotifications:2013:online}
 \BIBentryALTinterwordspacing
 L.~Vogel. (2013, June) Android notifications - tutorial. [Online]. Available:
   \url{http://www.vogella.com/tutorials/AndroidNotifications/article.html}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent This was used extensivly to implement the
+  notifications within the application. \end{quotation}
 
 \bibitem{LarsVogel:UsingLists:2014:online}
 \BIBentryALTinterwordspacing
@@ -497,7 +497,8 @@ L.~Vogel. (2013, June) Android notifications - tutorial. [Online]. Available:
   [Online]. Available:
   \url{http://www.vogella.com/tutorials/AndroidListView/article.html}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent Used for implementing the list view used for the
+  friends list and comments within the application. \end{quotation}
 
 \bibitem{LarsVogel:ActionBars:2014:online}
 \BIBentryALTinterwordspacing
@@ -505,13 +506,16 @@ L.~Vogel. (2013, June) Android notifications - tutorial. [Online]. Available:
   [Online]. Available:
   \url{http://www.vogella.com/tutorials/AndroidActionBar/article.htm}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent This was used for creating the action bars and
+  adding information to them so that other parts of the application can be
+  accessed. \end{quotation}
 
 \bibitem{yybupt:CustomUtilityAdapter:2010:online}
 \BIBentryALTinterwordspacing
 yybupt. (2010, June) Custom android original utility adapter. [Online].
   Available: \url{http://www.phonesdevelopers.com/1709081/}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent Used to help create custom list view items for the
+  comments and friends sections of the application. \end{quotation}
 
 \end{thebibliography}
