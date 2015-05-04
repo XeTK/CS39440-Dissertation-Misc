@@ -51,11 +51,11 @@ The map shows exactly where the tag has been left on the map and is a very good 
 
 Commenting and voting as mentioned in the section \ref{sec:viewing_posting} are very integral to the user's participation within the application and are some of the features that the developer is most proud of, as they give a framework for users to collaborate and to leave insightful comments on the posts that have been left on the map.\\
 \\
-Getting the user experience right for comments was a fairly complicated procedure as there are a lot of UI elements that make up the comment sections within the application and getting them all to align and work together is a fairly difficult procedure as there also many different screen resolutions to tailor the application to work with.
+Getting the user experience right for comments was a fairly complicated procedure as there are a lot of UI elements that make up the comment sections within the application and getting them all to align and work together is a fairly difficult procedure as there are also many different screen resolutions to tailor the application to work with.
 
 \subsubsection{Notifications}
 
-The notification section of the application is a fairly well thought out and interesting part of the application. It uses some interesting algorithms to ensure it notifies the users at the correct points in time. It does need some more work to make it a fully rounded part of the application, but it is clear to see the potential of the notifications within the application. They give clear alerts that tell the user exactly what is needed to be known to tell them about nearby tags.\\
+The notification section of the application is a fairly well thought out and an interesting part of the application. It uses some interesting algorithms to ensure it notifies the users at the correct points in time. It does need some more work to make it a fully rounded part of the application, but it is clear to see the potential of the notifications within the application. They give clear alerts that tell the user exactly what is needed to be known to tell them about nearby tags.\\
 \\
 Notifications do need some work to make them better at saving power and clearing at the appropriate times, but it is clear to see how they engage the users to interact with the application and actually get a response out of the user. With a bit more work it will be an integral part of the application that users will appreciate.
 
@@ -69,70 +69,66 @@ The concept has come a long way since the early development of the project and i
 
 \subsection{Limitations \& Potential improvements - Bad bits}
 
-In this section the limitations of the application and what could be improved will be discussed, it will detail what parts of the application were not up to the standard of the developer.
+In this section the limitations of the application and what could be improved will be discussed. It will detail what parts of the application were not up to the standard of the developer.
 
 \subsubsection{Testing}
 
-Testing is one part of the project that the developer does think that needs some improvement, more focus should have been given to it in the early part of the project to ensure that the application had good test coverage.\\
+Testing is one part of the project that the developer does think needs some improvement. More focus should have been given to it in the early part of the project to ensure that the application had good test coverage.\\
 \\
 Automated testing would help with ensuring the robustness of the application and check if any regression had happened within the development of the application which would result in a less robust application. With more time the use of automated UI testing could of aided to see if the UI worked correctly on different devices, along with unit tests to ensure that the code base remains robust and stable.\\
 \\
-The testing issues can be partly blamed on the limited time given for the project and the constraints this placed on developing the application it was felt although maybe this shouldnt of been the case to focus on just developing a working application to prove the concept that trying to make the application more robust from the start with slower progress overall but leading to a much more robust platform with less functionality by this stage in the project.
+The testing issues can be partly blamed on the limited time given for the project and the constraints this placed on developing the application. Although it shouldn't necessarily have been the case, the developer felt it would be better to focus on developing a working application to prove the concept than trying to make the application more robust from the start, with slower progress overall, but leading to a much more robust platform with less functionality by this stage in the project.
 
 \subsubsection{Android}
 
-The initial choice to use native Google Android may been a poor judgment to have made, it required re-learning a programming language and to learn a whole new framework along side that, a significant amount of time and effort was spent trying to get a grips on Android development and with hindsight it is clear that PhoneGapp may have been a much better route to go down even if it isn't as mature as the native libraries.\\
+The initial choice to use native Google Android may been a poor judgment to have made, as it required re-learning a programming language and learning a whole new framework alongside that. A significant amount of time and effort was spent trying to get to grips with Android development and with hindsight it is clear that PhoneGapp may have been a much better route to go down, even if it isn't as mature as the native libraries.\\
 \\
-Androids innate instability and development complexities that it present are a very big turn of as a developer as a lot of time is wasted in trying to get the application just to run, and what seem to be trivial elements of the design seem to take a very long time to implement for example to implement a list within the UI requires 3 classes to make it function correctly, all with modifications to make them suite the specific need.\\
+Android's innate instability and the development complexities that it presents are a very big turn off as a developer, as a lot of time is wasted in trying to get the application just to run, and what seem to be trivial elements of the design take a very long time to implement. For example, to implement a list within the UI requires 3 classes to make it function correctly, all with modifications to make them suite the specific need.\\
 \\
-Phone Gapp uses the same language and framework as the backend application Node.js and uses standard web standards for example HTML, CSS \& JavaScript for its front end work. It is unclear if using Phone Gapp would of saved any pain or time in the development of the project, the developer wishes they had done more research into Phone Gapp at the beginning of the project and had done more spike work to determine what platform would be best to developer for.
+Phone Gapp uses the same language and framework as the backend application Node.js and uses standard web standards, for example HTML, CSS \& JavaScript for its front end work. It is unclear if using Phone Gapp would have saved any pain or time in the development of the project, but the developer wishes they had done more research into Phone Gapp at the beginning of the project and had done more spike work to determine upon what platform it would have been best to develop.
 
 \subsubsection{Confusing UI}
 
-Some of the feedback given by the user community that tested the application has said that the User Interface can be confusing and inconsistent at other points leading to confusion which means that people struggle to understand the application and how to do tasks within it.\\
+Some of the feedback given by the user community that tested the application has said that the User Interface can be confusing, plus inconsistent at other points leading to confusion, which means that people struggle to understand the application and how to do tasks within it.\\
 \\
-The main home page seems to have caused a lot of confusion as initially its very unclear how to post a message and how to differentiate between the different users tags. This can be very disorientating for new users as they are a bit overwhelmed to start with and do not know how to interact specifically with the application.\\
+The main home page seems to have caused a lot of confusion as initially its very unclear how to post a message and how to differentiate between the different user's tags. This can be very disorientating for new users as they are a bit overwhelmed to start with and do not know how to interact specifically with the application.\\
 \\
-With more development and maybe with a developer that is better experienced at UI design or design in general looking over the application it will be easier to design and set out a design that will be less confusing for the user to use.
+With more development and maybe with a developer that is better experienced at UI design, or design in general, looking over the application, it will be easier to set out a design that will be less confusing for the user.
 
 \subsubsection{Actively Negative}
 
-One query that was raised by one of the users of the application that the message \& comments systems voting system seems to be overly negative and users can be actively negative towards a post rather than passively negative by choosing not to up vote a post, they are being actively negative by pressing on the down vote button.\\
-\\
-By using negative voting it encourages a negative environment and could show negative reenforcement which could ultimately hurt the users of the application and they may feel that they are being actively targeted and that all of there actions are bad.
+One query that was raised by one of the users of the application was that the message \& comments systems voting system seems to be overly negative and users can be actively negative towards a post rather than passively negative by choosing not to up vote a post. They are being actively negative by pressing on the down vote button. By using negative voting it encourages a negative environment and could show negative reinforcement, which could ultimately hurt the users of the application and they may feel that they are being actively targeted and that all of their actions are bad.
 
 \subsubsection{Error handling}
 
-The error handling problems are in the same vain as testing as it was felt with the application should be completed to a proof of concept stage and that any extras should be left to further development, but the developer wishes they had spent more time on making the application being robust rather than rapidly developing the project to a proof of concept stage were the underlying code is not robust and will need to be gone over thoroughly before the application could be released.\\
+The error handling problems are in the same vain as testing, as it was felt the application should be completed to a proof of concept stage and that any extras should be left to further development. But the developer wishes they had spent more time on making the application robust, rather than rapidly developing the project to a proof of concept stage where the underlying code is not robust. This will need to be gone over thoroughly before the application could be released.\\
 \\
-Much tighter error handling and coping strategies need to be implemented into the application before it can be released to the public as at the moment when issues happen the application is fairly likely to fall over and not give useful feedback to the user explaining what has happened for to cause the action to fail.\\
-\\
-With more time and further development theses issues could easily be resolved and the application should reach a maturity that means the application can be enjoyed by the general public.
+Much tighter error handling and coping strategies need to be implemented into the application before it can be released to the public, as at the moment when issues happen the application is fairly likely to fall over and not give useful feedback to the user explaining what has happened to cause the action to fail. With more time and further development these issues could easily be resolved and the application should reach a maturity that means it can be enjoyed by the general public.
 
 \subsubsection{GPS accuracy}
 
-As mentioned in chapter \ref{ch:background} section \ref{sec:origin} there are some issues with the accuracy of GPS, this is not really a issue but it is a noted problem with the idea as a whole as with the accuracy as it stands its not possible to do fine marking of locations, thus would be useless if the were a load of locations very close to each other that need to be marked by users differentiate between them, for example if there was a row of shops and each of them had a marker outside them telling what they are.\\
+As mentioned in chapter \ref{ch:background} section \ref{sec:origin} there are some issues with the accuracy of GPS. This is not really an issue, but it is a noted problem with the idea as a whole as with the accuracy as it stands its not possible to do fine marking of locations. Thus, it would be useless if there were a load of locations very close to each other that need to be marked by users and differentiated between. For example, if there was a row of shops and each of them had a marker outside, them it would not be possible to tell what they are.\\
 \\
-It could be possible to use a Blue Tooth dongle with the application to give much more precise positioning, but this would require extra work and defeats the concept of the application working without any external hardware which was one of the main aims of the project as a whole.
+It could be possible to use a Blue Tooth dongle with the application to give much more precise positioning, but this would require extra work and defeats the concept of the application working without any external hardware, which was one of the main aims of the project as a whole.
 
 \subsubsection{Mapping With Multiple Pins}
 
-This is a issue with the Google Maps API rather than the application but there is a issue where that if there are multiple tags on the same location then its very hard to differentiate between the different tags that have been left on the same placed.\\
+This is an issue with the Google Maps API rather than the application, but there is an issue where if there are multiple tags on the same location then its very hard to differentiate between the different tags that have been left on the same place.\\
 \\
-The issue could be resolved with a bit of creative thinking from the developers end having a pin that pulls up a notification list with all the tags that are stored in the same area, this problem can be resolved in further development like most of the flaws within the application, more time is needed to polish the application.
+The issue could be resolved with a bit of creative thinking from the developer's end, such as having a pin that pulls up a notification list with all the tags that are stored in the same area. This problem can be resolved in further development, and like most of the flaws within the application, more time is needed to polish the application.
 
 \subsubsection{Application Completeness}
 
-As mentioned in multiple other sections of this document the applications is far from being complete to a level where the developer is happy to release the product to the general public, the application that will be included with this report shows that the concept works and has great potential, but ultimately the application will require fair amount of work to get it to the state where it can be used by members of the public.\\
+As mentioned in multiple other sections of this document, the applications is far from being complete to a level where the developer is happy to release the product to the general public. The application that will be included with this report shows that the concept works and has great potential, but ultimately the application will require a fair amount of work to get it to the state where it can be used by members of the public.\\
 \\
-Without the delays throughout the project the developer does not think that the application would be much more complete than it already is and it genuinely requires a fair amount of time to be spent to make it a viable product, the end of the dissertation does not mean the end of this project the developer has decided that they want to continue development of the application and hopefully create something that will be used a large amount of people.\\
+Without the delays throughout the project the developer does not think that the application would have been much more complete than it already is, and it genuinely requires a fair amount of time to be spent to make it a viable product. However, the end of the dissertation does not mean the end of this project and the developer has decided that they want to continue development of the application and hopefully create something that will be used by a large amount of people.\\
 \\
-The project has had a fair bit of interest from people that are interested in helping with development and create a application and community that will work in the real world and will be a viable idea for real people.
+The project has had a fair bit of interest from people who wish to help with the development and create an application and community that will work in the real world and will be a viable idea for real people.
 
 
-\section{Developers performance}
+\section{Developer's performance}
 
-This section will be assessing the developer's performance throughout the project, giving critical feedback about what was done well and what could have been done better to make the project better as a whole.
+This section will be assessing the developer's performance throughout the project, giving critical feedback about what was done well and what could have been done better to improve the project overall.
 
 \subsection{Positive - what was done well}
 
@@ -140,19 +136,19 @@ This section will cover in detail what the developer thought that they did well 
 
 \subsubsection{Risk Assessment}
 
-For the project it was apparent that some risks would have to be taken to get the application to a workable level. There were stages in the early development of the application where it was felt that some of the implementation for the application was behind schedule, thus some risk assessment was needed to ensure that the project would not fall behind in the development stages.\\
+With the time constraints of th
+For the project it was apparent that some risks would have to be taken to get the application to a workable level. There were stages in the early development of the application where it was felt that some of the implementation for the application was behind schedule. Thus some risk assessment was needed to ensure that the project would not fall behind in the development stages.\\
 \\
 At the point of the midway demo it was felt that the project was falling behind and there was not enough to present. Risk assessment was used to prioritise what parts of the application needed to be completed to have a reasonable demo to show at the midway point. It was decided that the user must be able to login by this point, along with send a message to the server with the GPS coordinates of where the user was. This functionality was successfully implemented by the time the midway demo occurred, leading to a very successful demo.
 
 \subsubsection{Priority Assessment}
-
-With the time constraints of the project being fairly low, a plan needed to be created to ensure that the project would not be at risk of failing. It was decided that the application should be developed to a proof of concept stage which should enable user testing to occur to give an indication of whether the concept behind the application works.\\
+With the time constraints of the project being fairly low, a plan needed to be created to ensure that the project would not be at risk of failing. It was decided that the application should be developed to a proof of concept stage which should enable user testing to occur to give an indication of whether the concept behind the application worked.\\
 \\
 With the limited time hard decisions were made to make sure the application would reach a point where it could be tested by real users. This meant that only the most important features stayed for the development of the application. It was essential that the posting and viewing of messages were complete, along with the ability to see the list of notifications in the surrounding areas. They are not quite as robust as the developer would like but the decision was made to prioritise getting the implementation there rather than making the application completely robust to all known issues.
 
 \subsubsection{Test Community}
 
-Setting up a community to test the application was a novel idea for the development of the application. It got good coverage of the application and helped uncover bugs and issues that the developer would have not thought of or encountered. This also gave a much broader range of devices to test the application on and ensure that the users had their voice heard when ideas for improvements are given.\\
+Setting up a community to test the application was a novel idea for the development of the application. It got good coverage of the application and helped uncover bugs and issues that the developer would have not thought of or encountered. This also gave a much broader range of devices to test the application on and ensured that the users had their voice heard when ideas for improvements are given.\\
 \\
 The test community has been a fun way to get feedback on the application and to get real user's feedback on the concept, which has helped improve motivation and willingness to work on the application, as it shows people are interested in the concept and that people actually want to use the application for real world tasks.
 
@@ -165,38 +161,34 @@ The use of strong problem solving abilities were used when trying to resolve var
 \subsection{Negative - what could be improved}
 \label{sec:negative_personal}
 
-Contained within this section is what the developer thought they could of possibly done better to aid with the development of the project as a whole and ultimately created a better product. 
+Contained within this section is what the developer thought they could possibly have done better to aid with the development of the project as a whole and ultimately create a better product. 
 
 \subsubsection{Methodologies}
 
-Covered in detail in chapter \ref{ch:background} section \ref{sec:methodology}, this is the process that was used for developing the project, but the developer feels that theses should have been followed more closely to ensure that the other issues detailed within this subsection \ref{sec:negative_personal} didn't happen.\\
+Covered in detail in chapter \ref{ch:backgroung} section \ref{sec:methodology}, this is the process that was used for developing the project. But the developer feels that these should have been followed more closely to ensure that the other issues detailed within this subsection \ref{sec:negative_personal} didn't happen.\\
 \\
-The use of strong software engineering methodologies should of helped with dealing with the difficult problems that are encountered during any software development, the developer wishes they had followed them more closely to help with the development and ultimately deliver a better pieces of software than what was delivered.
+The use of strong software engineering methodologies should have helped with dealing with the difficult problems that are encountered during any software development. But the developer wishes they had followed them more closely to help with the development and ultimately deliver a better piece of software than what was delivered.
 
 \subsubsection{Overly Critical}
 
-At points the developer has been overly critical of a issue or problem and has dedicated to much time to resolving what in reality is a minor issue, the developer has a perfectionist nature and wants everything to work perfectly even when it is not exactly necessary.\\
-\\
-A prime example of this was during the early configuration of the Android environment the developer was not happy with the version of Android being used so spent a long time trying to get the device for testing up to the version that they wanted to use even though this caused major problems and delays at the start of the project.
+At points the developer has been overly critical of an issue or problem and has dedicated too much time to resolving what in reality was a minor issue. The developer has a perfectionist nature and wants everything to work perfectly even when it is not exactly necessary. A prime example of this was during the early configuration of the Android environment when the developer was not happy with the version of Android being used, so spent a long time trying to get the device for testing up to the version that they wanted, even though this caused major problems and delays at the start of the project.
 
 \subsubsection{Time Management}
 \label{sec:time_management}
 
-During the development of the project there were points where the developer struggled with time management due to other commitments and factoring in the large work load of the project around them, this also ties into section \ref{sec:motivation} about motivation as they are somewhat interlinked.\\
+During the development of the project there were points where the developer struggled with time management due to other commitments and factoring in the large work load of the project around them. This also ties in to section \ref{sec:motivation} about motivation as they are somewhat interlinked.\\
 \\
-Theses issues could be resolved by better use of methodologies and coping techniques for resolving bad time management, the bad time management has lead to features being cut when they probably shouldn't have been and has ultimately put unnecessary stress on the developer when maybe in some cases if better time management was executed this would not be the case, and the developer could of performed much better due to not being stressed due to bad time management.
+These issues could be resolved by better use of methodologies and coping techniques for resolving bad time management. The bad time management has led to features being cut when they probably shouldn't have been and has ultimately put unnecessary stress on the developer when maybe, in some cases, if better time management was executed this would not be the case. The developer could have performed much better if he had not been stressed due to poor time management.
 
 \subsubsection{Motivation}
 \label{sec:motivation}
 
-Motivation is a difficult thing for a simple person project, the developer finds it very difficult to develop an application without an outside customer as at the end of the day the customer is the developer. There is no outside force to push the project along it is all down to a single developer, who may have bad patch which will lead to a de-motivated streak which ultimately slows down the project and leads to the project falling behind which then leads back to the time management issues spoke about in section \ref{sec:time_management}.\\
-\\
-With better use of methodologies and maybe some 3rd party input the developer could of thought through these de-motivated timed and ultimately improved the productivity and kept the project on target, even while they were experiencing personal problems.
+Motivation is a difficult thing for a single person project. The developer finds it very difficult to develop an application without an outside customer as at the end of the day the customer is the developer. There is no outside force to push the project along and it is all down to a single developer, who may have a bad patch which will lead to a de-motivated phase which ultimately slows down the project and leads to the project falling behind, which then leads back to the time management issues spoken about in section \ref{sec:time_management}. With better use of methodologies and maybe some 3rd party input the developer could have thought through these de-motivated times and ultimately improved the productivity and kept the project on target, even while they were experiencing personal problems.
 
 \section{Overview}
 
-Overall the development of this project has been very rewarding and I as a developer has learnt a lot about developing a large scale application development, in particular the implementation of mobile application along with developing from scratch a enterprise style database to keep hold of all of the information that is needed for the application.\\
+Overall the development of this project has been very rewarding and I as a developer have learnt a lot about managing a large scale application development. In particular, the implementation of mobile application along with developing from scratch an enterprise style database to keep hold of all of the information that is needed for the application.\\
 \\
-I as developer have also learnt that problems arise in developing any application and the way you learn to deal with the issues and get past them is also an integral part of the development of any project, learning from the mistakes will ultimately make a developer a better developer. From this project I have taken away that I need to personally follow process better and not get so flustered by time constraints and try and develop the application to be the best it can be rather than getting the application to a presentable level for the given deadlines where it looks okay on the surface but under the covers it needs a lot of work to get it to a good standard where it can be released others would argue that what is there is up to the standard of most applications but personally I am not happy with the standard the code is at at the moment and will need more work.\\
+I as developer have also learnt that problems arise in developing any application and the way you learn to deal with the issues and get past them is also an integral part of the development of any project. Learning from the mistakes will ultimately make me a better developer. From this project I have taken away that I need to personally follow process better and not get so flustered by time constraints. Also, I need to try and develop the application to be the best it can be, rather than getting the application to a presentable level for the given deadlines where it looks okay on the surface, but under the covers it needs a lot of work to get it to a good standard where it can be released. Others would argue that what is there is up to the standard of most applications, but personally I am not happy with the standard the code is at presently and it will need more work.\\
 \\
-But I must end on a positive note and this project even though very hard at some points has been very rewarding and very interesting to work on and I would like to take the points learnt throughout the project and use them to further my self within the software development industry, and hopefully create a great product that people will want to use, at the end of the day what is a application without its users?
+But I must end on a positive note and this project, even though very hard at some points, has been very rewarding and very interesting to work on. I would like to take the points learnt throughout the project and use them to further myself within the software development industry, and hopefully create a great product that people will want to use. Because, at the end of the day, what is an application without its users?
