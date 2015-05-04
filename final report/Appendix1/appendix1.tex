@@ -653,8 +653,11 @@ There are miscellaneous code fragments taken from other sources throughout the p
 
 \section{Server side}
 
+The server side application relies on the use of some 3rd party code and libraries to execute correctly.
 
 \subsection{Libraries}
+
+These are the large scale libraries used to make the application function.
 
 \subsubsection{HAPI.js}
 
@@ -666,7 +669,11 @@ Sequelize was a very important API that the backend application interfaced with 
 
 \subsection{Code Snippets}
 
+Various code snippets were used to create the backend application and give the functionality given in the backend application.
+
 \subsubsection{JSON 2 SQL}
+
+This SQL function for PostgreSQL automatically converts a JSON object into a insert statement that then can be used for adding new data into the database all credit goes to StackOverflow user beldaz \cite{user2627000:PostgreSQLinsertdataintotablefromjson:2013:online}.
 
 \lstsql
 \begin{lstlisting}
@@ -699,8 +706,9 @@ language plpgsql volatile;
 
 \end{lstlisting}
 
-
 \subsubsection{RouteLoader.js}
+
+This dynamic code loader was written by a few other people, I originally wrote it for another project and have modified it to work with this one but it is also based of a few other peoples work, major parts were taken from a Stack overflow post by user775171 \cite{user775171:LoadingNodejsmodulesdynamicallybasedonroute:2012:online} along with a GIST by Eric Newport\cite{EricNewport:FileWalker:2013:online}, but it has been modified extensively by me.
 
 \lstjavascript
 \begin{lstlisting}

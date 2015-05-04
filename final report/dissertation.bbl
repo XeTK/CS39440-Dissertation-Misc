@@ -184,17 +184,9 @@ Y.~M. Kim. (2011, December) Android button example. [Online]. Available:
 \BIBentrySTDinterwordspacing
 
 
-\bibitem{AntonioLeiva:SwipeToRefresh:2014:online}
-\BIBentryALTinterwordspacing
-A.~Leiva. (2014, March) An activity that uses a swiperefreshlayout as a
-  container for the layout of the classes that extend it. [Online]. Available:
-  \url{https://gist.github.com/antoniolg/9837398}
-\BIBentrySTDinterwordspacing
-
-
 \bibitem{AntonioLeiva:SwipeToRefreshLayout:2014:online}
 \BIBentryALTinterwordspacing
-------. (2014, March) Swiperefreshlayout: How to use. [Online]. Available:
+A.~Leiva. (2014, March) Swiperefreshlayout: How to use. [Online]. Available:
   \url{http://antonioleiva.com/swiperefreshlayout/}
 \BIBentrySTDinterwordspacing
 
@@ -241,6 +233,14 @@ S.~E. Morten. (2010, December) Is basic-auth secure if done over https?
 MySampleCode. Android listview checkbox example - onitemclicklistener() and
   onclicklistener(). [Online]. Available:
   \url{http://www.mysamplecode.com/2012/07/android-listview-checkbox-example.html}
+\BIBentrySTDinterwordspacing
+
+
+\bibitem{EricNewport:FileWalker:2013:online}
+\BIBentryALTinterwordspacing
+E.~Newport. (2013, Sept) List all files in a directory in node.js recursively
+  in a synchronous fashion. [Online]. Available:
+  \url{https://gist.github.com/kethinov/6658166}
 \BIBentrySTDinterwordspacing
 
 
@@ -604,6 +604,14 @@ stackoverflow User:~user2186086. (2013, March) Permission denied for relation.
 \BIBentrySTDinterwordspacing
 
 
+\bibitem{user2627000:PostgreSQLinsertdataintotablefromjson:2013:online}
+\BIBentryALTinterwordspacing
+stackoverflow User:~user2627000. (2013, July) Postgresql: insert data into
+  table from json. [Online]. Available:
+  \url{http://stackoverflow.com/questions/17905501/postgresql-insert-data-into-table-from-json}
+\BIBentrySTDinterwordspacing
+
+
 \bibitem{user2736022:ConvertJavascriptJsonDateStringtoJavaDateusingGson:2014:online}
 \BIBentryALTinterwordspacing
 stackoverflow User:~user2736022. (2014, May) Convert javascript/json date
@@ -633,6 +641,14 @@ stackoverflow User:~user34305. (2013, December) Check if a key exists inside a
 stackoverflow User:~user409841. (2010, August) How to define callbacks in
   android? [Online]. Available:
   \url{http://stackoverflow.com/questions/3398363/how-to-define-callbacks-in-android}
+\BIBentrySTDinterwordspacing
+
+
+\bibitem{user775171:LoadingNodejsmodulesdynamicallybasedonroute:2012:online}
+\BIBentryALTinterwordspacing
+stackoverflow User:~user775171. (2012, June) Loading node.js modules
+  dynamically based on route. [Online]. Available:
+  \url{http://stackoverflow.com/questions/10914751/loading-node-js-modules-dynamically-based-on-route}
 \BIBentrySTDinterwordspacing
 
 
@@ -681,14 +697,6 @@ stackoverflow User: Ziyan~Junaideen. (2012, May) Android - periodic background
 Statista. Market share held by smartphone platforms in the united states from
   january 2012 to january 2015. [Online]. Available:
   \url{http://www.statista.com/statistics/266572/market-share-held-by-smartphone-platforms-in-the-united-states/}
-\BIBentrySTDinterwordspacing
-
-
-\bibitem{RaviTamada:AndroidExpandableListViewTutorial:2013:online}
-\BIBentryALTinterwordspacing
-R.~Tamada. (2013, July) Android expandable list view tutorial. [Online].
-  Available:
-  \url{http://www.androidhive.info/2013/07/android-expandable-list-view-tutorial/}
 \BIBentrySTDinterwordspacing
 
 

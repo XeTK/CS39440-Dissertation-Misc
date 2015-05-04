@@ -19,7 +19,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: References/references.bib
-Repeated entry---line 1162 of file References/references.bib
+Repeated entry---line 1138 of file References/references.bib
  : @webpage{mudit:HowdoIgetthecurrentGPSlocationprogrammaticallyinAndroid:2009:online
  :                                                                                   ,
 I'm skipping whatever remains of this entry
@@ -30,45 +30,45 @@ Warning--I didn't find a database entry for "google:osstats:2015:online"
 ** Sorting version - not for use with work to be submitted to the IEEE.
 
 Done.
-You've used 100 entries,
+You've used 101 entries,
             4538 wiz_defined-function locations,
-            1392 strings with 32052 characters,
-and the built_in function-call counts, 43634 in all, are:
-= -- 3972
-> -- 707
+            1399 strings with 32387 characters,
+and the built_in function-call counts, 44075 in all, are:
+= -- 4013
+> -- 714
 < -- 0
-+ -- 307
-- -- 202
-* -- 1511
-:= -- 8052
-add.period$ -- 200
-call.type$ -- 100
-change.case$ -- 401
++ -- 309
+- -- 204
+* -- 1527
+:= -- 8135
+add.period$ -- 202
+call.type$ -- 101
+change.case$ -- 405
 chr.to.int$ -- 0
-cite$ -- 100
-duplicate$ -- 2959
-empty$ -- 3859
-format.name$ -- 203
-if$ -- 9049
+cite$ -- 101
+duplicate$ -- 2989
+empty$ -- 3898
+format.name$ -- 205
+if$ -- 9140
 int.to.chr$ -- 0
-int.to.str$ -- 100
-missing$ -- 701
-newline$ -- 620
-num.names$ -- 200
-pop$ -- 2215
+int.to.str$ -- 101
+missing$ -- 708
+newline$ -- 626
+num.names$ -- 202
+pop$ -- 2236
 preamble$ -- 1
-purify$ -- 301
+purify$ -- 304
 quote$ -- 2
-skip$ -- 3369
+skip$ -- 3404
 stack$ -- 0
-substring$ -- 504
-swap$ -- 1693
+substring$ -- 508
+swap$ -- 1711
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 6
-type$ -- 900
+type$ -- 909
 warning$ -- 0
-while$ -- 200
-width$ -- 103
-write$ -- 1097
+while$ -- 202
+width$ -- 104
+write$ -- 1108
 (There was 1 error message)
