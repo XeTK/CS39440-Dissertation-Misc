@@ -1,4 +1,4 @@
-\begin{thebibliography}{100}
+\begin{thebibliography}{10}
 \providecommand{\url}[1]{#1}
 \csname url@rmstyle\endcsname
 \providecommand{\newblock}{\relax}
@@ -24,7 +24,9 @@ S.~E. 32bitfloat. (2012, September) How to use aes-encryption in postgresql?
   [Online]. Available:
   \url{https://dba.stackexchange.com/questions/24370/how-to-use-aes-encryption-in-postgresql}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent This was used to develop the encryption method
+  within the database, it is a code caption detailing AES Encryption
+  \end{quotation}
 
 \bibitem{Adham:AndroidEditText:2010:online}
 \BIBentryALTinterwordspacing
@@ -32,14 +34,17 @@ S.~E. Adham. (2010, November) Get text string from edittext? [Online].
   Available:
   \url{https://stackoverflow.com/questions/4186021/how-to-start-new-activity-on-button-click}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent This was used in the early stages to work out how
+  to switch between different activities within the Android framework
+  \end{quotation}
 
 \bibitem{Agendor:SimpleRestClient:2014:online}
 \BIBentryALTinterwordspacing
 Agendor. (2014, April) Sample hapi.js rest api. [Online]. Available:
   \url{https://gist.github.com/agendor/9922151}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent This was used as an example to develop the early
+  HAPI.js routes \end{quotation}
 
 \bibitem{AdrianAncona:PeriodicAndroidEvents:2014:online}
 \BIBentryALTinterwordspacing
@@ -47,7 +52,9 @@ A.~Ancona. (2014, April) Schedule your android app to do something
   periodically. [Online]. Available:
   \url{http://ncona.com/2014/04/schedule-your-android-app-to-do-something-periodically/}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent This was used within the development of the servies
+  to make the application check for new notifications periodically.
+  \end{quotation}
 
 \bibitem{bneupaane:AndroidEditText:2010:online}
 \BIBentryALTinterwordspacing
@@ -55,14 +62,17 @@ S.~E. bneupaane. (2010, November) Self-signed certificate and loopj for
   android. [Online]. Available:
   \url{https://stackoverflow.com/questions/11573108/self-signed-certificate-and-loopj-for-android}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent Used to enable self signed SSL certificates within
+  Android to make the application work correctly with the self signed SSL
+  certificates used in the backend of the application. \end{quotation}
 
 \bibitem{fredbrooks:throwoneaway:1995:online}
 \BIBentryALTinterwordspacing
 F.~Brooks. (1995, August) Plan to throw one away. [Online]. Available:
   \url{http://c2.com/cgi/wiki/wiki?PlanToThrowOneAway}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent This quote was used within this report, it was one
+  of the quotes that summed up how development went. \end{quotation}
 
 \bibitem{EspenDallokken:TLSHapi:2014:online}
 \BIBentryALTinterwordspacing
@@ -70,28 +80,32 @@ E.~Dall{\o}kken. (2014, July) Configuring tls for hapi using convict. [Online].
   Available:
   \url{https://gist.github.com/leftieFriele/26015f2dc17f0ecfe72d#file-tlsconfighapiwithconvict}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent Example code for enabling TLS/SSL within the
+  HAPI.js backend to make the application more secure. \end{quotation}
 
 \bibitem{PaulDavies:AndroidListView:2014:online}
 \BIBentryALTinterwordspacing
 P.~Davies. Android listview. [Online]. Available:
   \url{http://www.codelearn.org/android-tutorial/android-listview}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent Used as a refrence for developing a list view
+  within the Android application its self. \end{quotation}
 
 \bibitem{SaschaDepold:Sequelize:2015:online}
 \BIBentryALTinterwordspacing
 S.~Depold. Sequelize api documentation. [Online]. Available:
   \url{https://sequelize.readthedocs.org/en/latest/docs/getting-started/}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent API documentation for the Sequelize libary which
+  was used as the SQL connector for the backend of the project. \end{quotation}
 
 \bibitem{jemt:postgresapp:2015:online}
 \BIBentryALTinterwordspacing
 J.~Egger and M.~Thompson. The easiest way to get started with postgresql on the
   mac. [Online]. Available: \url{http://postgresapp.com}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent This is the app used to install PostgreSQL on my
+  development machine, it is a quick installer for PostgreSQL. \end{quotation}
 
 \bibitem{JustinEllingwood:PostGresSQL1404:2014:online}
 \BIBentryALTinterwordspacing
@@ -99,7 +113,9 @@ J.~Ellingwood. (2014, April) How to install and use postgresql on ubuntu 14.04.
   [Online]. Available:
   \url{https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-14-04}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent Used as a refrence on how to configure PostgrSQL on
+  the production server that is being used to run the application.
+  \end{quotation}
 
 \bibitem{NathanEsquenazi:StartingBackgroundServices:2013:online}
 \BIBentryALTinterwordspacing
@@ -107,7 +123,9 @@ N.~Esquenazi. (2013, October) Starting background services. [Online].
   Available:
   \url{https://guides.codepath.com/android/Starting-Background-Services}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent Used as a refrence for developing the background
+  services used for the notifications within the Android application.
+  \end{quotation}
 
 \bibitem{NathanEsquenazi:UsingArrayAdapter:2013:online}
 \BIBentryALTinterwordspacing
@@ -115,7 +133,8 @@ N.~Esquenazi. (2013, October) Starting background services. [Online].
   Available:
   \url{https://github.com/codepath/android_guides/wiki/Using-an-ArrayAdapter-with-ListView}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent Used as a refrence for the development of the
+  listview's within the Android application. \end{quotation}
 
 \bibitem{se:howtoinstallpgcrypto:2011:online}
 \BIBentryALTinterwordspacing
@@ -123,29 +142,27 @@ S.~Exchange. (2011, March) How do i install pgcrypto for postgresql in ubuntu
   server? [Online]. Available:
   \url{https://dba.stackexchange.com/questions/1883/how-do-i-install-pgcrypto-for-postgresql-in-ubuntu-server}
 \BIBentrySTDinterwordspacing
-
-
-\bibitem{GopinathG:AndroidRestFulServices:2014:online}
-\BIBentryALTinterwordspacing
-G.~G. (2014, May) Android restful webservice tutorial -- how to call restful
-  webservice in android -- part 3. [Online]. Available:
-  \url{http://programmerguru.com/android-tutorial/android-restful-webservice-tutorial-how-to-call-restful-webservice-in-android-part-3/#android-invoke-rest}
-\BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent Used as a refrence manul for installing the extra
+  packages needed on the server to get the encryption working within
+  PostgreSQL. \end{quotation}
 
 \bibitem{Google:androidAPIDocs:2015:online}
 \BIBentryALTinterwordspacing
 Google. Android developers. [Online]. Available:
   \url{https://developer.android.com/index.html}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent This was used all the way through the development
+  of the project, it contained all the refrences needed for developing the
+  Android side of the application and was the main API documentation for
+  developing the front end application. \end{quotation}
 
 \bibitem{Google:MappingAPI:2015:online}
 \BIBentryALTinterwordspacing
 ------. Quick start with the google maps android api. [Online]. Available:
   \url{https://github.com/googlemaps/hellomap-android}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent Used as a reference for developing the mapping
+  functionality of the application. \end{quotation}
 
 \bibitem{AlexGorbatchev:CompairingExpressRestifyHapLoopBack:2015:online}
 \BIBentryALTinterwordspacing
@@ -153,7 +170,9 @@ A.~Gorbatchev. Comparing express, restify, hapi and loopback for building
   restful apis. [Online]. Available:
   \url{https://strongloop.com/strongblog/compare-express-restify-hapi-loopback/}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent Used for compairing different frameworks to use for
+  the backend application, was bius towards LoopBack so not really a fair
+  source for compairing the API's \end{quotation}
 
 \bibitem{MatthewHernandez:NodeHapiRestInterface:2015:online}
 \BIBentryALTinterwordspacing
@@ -161,41 +180,40 @@ M.~Hernandez. (2013, September) Node.js and hapi - creating a rest api.
   [Online]. Available:
   \url{http://blog.modulus.io/nodejs-and-hapi-create-rest-api}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent Used in the early development of the backend
+  application to setup the early rest end points. \end{quotation}
 
 \bibitem{RogerHu:StartingBackgroundServices:2015:online}
 \BIBentryALTinterwordspacing
 R.~Hu. (2015, March) Starting background services. [Online]. Available:
   \url{https://github.com/codepath/android_guides/wiki/Starting-Background-Services}
 \BIBentrySTDinterwordspacing
-
-
-\bibitem{Joyent:NodeJS:2015:online}
-\BIBentryALTinterwordspacing
-Joyent. Node.js api documentation. [Online]. Available:
-  \url{https://nodejs.org/api/}
-\BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent Well written information on how to deploy a
+  background service within Android. \end{quotation}
 
 \bibitem{YongMookKin:AndroidButtonTutorial:2011:online}
 \BIBentryALTinterwordspacing
 Y.~M. Kim. (2011, December) Android button example. [Online]. Available:
   \url{http://www.mkyong.com/android/android-button-example/}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent Simple explenation of how to create a action
+  handler for when a button is pressed within a Android application.
+  \end{quotation}
 
 \bibitem{AntonioLeiva:SwipeToRefreshLayout:2014:online}
 \BIBentryALTinterwordspacing
 A.~Leiva. (2014, March) Swiperefreshlayout: How to use. [Online]. Available:
   \url{http://antonioleiva.com/swiperefreshlayout/}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent Used within the development of the comments section
+  to have a pull down to refresh style container. \end{quotation}
 
 \bibitem{LoopBack:LoopBackApp:2015:online}
 \BIBentryALTinterwordspacing
 Loopback. Loopback framework. [Online]. Available: \url{http://loopback.io/}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent One of the backend frameworks for Node.js
+  considered for the project. \end{quotation}
 
 \bibitem{GeorgeMatthew:AddingListItems:2012:online}
 \BIBentryALTinterwordspacing
@@ -203,14 +221,19 @@ G.~Mathew. (2012, June) Dynamically add items to listview in android. [Online].
   Available:
   \url{http://wptrafficanalyzer.in/blog/dynamically-add-items-to-listview-in-android/}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent Used as refrence for designing the friends list
+  activity within the application, it simple explains how to add elements
+  dynamically to a list view item on a activity. \end{quotation}
 
 \bibitem{FilipMinev:SublimeText2:2015:online}
 \BIBentryALTinterwordspacing
 F.~Minev. Sublime text 2 theme for android studio. [Online]. Available:
   \url{http://www.ideacolorthemes.org/themes/5/}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent This is the theme that was used within the Android
+  Studio environment that helped with the useability of the application due to
+  the stock themes being very bad for people with eye conditions.
+  \end{quotation}
 
 \bibitem{mkyong:AndroidSpinners:2011:online}
 \BIBentryALTinterwordspacing
@@ -218,7 +241,9 @@ mkyong. (2011, November) Android spinner (drop down list) example. [Online].
   Available:
   \url{http://www.mkyong.com/android/android-spinner-drop-down-list-example/}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent This was used as a refrence for developing the drop
+  down list that is used in the posting of messages to select the ranges of the
+  messages. \end{quotation}
 
 \bibitem{Morten:BasicAuthOverHTTPS:2010:online}
 \BIBentryALTinterwordspacing
@@ -226,7 +251,8 @@ S.~E. Morten. (2010, December) Is basic-auth secure if done over https?
   [Online]. Available:
   \url{https://security.stackexchange.com/questions/988/is-basic-auth-secure-if-done-over-https}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent Used to determin if the way that the passwords are
+  being transfered to the server is secure or not. \end{quotation}
 
 \bibitem{MySampleCode:CheckboxExample:2012:online}
 \BIBentryALTinterwordspacing
@@ -234,7 +260,8 @@ MySampleCode. Android listview checkbox example - onitemclicklistener() and
   onclicklistener(). [Online]. Available:
   \url{http://www.mysamplecode.com/2012/07/android-listview-checkbox-example.html}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent Used to create the check list items on the friends
+  list activity within the application. \end{quotation}
 
 \bibitem{EricNewport:FileWalker:2013:online}
 \BIBentryALTinterwordspacing
@@ -242,45 +269,24 @@ E.~Newport. (2013, Sept) List all files in a directory in node.js recursively
   in a synchronous fashion. [Online]. Available:
   \url{https://gist.github.com/kethinov/6658166}
 \BIBentrySTDinterwordspacing
-
-
-\bibitem{SercanOzdemir:MapMarkers:2013:online}
-\BIBentryALTinterwordspacing
-S.~E.~S. Ozdemir. (2013, January) Google android maps api v2 show marker tittle
-  always. [Online]. Available:
-  \url{https://stackoverflow.com/questions/14579426/google-android-maps-api-v2-show-marker-tittle-always}
-\BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent Used as part of the dynamic code loader for the
+  node.js backend. \end{quotation}
 
 \bibitem{Postgres:APIDocumentation:2015:online}
 \BIBentryALTinterwordspacing
-PostgresSQL. How do i install pgcrypto for postgresql in ubuntu server?
-  [Online]. Available: \url{http://www.postgresql.org/docs/}
+PostgresSQL. Postgressql api documentation. [Online]. Available:
+  \url{http://www.postgresql.org/docs/}
 \BIBentrySTDinterwordspacing
-
-
-\bibitem{Santbob:SessionAuthExample:2015:online}
-\BIBentryALTinterwordspacing
-Santbob. An example session management application using bell and
-  hapi-auth-cookie. [Online]. Available:
-  \url{https://github.com/santbob/hapi-auth-example}
-\BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent This is the API documentation behind the PostgreSQL
+  database used for this application. \end{quotation}
 
 \bibitem{JamesSmith:AjaxRestLib:2015:online}
 \BIBentryALTinterwordspacing
 J.~Smith. Android asynchronous http client. [Online]. Available:
   \url{http://loopj.com/android-async-http/}
 \BIBentrySTDinterwordspacing
-
-
-\bibitem{VladSpreys:MainActivityASyncTask:2013:online}
-\BIBentryALTinterwordspacing
-S.~E.~V. Spreys. (2013, January) Mainactivity.this is not an enclosing class
-  asynctask. [Online]. Available:
-  \url{https://stackoverflow.com/questions/14116415/mainactivity-this-is-not-an-enclosing-class-asynctask}
-\BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent The libary used for the http requests within the
+  Android application. \end{quotation}
 
 \bibitem{Adham:Howtostartnewactivityonbuttonclick:2010:online}
 \BIBentryALTinterwordspacing
@@ -698,42 +704,42 @@ Statista. Market share held by smartphone platforms in the united states from
   january 2012 to january 2015. [Online]. Available:
   \url{http://www.statista.com/statistics/266572/market-share-held-by-smartphone-platforms-in-the-united-states/}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent Market share of different mobile OS types within
+  the USA, this was used in the writting of this report to detail why Android
+  was used. \end{quotation}
 
 \bibitem{dmt:dropmessageteam:2015:online}
 \BIBentryALTinterwordspacing
 D.~M. Team. Leave and discover messages anywhere. [Online]. Available:
   \url{http://www.dropmessages.com}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent One of the applications similar to the concept used
+  within this project. \end{quotation}
 
 \bibitem{HapiTeam:BasicAuth:2015:online}
 \BIBentryALTinterwordspacing
 H.~Team. Hapi authentication basic. [Online]. Available:
   \url{https://github.com/hapijs/hapi-auth-basic}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent This is the libary used to give the backend
+  application HTTP basic authentication to authenticate users. \end{quotation}
 
 \bibitem{HapiTeam:Cookie:2015:online}
 \BIBentryALTinterwordspacing
 ------. Hapi authentication cookie. [Online]. Available:
   \url{https://github.com/hapijs/hapi-auth-cookie}
 \BIBentrySTDinterwordspacing
-
-
-\bibitem{HapiTeam:HAPI:2015:online}
-\BIBentryALTinterwordspacing
-------. Hapi.js api documentation. [Online]. Available:
-  \url{http://hapijs.com/api}
-\BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent This is the libary that provided cookie based
+  sessions for the application this is used in the authenticating of users.
+  \end{quotation}
 
 \bibitem{hapiteam:hapti:2015:online}
 \BIBentryALTinterwordspacing
 ------. A rich framework for building applications and services. [Online].
   Available: \url{http://hapijs.com}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent API documentation for HAPI.js this was the framwork
+  that the backend uses to create RESTful routes. \end{quotation}
 
 \bibitem{nodeteam:node:2015:online}
 \BIBentryALTinterwordspacing
@@ -741,7 +747,8 @@ N.~Team. Node.js is a platform built on chrome's javascript runtime for easily
   building fast, scalable network applications. [Online]. Available:
   \url{https://nodejs.org}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent This is the platform that the backend application
+  runs on. \end{quotation}
 
 \bibitem{DevdattaTengshe:gpsacuracy:2012:online}
 \BIBentryALTinterwordspacing
