@@ -20,6 +20,8 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: References/references.bib
 Warning--I didn't find a database entry for "google:osstats:2015:online"
+Warning--I didn't find a database entry for "se:howtoinstallpgcrypto:2011:online"
+Warning--I didn't find a database entry for "kAnNaN:PopulatingaListViewusingArrayList:2011:online"
 Warning--I didn't find a database entry for "wei:AndroidIsitpossibletorefreshjustoneiteminalistview:2010:online"
 -- IEEEtranS.bst version 1.11 (2003/04/02) by Michael Shell.
 -- http://www.ctan.org/tex-archive/macros/latex/contrib/supported/IEEEtran/
@@ -27,45 +29,45 @@ Warning--I didn't find a database entry for "wei:AndroidIsitpossibletorefreshjus
 ** Sorting version - not for use with work to be submitted to the IEEE.
 
 Done.
-You've used 65 entries,
+You've used 57 entries,
             4538 wiz_defined-function locations,
-            1265 strings with 27422 characters,
-and the built_in function-call counts, 28311 in all, are:
-= -- 2555
-> -- 462
+            1232 strings with 25663 characters,
+and the built_in function-call counts, 24775 in all, are:
+= -- 2227
+> -- 406
 < -- 0
-+ -- 200
-- -- 132
-* -- 1040
-:= -- 5207
-add.period$ -- 130
-call.type$ -- 65
-change.case$ -- 261
++ -- 176
+- -- 116
+* -- 920
+:= -- 4551
+add.period$ -- 114
+call.type$ -- 57
+change.case$ -- 229
 chr.to.int$ -- 0
-cite$ -- 65
-duplicate$ -- 1915
-empty$ -- 2500
-format.name$ -- 133
-if$ -- 5850
+cite$ -- 57
+duplicate$ -- 1675
+empty$ -- 2188
+format.name$ -- 117
+if$ -- 5114
 int.to.chr$ -- 0
-int.to.str$ -- 65
-missing$ -- 456
-newline$ -- 410
-num.names$ -- 130
-pop$ -- 1465
+int.to.str$ -- 57
+missing$ -- 400
+newline$ -- 362
+num.names$ -- 114
+pop$ -- 1297
 preamble$ -- 1
-purify$ -- 196
+purify$ -- 172
 quote$ -- 2
-skip$ -- 2163
+skip$ -- 1883
 stack$ -- 0
-substring$ -- 327
-swap$ -- 1078
+substring$ -- 287
+swap$ -- 934
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 6
-type$ -- 585
+type$ -- 513
 warning$ -- 0
-while$ -- 130
-width$ -- 67
-write$ -- 715
-(There were 2 warnings)
+while$ -- 114
+width$ -- 59
+write$ -- 627
+(There were 4 warnings)

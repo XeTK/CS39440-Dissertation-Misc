@@ -97,16 +97,6 @@ J.~Egger and M.~Thompson. The easiest way to get started with postgresql on the
  \begin{quotation}\noindent This is the app used to install PostgreSQL on my
   development machine, it is a quick installer for PostgreSQL. \end{quotation}
 
-\bibitem{JustinEllingwood:PostGresSQL1404:2014:online}
-\BIBentryALTinterwordspacing
-J.~Ellingwood. (2014, April) How to install and use postgresql on ubuntu 14.04.
-  [Online]. Available:
-  \url{https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-14-04}
-\BIBentrySTDinterwordspacing
- \begin{quotation}\noindent Used as a refrence on how to configure PostgrSQL on
-  the production server that is being used to run the application.
-  \end{quotation}
-
 \bibitem{NathanEsquenazi:StartingBackgroundServices:2013:online}
 \BIBentryALTinterwordspacing
 N.~Esquenazi. (2013, October) Starting background services. [Online].
@@ -125,16 +115,6 @@ N.~Esquenazi. (2013, October) Starting background services. [Online].
 \BIBentrySTDinterwordspacing
  \begin{quotation}\noindent Used as a refrence for the development of the
   listview's within the Android application. \end{quotation}
-
-\bibitem{se:howtoinstallpgcrypto:2011:online}
-\BIBentryALTinterwordspacing
-S.~Exchange. (2011, March) How do i install pgcrypto for postgresql in ubuntu
-  server? [Online]. Available:
-  \url{https://dba.stackexchange.com/questions/1883/how-do-i-install-pgcrypto-for-postgresql-in-ubuntu-server}
-\BIBentrySTDinterwordspacing
- \begin{quotation}\noindent Used as a refrence manul for installing the extra
-  packages needed on the server to get the encryption working within
-  PostgreSQL. \end{quotation}
 
 \bibitem{Google:androidAPIDocs:2015:online}
 \BIBentryALTinterwordspacing
@@ -180,15 +160,6 @@ R.~Hu. (2015, March) Starting background services. [Online]. Available:
 \BIBentrySTDinterwordspacing
  \begin{quotation}\noindent Well written information on how to deploy a
   background service within Android. \end{quotation}
-
-\bibitem{YongMookKin:AndroidButtonTutorial:2011:online}
-\BIBentryALTinterwordspacing
-Y.~M. Kim. (2011, December) Android button example. [Online]. Available:
-  \url{http://www.mkyong.com/android/android-button-example/}
-\BIBentrySTDinterwordspacing
- \begin{quotation}\noindent Simple explenation of how to create a action
-  handler for when a button is pressed within a Android application.
-  \end{quotation}
 
 \bibitem{AntonioLeiva:SwipeToRefreshLayout:2014:online}
 \BIBentryALTinterwordspacing
@@ -284,7 +255,9 @@ stackoverflow User:~Dunkey. (2013, October) Android sort listview
   alphabetically. [Online]. Available:
   \url{http://stackoverflow.com/questions/19676781/android-sort-listview-alphabetically}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent This was used to help create a sorting algorithm
+  for the listview to make sure the elements were ordered by the time they were
+  created. \end{quotation}
 
 \bibitem{FleshWound:HowtodismissAndroidnotificationafteractionhasbeenclicked:2012:online}
 \BIBentryALTinterwordspacing
@@ -292,7 +265,9 @@ stackoverflow User:~FleshWound. (2012, August) How to dismiss android
   notification after action has been clicked. [Online]. Available:
   \url{http://stackoverflow.com/questions/11883534/how-to-dismiss-android-notification-after-action-has-been-clicked}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent This was used for making a notifications
+  dissmisable which prevented them filling up the users notification area on
+  there phone. \end{quotation}
 
 \bibitem{friedo:Wheredoyoustoreyoursaltstrings:2009:online}
 \BIBentryALTinterwordspacing
@@ -300,15 +275,9 @@ stackoverflow User:~friedo. (2009, August) Where do you store your salt
   strings? [Online]. Available:
   \url{http://stackoverflow.com/questions/1219899/where-do-you-store-your-salt-strings}
 \BIBentrySTDinterwordspacing
-
-
-\bibitem{kAnNaN:PopulatingaListViewusingArrayList:2011:online}
-\BIBentryALTinterwordspacing
-stackoverflow User:~kAnNaN. (2011, February) Populating a listview using
-  arraylist? [Online]. Available:
-  \url{http://stackoverflow.com/questions/5070830/populating-a-listview-using-arraylist}
-\BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent This was used in desiging the database to make sure
+  that the data is stored safely and the salt for the password system is stored
+  correctly. \end{quotation}
 
 \bibitem{Kzqai:HowcanIhashpasswordsinpostgresql:2010:online}
 \BIBentryALTinterwordspacing
@@ -316,7 +285,8 @@ stackoverflow User:~Kzqai. (2010, April) How can i hash passwords in
   postgresql? [Online]. Available:
   \url{http://stackoverflow.com/questions/2647158/how-can-i-hash-passwords-in-postgresql}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent This was used as guidence for the for hashing the
+  passwords to make them secure. \end{quotation}
 
 \bibitem{Louzoid:GooglemapsAPIV3multiplemarkersonexactsamespot:2010:online}
 \BIBentryALTinterwordspacing
@@ -324,7 +294,8 @@ stackoverflow User:~Louzoid. (2010, August) Google maps api v3 - multiple
   markers on exact same spot. [Online]. Available:
   \url{http://stackoverflow.com/questions/3548920/google-maps-api-v3-multiple-markers-on-exact-same-spot}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent Explination on how to fix multiple markers placed
+  on the same space within the mapping area. \end{quotation}
 
 \bibitem{mudit:HowdoIgetthecurrentGPSlocationprogrammaticallyinAndroid:2009:online}
 \BIBentryALTinterwordspacing
@@ -332,16 +303,9 @@ stackoverflow User:~mudit. (2009, October) How do i get the current gps
   location programmatically in android? [Online]. Available:
   \url{http://stackoverflow.com/questions/1513485/how-do-i-get-the-current-gps-location-programmatically-in-android}
 \BIBentrySTDinterwordspacing
-
-
-\bibitem{MUYBelgium:currvalhasnotyetbeendefinedthissessionhowtogetmultisessionsequences:2012:online}
-\BIBentryALTinterwordspacing
-stackoverflow User: MUY~Belgium. (2012, September) currval has not yet been
-  defined this session, how to get multi-session sequences? [Online].
-  Available:
-  \url{http://stackoverflow.com/questions/12481448/currval-has-not-yet-been-defined-this-session-how-to-get-multi-session-sequence}
-\BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent This is the post that all of the GPS functionality
+  is based of within the application, this is one of the most important
+  documents when it came to implementing the application. \end{quotation}
 
 \bibitem{nknj:AndroidAsynchronousHttpClientloopjandthePersistentCookieStore:2013:online}
 \BIBentryALTinterwordspacing
@@ -349,31 +313,8 @@ stackoverflow User:~nknj. (2013, May) Android asynchronous http client (loopj)
   and the persistent cookie store. [Online]. Available:
   \url{http://stackoverflow.com/questions/16647287/android-asynchronous-http-client-loopj-and-the-persistent-cookie-store}
 \BIBentrySTDinterwordspacing
-
-
-\bibitem{Pentium10:WhythePendingIntentdoesn39tsendbackmycustomExtrassetupfortheIntent:2010:online}
-\BIBentryALTinterwordspacing
-stackoverflow User:~Pentium10. (2010, June) Why the pendingintent doesn't send
-  back my custom extras setup for the intent? [Online]. Available:
-  \url{http://stackoverflow.com/questions/3127957/why-the-pendingintent-doesnt-send-back-my-custom-extras-setup-for-the-intent}
-\BIBentrySTDinterwordspacing
-
-
-\bibitem{Richard:AligningtextviewsontheleftandrightedgesinAndroidlayout:2010:online}
-\BIBentryALTinterwordspacing
-stackoverflow User:~Richard. (2010, January) Aligning textviews on the left and
-  right edges in android layout. [Online]. Available:
-  \url{http://stackoverflow.com/questions/2099249/aligning-textviews-on-the-left-and-right-edges-in-android-layout}
-\BIBentrySTDinterwordspacing
-
-
-\bibitem{SercanOzdemir:Googleandroidmapsapiv2ShowMarkerTittleAlways:2013:online}
-\BIBentryALTinterwordspacing
-stackoverflow User: Sercan~Ozdemir. (2013, January) Google android maps api v2
-  show marker tittle always. [Online]. Available:
-  \url{http://stackoverflow.com/questions/14579426/google-android-maps-api-v2-show-marker-tittle-always}
-\BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent Intergral post to getting the application
+  authetnicating with the backend application. \end{quotation}
 
 \bibitem{SeymourCakes:HowtolaunchaAndroidServicewhentheapplaunches:2010:online}
 \BIBentryALTinterwordspacing
