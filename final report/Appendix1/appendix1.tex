@@ -1,22 +1,22 @@
 \chapter{Third-Party Code and Libraries}
 
-This appendix will detail 3rd party code and libraries used within the application, it will explain why they were used and will accredit the author.
+This appendix will detail 3rd party code and libraries used within the application and it will explain why they were used and will accredit the authors.
 
 \lstjava
 
 \section{Android application}
 
-Theses are supporting libraries needed to make the application work.
+These are supporting libraries needed to make the application work.
 
 \subsection{Libraries}
 
 \subsubsection{Google Maps API}
 
-This library \cite{Google:MappingAPI:2015:online} was integral for all of the maps within the application application and was very flexible in allowing modifications to be made to show details on the map. The Google Maps API is licensed under the Apache License v2.0.
+This library \cite{Google:MappingAPI:2015:online} was integral for all of the maps within the application and was very flexible in allowing modifications to be made to show details on the map. The Google Maps API is licensed under the Apache License v2.0.
 
 \subsubsection{Android Asynchronous Http Client}
 
-James Smiths library \cite{JamesSmith:AjaxRestLib:2015:online} has been integral to all of the HTTP requests made from the Android application to the backend in a Asynchronous manner, this library is also licensed under the Apache License v2.0.
+James Smith's library \cite{JamesSmith:AjaxRestLib:2015:online} has been integral to all of the HTTP requests made from the Android application to the backend in an Asynchronous manner. This library is also licensed under the Apache License v2.0.
 
 \subsection{Code Snippets}
 
@@ -24,7 +24,7 @@ This section will detail significant code snippets taken to resolve issues withi
 
 \subsubsection{GPS Code}
 
-This code was integral to getting the GPS working correctly, and has been modified slightly to get it work within the grounds of the project, all credit should be given to Nirav Ranpara \& Anas Azeem\cite{mudit:HowdoIgetthecurrentGPSlocationprogrammaticallyinAndroid:2009:online
+This code was integral to getting the GPS working correctly, and has been modified slightly to get it to work within the grounds of the project. All credit should be given to Nirav Ranpara \& Anas Azeem\cite{mudit:HowdoIgetthecurrentGPSlocationprogrammaticallyinAndroid:2009:online
 } for writing the solution for interfacing with the GPS within an Android application.
 
 \begin{lstlisting}
@@ -214,7 +214,7 @@ public class GPSTracker extends Service implements LocationListener {
 
 \subsubsection{GPS Distance Calculation Code}
 
-This algorithm was constructed by Chris Veness\cite{ChrisVeness:GPSDistance:2010:online} it was original written in JavaScript and Developer of the project has converted it to Java. This algorithm gives the distance in meters between two different GPS coordinates and is integral to the notification code as it determines if the user is near by to a message thus trigging a notification if they are near by to it.
+This algorithm was constructed by Chris Veness\cite{ChrisVeness:GPSDistance:2010:online}. It was originally written in JavaScript and the developer of this project has converted it to Java. This algorithm gives the distance in meters between two different GPS coordinates and is integral to the notification code, as it determines if the user is nearby to a message, thus triggering a notification if they are nearby to it.
 
 \begin{lstlisting}
 
@@ -324,9 +324,9 @@ Although this has been heavily modified the original core code originates from t
 
 \subsubsection{Notification Code}
 
-The notification code was based of multiple sources and pieced together to create a working notification code.\\
+The notification code was based on multiple sources and pieced together to create a working notification code.\\
 \\
-The code is based of examples found in two different StackOverflow Posts \cite{tofira:DetermineaddActionclickforAndroidnotifications:2013:online} \cite{FleshWound:HowtodismissAndroidnotificationafteractionhasbeenclicked:2012:online}\\
+The code is based on examples found in two different StackOverflow Posts \cite{tofira:DetermineaddActionclickforAndroidnotifications:2013:online} \cite{FleshWound:HowtodismissAndroidnotificationafteractionhasbeenclicked:2012:online}\\
 \\
 File: GPSService.java
 \begin{lstlisting}
@@ -442,7 +442,7 @@ public class NotificationActivity extends Activity {
 
 \subsubsection{Background Services Code}
 
-Creating working background services required multiples sources and the credit goes to the following people Nathan Esquenazi \cite{NathanEsquenazi:StartingBackgroundServices:2013:online} and Roger Hu \cite{RogerHu:StartingBackgroundServices:2015:online}.
+Creating working background services required multiple sources and the credit goes to the following people: Gopinath G \cite{GopinathG:AndroidRestFulServices:2014:online}, Nathan Esquenazi \cite{NathanEsquenazi:StartingBackgroundServices:2013:online} and Roger Hu \cite{RogerHu:StartingBackgroundServices:2015:online}.
 
 File: DiscoverService.java
 
@@ -515,7 +515,7 @@ public class BootReceiver extends BroadcastReceiver {
 
 \subsubsection{Listview Code}
 
-The listview components within the application again are based of multiple sources as they are a fairly complicated framework for showing information, the credit should be given to following for there tutorials George Matthew \cite{GeorgeMatthew:AddingListItems:2012:online}, Paul Davies \cite{PaulDavies:AndroidListView:2014:online}, Lars Vogel \cite{LarsVogel:UsingLists:2014:online}, Nathan Esquenazi \cite{NathanEsquenazi:UsingArrayAdapter:2013:online}, Antonio Leiva \cite{AntonioLeiva:SwipeToRefreshLayout:2014:online}, Website MySampleCode \cite{MySampleCode:CheckboxExample:2012:online} along with the following StackOverflow posts by simplified \cite{simplified:AndroidListViewinFragment:2011:online}, kAnNaN \cite{kAnNaN:PopulatingaListViewusingArrayList:2011:online}, wei \cite{wei:AndroidIsitpossibletorefreshjustoneiteminalistview:2010:online}, Dunkey \cite{Dunkey:Androidsortlistviewalphabetically:2013:online} and UMAR \cite{UMAR:HowtorefreshAndroidlistview:2010:online}.\\
+The listview components within the application again are based on multiple sources, as they are a fairly complicated framework for showing information. The credit should be given to the following for their tutorials; George Matthew \cite{GeorgeMatthew:AddingListItems:2012:online}, Paul Davies \cite{PaulDavies:AndroidListView:2014:online}, Lars Vogel \cite{LarsVogel:UsingLists:2014:online}, Nathan Esquenazi \cite{NathanEsquenazi:UsingArrayAdapter:2013:online}, Antonio Leiva \cite{AntonioLeiva:SwipeToRefreshLayout:2014:online}, Website MySampleCode \cite{MySampleCode:CheckboxExample:2012:online} along with the following StackOverflow posts by simplified \cite{simplified:AndroidListViewinFragment:2011:online}, kAnNaN \cite{kAnNaN:PopulatingaListViewusingArrayList:2011:online}, wei \cite{wei:AndroidIsitpossibletorefreshjustoneiteminalistview:2010:online}, Dunkey \cite{Dunkey:Androidsortlistviewalphabetically:2013:online} and UMAR \cite{UMAR:HowtorefreshAndroidlistview:2010:online}.\\
 \\
 File: MessageFriendsActivity.java
 
@@ -649,7 +649,7 @@ public class FriendArrayAdapter extends ArrayAdapter<Friend> {
 
 \subsubsection{Miscellaneous}
 
-There are miscellaneous code fragments taken from other sources throughout the project within the appendixes I as developer have indicated the main ones, any other code will be annotated within the bibliography.
+There are miscellaneous code fragments taken from other sources throughout the project within the appendices. I as developer have indicated the main ones, and any other code will be annotated within the bibliography.
 
 \section{Server side}
 
@@ -661,11 +661,11 @@ These are the large scale libraries used to make the application function.
 
 \subsubsection{HAPI.js}
 
-HAPI.js \cite{hapiteam:hapti:2015:online} is the main framework used for the development of the backend services within the application it provides the HTTP routes for the RESTful services to take place. It uses its own propriety license written by Yahoo \& Walmart.
+HAPI.js \cite{hapiteam:hapti:2015:online} is the main framework used for the development of the backend services within the application. It provides the HTTP routes for the RESTful services to take place. It uses its own propriety license written by Yahoo \& Walmart.
 
 \subsubsection{Sequelize}
 
-Sequelize was a very important API that the backend application interfaced with it was there to deal with the interfacing between the middle tier application and the database connector. It also uses its own propriety license written by the developers of Sequelize.
+Sequelize was a very important API that the backend application interfaced with. It was there to deal with the interfacing between the middle tier application and the database connector. It also uses its own propriety license written by the developers of Sequelize.
 
 \subsection{Code Snippets}
 
@@ -673,13 +673,13 @@ Various code snippets were used to create the backend application and give the f
 
 \subsubsection{JSON 2 SQL}
 
-This SQL function for PostgreSQL automatically converts a JSON object into a insert statement that then can be used for adding new data into the database all credit goes to StackOverflow user beldaz \cite{user2627000:PostgreSQLinsertdataintotablefromjson:2013:online}.
+This SQL function for PostgreSQL automatically converts a JSON object into a insert statement that then can be used for adding new data into the database. All credit goes to StackOverflow user beldaz \cite{user2627000:PostgreSQLinsertdataintotablefromjson:2013:online}.
 
 \lstsql
 \begin{lstlisting}
 
 /*
- * This is a method taken from Stack Overflow, it converts JSON objects directly into records within tables and inserts them into the table.
+ * This is a method taken from Stack Overflow. It converts JSON objects directly into records within tables and inserts them into the table.
  * Taken from http://stackoverflow.com/a/28573007 
  * All credit goes to user "beldaz".
  */
@@ -708,7 +708,7 @@ language plpgsql volatile;
 
 \subsubsection{RouteLoader.js}
 
-This dynamic code loader was written by a few other people, I originally wrote it for another project and have modified it to work with this one but it is also based of a few other peoples work, major parts were taken from a Stack overflow post by user775171 \cite{user775171:LoadingNodejsmodulesdynamicallybasedonroute:2012:online} along with a GIST by Eric Newport\cite{EricNewport:FileWalker:2013:online}, but it has been modified extensively by me.
+This dynamic code loader was written by a few other people. I originally wrote it for another project and have modified it to work with this one, but it is also based off a few other peoples' work. Major parts were taken from a Stack overflow post by user775171 \cite{user775171:LoadingNodejsmodulesdynamicallybasedonroute:2012:online} along with a GIST by Eric Newport\cite{EricNewport:FileWalker:2013:online}, but it has been modified extensively by me.
 
 \lstjavascript
 \begin{lstlisting}
