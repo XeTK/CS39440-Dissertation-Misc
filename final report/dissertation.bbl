@@ -28,16 +28,6 @@ S.~E. 32bitfloat. (2012, September) How to use aes-encryption in postgresql?
   within the database, it is a code caption detailing AES Encryption
   \end{quotation}
 
-\bibitem{Adham:AndroidEditText:2010:online}
-\BIBentryALTinterwordspacing
-S.~E. Adham. (2010, November) Get text string from edittext? [Online].
-  Available:
-  \url{https://stackoverflow.com/questions/4186021/how-to-start-new-activity-on-button-click}
-\BIBentrySTDinterwordspacing
- \begin{quotation}\noindent This was used in the early stages to work out how
-  to switch between different activities within the Android framework
-  \end{quotation}
-
 \bibitem{Agendor:SimpleRestClient:2014:online}
 \BIBentryALTinterwordspacing
 Agendor. (2014, April) Sample hapi.js rest api. [Online]. Available:
@@ -288,124 +278,11 @@ J.~Smith. Android asynchronous http client. [Online]. Available:
  \begin{quotation}\noindent The libary used for the http requests within the
   Android application. \end{quotation}
 
-\bibitem{Adham:Howtostartnewactivityonbuttonclick:2010:online}
-\BIBentryALTinterwordspacing
-stackoverflow User:~Adham. (2010, November) How to start new activity on button
-  click. [Online]. Available:
-  \url{http://stackoverflow.com/questions/4186021/how-to-start-new-activity-on-button-click}
-\BIBentrySTDinterwordspacing
-
-
-\bibitem{Alesito:AndroidgetTextfromEditTextfield:2011:online}
-\BIBentryALTinterwordspacing
-stackoverflow User:~Alesito. (2011, August) Android gettext from edittext
-  field. [Online]. Available:
-  \url{http://stackoverflow.com/questions/7200108/android-gettext-from-edittext-field}
-\BIBentrySTDinterwordspacing
-
-
-\bibitem{AndroidRaji:Whytoastmessagearenotshowinandroid41operatingsystemcontainingmobile:2012:online}
-\BIBentryALTinterwordspacing
-stackoverflow User:~AndroidRaji. (2012, August) Why toast message are not show
-  in android 4.1 operating system containing mobile. [Online]. Available:
-  \url{http://stackoverflow.com/questions/12159546/why-toast-message-are-not-show-in-android-4-1-operating-system-containing-mobile}
-\BIBentrySTDinterwordspacing
-
-
-\bibitem{apelliciari:ListallsequencesinaPostgresdb81withSQL:2009:online}
-\BIBentryALTinterwordspacing
-stackoverflow User:~apelliciari. (2009, September) List all sequences in a
-  postgres db 8.1 with sql. [Online]. Available:
-  \url{http://stackoverflow.com/questions/1493262/list-all-sequences-in-a-postgres-db-8-1-with-sql}
-\BIBentrySTDinterwordspacing
-
-
-\bibitem{Arch1tect:AddingcustompropertytomarkerGoogleMapAndroidAPIV2:2013:online}
-\BIBentryALTinterwordspacing
-stackoverflow User:~Arch1tect. (2013, June) Adding custom property to marker
-  (google map android api v2). [Online]. Available:
-  \url{http://stackoverflow.com/questions/16997130/adding-custom-property-to-marker-google-map-android-api-v2}
-\BIBentrySTDinterwordspacing
-
-
-\bibitem{Blake:WherecanIfindAndroid39sdefaulticons:2012:online}
-\BIBentryALTinterwordspacing
-stackoverflow User:~Blake. (2012, November) Where can i find android's default
-  icons? [Online]. Available:
-  \url{http://stackoverflow.com/questions/13185722/where-can-i-find-androids-default-icons}
-\BIBentrySTDinterwordspacing
-
-
-\bibitem{bneupaane:SelfsignedcertificateandloopjforAndroid:2012:online}
-\BIBentryALTinterwordspacing
-stackoverflow User:~bneupaane. (2012, July) Self-signed certificate and loopj
-  for android. [Online]. Available:
-  \url{http://stackoverflow.com/questions/11573108/self-signed-certificate-and-loopj-for-android}
-\BIBentrySTDinterwordspacing
-
-
-\bibitem{BreakHart:javaxnetsslsslpeerunverifiedexceptionnopeercertificate:2013:online}
-\BIBentryALTinterwordspacing
-stackoverflow User: Break~Hart. (2013, June)
-  javax.net.ssl.sslpeerunverifiedexception no peer certificate. [Online].
-  Available:
-  \url{http://stackoverflow.com/questions/17159657/javax-net-ssl-sslpeerunverifiedexception-no-peer-certificate}
-\BIBentrySTDinterwordspacing
-
-
-\bibitem{brian:Pressbackbuttontoanotheractivity:2012:online}
-\BIBentryALTinterwordspacing
-stackoverflow User:~brian. (2012, March) Press back button to another activity.
-  [Online]. Available:
-  \url{http://stackoverflow.com/questions/9510483/press-back-button-to-another-activity}
-\BIBentrySTDinterwordspacing
-
-
-\bibitem{dahpgjgamgan:postgreSQLpsqlihowtoexecutescriptinagivenpath:2008:online}
-\BIBentryALTinterwordspacing
-stackoverflow User:~dahpgjgamgan. (2008, September) postgresql - psql \i : how
-  to execute script in a given path. [Online]. Available:
-  \url{http://stackoverflow.com/questions/129445/postgresql-psql-i-how-to-execute-script-in-a-given-path}
-\BIBentrySTDinterwordspacing
-
-
-\bibitem{Dnaso:Tryingtohideandshowmenuitemsonactionbar:2013:online}
-\BIBentryALTinterwordspacing
-stackoverflow User:~Dnaso. (2013, April) Trying to hide and show menu items on
-  action bar. [Online]. Available:
-  \url{http://stackoverflow.com/questions/16114520/trying-to-hide-and-show-menu-items-on-action-bar}
-\BIBentrySTDinterwordspacing
-
-
-\bibitem{dootcher:ChangetitlebartextinAndroid:2010:online}
-\BIBentryALTinterwordspacing
-stackoverflow User:~dootcher. (2010, August) Change title bar text in android.
-  [Online]. Available:
-  \url{http://stackoverflow.com/questions/3438276/change-title-bar-text-in-android}
-\BIBentrySTDinterwordspacing
-
-
 \bibitem{Dunkey:Androidsortlistviewalphabetically:2013:online}
 \BIBentryALTinterwordspacing
 stackoverflow User:~Dunkey. (2013, October) Android sort listview
   alphabetically. [Online]. Available:
   \url{http://stackoverflow.com/questions/19676781/android-sort-listview-alphabetically}
-\BIBentrySTDinterwordspacing
-
-
-\bibitem{Eric:FullScreenDialogFragmentinAndroid:2011:online}
-\BIBentryALTinterwordspacing
-stackoverflow User:~Eric. (2011, August) Full screen dialogfragment in android.
-  [Online]. Available:
-  \url{http://stackoverflow.com/questions/7189948/full-screen-dialogfragment-in-android}
-\BIBentrySTDinterwordspacing
-
-
-\bibitem{Eugene:IsitpossibletoiteratethroughJSONArray:2011:online}
-\BIBentryALTinterwordspacing
-stackoverflow User:~Eugene. (2011, January) Is it possible to iterate through
-  jsonarray? [Online]. Available:
-  \url{http://stackoverflow.com/questions/4784874/is-it-possible-to-iterate-through-jsonarray}
 \BIBentrySTDinterwordspacing
 
 
@@ -422,30 +299,6 @@ stackoverflow User:~FleshWound. (2012, August) How to dismiss android
 stackoverflow User:~friedo. (2009, August) Where do you store your salt
   strings? [Online]. Available:
   \url{http://stackoverflow.com/questions/1219899/where-do-you-store-your-salt-strings}
-\BIBentrySTDinterwordspacing
-
-
-\bibitem{gersh:HowdoyoucreatearandomstringinPostgresql:2010:online}
-\BIBentryALTinterwordspacing
-stackoverflow User:~gersh. (2010, October) How do you create a random string in
-  postgresql? [Online]. Available:
-  \url{http://stackoverflow.com/questions/3970795/how-do-you-create-a-random-string-in-postgresql}
-\BIBentrySTDinterwordspacing
-
-
-\bibitem{Henrik:GettextstringfromEditText:2011:online}
-\BIBentryALTinterwordspacing
-stackoverflow User:~Henrik. (2011, March) Get text string from edittext?
-  [Online]. Available:
-  \url{http://stackoverflow.com/questions/5324941/get-text-string-from-edittext}
-\BIBentrySTDinterwordspacing
-
-
-\bibitem{kabuto178:AndroidSharedpreferenceswithmultipleactivities:2012:online}
-\BIBentryALTinterwordspacing
-stackoverflow User:~kabuto178. (2012, September) Android shared preferences
-  with multiple activities. [Online]. Available:
-  \url{http://stackoverflow.com/questions/12432585/android-shared-preferences-with-multiple-activities}
 \BIBentrySTDinterwordspacing
 
 
@@ -490,14 +343,6 @@ stackoverflow User: MUY~Belgium. (2012, September) currval has not yet been
 \BIBentrySTDinterwordspacing
 
 
-\bibitem{NickT:Debuggingaservice:2010:online}
-\BIBentryALTinterwordspacing
-stackoverflow User:~NickT. (2010, October) Debugging a service. [Online].
-  Available:
-  \url{http://stackoverflow.com/questions/4008081/debugging-a-service}
-\BIBentrySTDinterwordspacing
-
-
 \bibitem{nknj:AndroidAsynchronousHttpClientloopjandthePersistentCookieStore:2013:online}
 \BIBentryALTinterwordspacing
 stackoverflow User:~nknj. (2013, May) Android asynchronous http client (loopj)
@@ -511,14 +356,6 @@ stackoverflow User:~nknj. (2013, May) Android asynchronous http client (loopj)
 stackoverflow User:~Pentium10. (2010, June) Why the pendingintent doesn't send
   back my custom extras setup for the intent? [Online]. Available:
   \url{http://stackoverflow.com/questions/3127957/why-the-pendingintent-doesnt-send-back-my-custom-extras-setup-for-the-intent}
-\BIBentrySTDinterwordspacing
-
-
-\bibitem{progjose:AndroidSettexttoTextView:2013:online}
-\BIBentryALTinterwordspacing
-stackoverflow User:~progjose. (2013, October) Android - set text to textview.
-  [Online]. Available:
-  \url{http://stackoverflow.com/questions/19452269/android-set-text-to-textview}
 \BIBentrySTDinterwordspacing
 
 
@@ -554,15 +391,6 @@ stackoverflow User:~simplified. (2011, June) Android listview in fragment.
 \BIBentrySTDinterwordspacing
 
 
-\bibitem{SwathiEP:AndroidjavalangSecurityExceptionPermissionDenialstartIntent:2010:online}
-\BIBentryALTinterwordspacing
-stackoverflow User: Swathi~EP. (2010, November) Android:
-  java.lang.securityexception: Permission denial: start intent. [Online].
-  Available:
-  \url{http://stackoverflow.com/questions/4162447/android-java-lang-securityexception-permission-denial-start-intent}
-\BIBentrySTDinterwordspacing
-
-
 \bibitem{tofira:DetermineaddActionclickforAndroidnotifications:2013:online}
 \BIBentryALTinterwordspacing
 stackoverflow User:~tofira. (2013, March) Determine addaction click for android
@@ -571,17 +399,10 @@ stackoverflow User:~tofira. (2013, March) Determine addaction click for android
 \BIBentrySTDinterwordspacing
 
 
-\bibitem{UMAR:HowdoIpassdatabetweenactivitiesinAndroid:2010:online}
-\BIBentryALTinterwordspacing
-stackoverflow User:~UMAR. (2010, January) How do i pass data between activities
-  in android? [Online]. Available:
-  \url{http://stackoverflow.com/questions/2091465/how-do-i-pass-data-between-activities-in-android}
-\BIBentrySTDinterwordspacing
-
-
 \bibitem{UMAR:HowtorefreshAndroidlistview:2010:online}
 \BIBentryALTinterwordspacing
-------. (2010, February) How to refresh android listview? [Online]. Available:
+stackoverflow User:~UMAR. (2010, February) How to refresh android listview?
+  [Online]. Available:
   \url{http://stackoverflow.com/questions/2250770/how-to-refresh-android-listview}
 \BIBentrySTDinterwordspacing
 
@@ -599,14 +420,6 @@ stackoverflow User:~user1198982. (2012, February) How to disable/hide three-dot
 stackoverflow User:~user1977908. (2013, May) Android google map - clicked
   marker opens new activity or bigger window. [Online]. Available:
   \url{http://stackoverflow.com/questions/16635530/android-google-map-clicked-marker-opens-new-activity-or-bigger-window}
-\BIBentrySTDinterwordspacing
-
-
-\bibitem{user2186086:Permissiondeniedforrelation:2013:online}
-\BIBentryALTinterwordspacing
-stackoverflow User:~user2186086. (2013, March) Permission denied for relation.
-  [Online]. Available:
-  \url{http://stackoverflow.com/questions/15520361/permission-denied-for-relation}
 \BIBentrySTDinterwordspacing
 
 
@@ -634,59 +447,11 @@ stackoverflow User:~user3104719. (2014, April) Android shared preferences
 \BIBentrySTDinterwordspacing
 
 
-\bibitem{user34305:Checkifakeyexistsinsideajsonobject:2013:online}
-\BIBentryALTinterwordspacing
-stackoverflow User:~user34305. (2013, December) Check if a key exists inside a
-  json object. [Online]. Available:
-  \url{http://stackoverflow.com/questions/20804163/check-if-a-key-exists-inside-a-json-object}
-\BIBentrySTDinterwordspacing
-
-
-\bibitem{user409841:HowtoDefineCallbacksinAndroid:2010:online}
-\BIBentryALTinterwordspacing
-stackoverflow User:~user409841. (2010, August) How to define callbacks in
-  android? [Online]. Available:
-  \url{http://stackoverflow.com/questions/3398363/how-to-define-callbacks-in-android}
-\BIBentrySTDinterwordspacing
-
-
 \bibitem{user775171:LoadingNodejsmodulesdynamicallybasedonroute:2012:online}
 \BIBentryALTinterwordspacing
 stackoverflow User:~user775171. (2012, June) Loading node.js modules
   dynamically based on route. [Online]. Available:
   \url{http://stackoverflow.com/questions/10914751/loading-node-js-modules-dynamically-based-on-route}
-\BIBentrySTDinterwordspacing
-
-
-\bibitem{VidarVestnes:ClosehidetheAndroidSoftKeyboard:2009:online}
-\BIBentryALTinterwordspacing
-stackoverflow User: Vidar~Vestnes. (2009, July) Close/hide the android soft
-  keyboard. [Online]. Available:
-  \url{http://stackoverflow.com/questions/1109022/close-hide-the-android-soft-keyboard}
-\BIBentrySTDinterwordspacing
-
-
-\bibitem{VladSpreys:MainActivitythisisnotanenclosingclassAsyncTask:2013:online}
-\BIBentryALTinterwordspacing
-stackoverflow User: Vlad~Spreys. (2013, January) Mainactivity.this is not an
-  enclosing class asynctask. [Online]. Available:
-  \url{http://stackoverflow.com/questions/14116415/mainactivity-this-is-not-an-enclosing-class-asynctask}
-\BIBentrySTDinterwordspacing
-
-
-\bibitem{wei:AndroidIsitpossibletorefreshjustoneiteminalistview:2010:online}
-\BIBentryALTinterwordspacing
-stackoverflow User:~wei. (2010, June) Android: Is it possible to refresh just
-  one item in a listview? [Online]. Available:
-  \url{http://stackoverflow.com/questions/2953381/android-is-it-possible-to-refresh-just-one-item-in-a-listview}
-\BIBentrySTDinterwordspacing
-
-
-\bibitem{Yebach:postgrescasecomparestringtostring:2013:online}
-\BIBentryALTinterwordspacing
-stackoverflow User:~Yebach. (2013, January) postgres case compare string to
-  string. [Online]. Available:
-  \url{http://stackoverflow.com/questions/14398655/postgres-case-compare-string-to-string}
 \BIBentrySTDinterwordspacing
 
 
@@ -756,7 +521,9 @@ D.~Tengshe. What is the maximum theoretical accuracy of gps? [Online].
   Available:
   \url{https://gis.stackexchange.com/questions/43617/what-is-the-maximum-theoretical-accuracy-of-gps}
 \BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent This is a artical talking about the theoretical
+  accuracy of GPS this was used to assess if the project was worth developing
+  or not. \end{quotation}
 
 \bibitem{ostezer:sqlframeworks:2014:online}
 \BIBentryALTinterwordspacing
@@ -764,15 +531,9 @@ O.~Tezer. (2014, February) Sqlite vs mysql vs postgresql: A comparison of
   relational database management systems. [Online]. Available:
   \url{https://www.digitalocean.com/community/tutorials/sqlite-vs-mysql-vs-postgresql-a-comparison-of-relational-database-management-systems}
 \BIBentrySTDinterwordspacing
-
-
-\bibitem{UMAR:HowToPassDataBetweenActivities:2010:online}
-\BIBentryALTinterwordspacing
-S.~E. UMAR. (2010, January) How do i pass data between activities in android?
-  [Online]. Available:
-  \url{https://stackoverflow.com/questions/2091465/how-do-i-pass-data-between-activities-in-android}
-\BIBentrySTDinterwordspacing
-
+ \begin{quotation}\noindent Compair and contrasting different relational
+  database systems, used for deciding what database engine was the correct one
+  to use for the project. \end{quotation}
 
 \bibitem{ChrisVeness:GPSDistance:2010:online}
 \BIBentryALTinterwordspacing

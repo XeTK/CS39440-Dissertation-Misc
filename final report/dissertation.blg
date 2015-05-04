@@ -20,51 +20,52 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: References/references.bib
 Warning--I didn't find a database entry for "google:osstats:2015:online"
+Warning--I didn't find a database entry for "wei:AndroidIsitpossibletorefreshjustoneiteminalistview:2010:online"
 -- IEEEtranS.bst version 1.11 (2003/04/02) by Michael Shell.
 -- http://www.ctan.org/tex-archive/macros/latex/contrib/supported/IEEEtran/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 ** Sorting version - not for use with work to be submitted to the IEEE.
 
 Done.
-You've used 95 entries,
+You've used 65 entries,
             4538 wiz_defined-function locations,
-            1409 strings with 35208 characters,
-and the built_in function-call counts, 41599 in all, are:
-= -- 3785
-> -- 672
+            1265 strings with 27422 characters,
+and the built_in function-call counts, 28311 in all, are:
+= -- 2555
+> -- 462
 < -- 0
-+ -- 290
-- -- 192
-* -- 1518
-:= -- 7666
-add.period$ -- 190
-call.type$ -- 95
-change.case$ -- 381
++ -- 200
+- -- 132
+* -- 1040
+:= -- 5207
+add.period$ -- 130
+call.type$ -- 65
+change.case$ -- 261
 chr.to.int$ -- 0
-cite$ -- 95
-duplicate$ -- 2815
-empty$ -- 3670
-format.name$ -- 193
-if$ -- 8611
+cite$ -- 65
+duplicate$ -- 1915
+empty$ -- 2500
+format.name$ -- 133
+if$ -- 5850
 int.to.chr$ -- 0
-int.to.str$ -- 95
-missing$ -- 666
-newline$ -- 590
-num.names$ -- 190
-pop$ -- 2095
+int.to.str$ -- 65
+missing$ -- 456
+newline$ -- 410
+num.names$ -- 130
+pop$ -- 1465
 preamble$ -- 1
-purify$ -- 286
+purify$ -- 196
 quote$ -- 2
-skip$ -- 3213
+skip$ -- 2163
 stack$ -- 0
-substring$ -- 477
-swap$ -- 1618
+substring$ -- 327
+swap$ -- 1078
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 6
-type$ -- 855
+type$ -- 585
 warning$ -- 0
-while$ -- 190
-width$ -- 97
-write$ -- 1045
-(There was 1 warning)
+while$ -- 130
+width$ -- 67
+write$ -- 715
+(There were 2 warnings)
