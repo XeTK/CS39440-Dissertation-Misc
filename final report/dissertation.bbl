@@ -25,7 +25,7 @@ S.~E. 32bitfloat. (2012, September) How to use aes-encryption in postgresql?
   \url{https://dba.stackexchange.com/questions/24370/how-to-use-aes-encryption-in-postgresql}
 \BIBentrySTDinterwordspacing
  \begin{quotation}\noindent This was used to develop the encryption method
-  within the database, it is a code caption detailing AES Encryption
+  within the database. It is a code caption detailing AES Encryption.
   \end{quotation}
 
 \bibitem{Agendor:SimpleRestClient:2014:online}
@@ -42,9 +42,9 @@ A.~Ancona. (2014, April) Schedule your android app to do something
   periodically. [Online]. Available:
   \url{http://ncona.com/2014/04/schedule-your-android-app-to-do-something-periodically/}
 \BIBentrySTDinterwordspacing
- \begin{quotation}\noindent This was used within the development of the servies
-  to make the application check for new notifications periodically.
-  \end{quotation}
+ \begin{quotation}\noindent This was used within the development of the
+  background services to make the application check for new notifications
+  periodically. \end{quotation}
 
 \bibitem{bneupaane:AndroidEditText:2010:online}
 \BIBentryALTinterwordspacing
@@ -61,8 +61,8 @@ S.~E. bneupaane. (2010, November) Self-signed certificate and loopj for
 F.~Brooks. (1995, August) Plan to throw one away. [Online]. Available:
   \url{http://c2.com/cgi/wiki/wiki?PlanToThrowOneAway}
 \BIBentrySTDinterwordspacing
- \begin{quotation}\noindent This quote was used within this report, it was one
-  of the quotes that summed up how development went. \end{quotation}
+ \begin{quotation}\noindent This quote was used within this report as it was
+  one of the quotes that summed up how development went. \end{quotation}
 
 \bibitem{EspenDallokken:TLSHapi:2014:online}
 \BIBentryALTinterwordspacing
@@ -78,15 +78,15 @@ E.~Dall{\o}kken. (2014, July) Configuring tls for hapi using convict. [Online].
 P.~Davies. Android listview. [Online]. Available:
   \url{http://www.codelearn.org/android-tutorial/android-listview}
 \BIBentrySTDinterwordspacing
- \begin{quotation}\noindent Used as a refrence for developing a list view
-  within the Android application its self. \end{quotation}
+ \begin{quotation}\noindent Used as a reference for developing a list view
+  within the Android application itself. \end{quotation}
 
 \bibitem{SaschaDepold:Sequelize:2015:online}
 \BIBentryALTinterwordspacing
 S.~Depold. Sequelize api documentation. [Online]. Available:
   \url{https://sequelize.readthedocs.org/en/latest/docs/getting-started/}
 \BIBentrySTDinterwordspacing
- \begin{quotation}\noindent API documentation for the Sequelize libary which
+ \begin{quotation}\noindent API documentation for the Sequelize library, which
   was used as the SQL connector for the backend of the project. \end{quotation}
 
 \bibitem{jemt:postgresapp:2015:online}
@@ -95,7 +95,7 @@ J.~Egger and M.~Thompson. The easiest way to get started with postgresql on the
   mac. [Online]. Available: \url{http://postgresapp.com}
 \BIBentrySTDinterwordspacing
  \begin{quotation}\noindent This is the app used to install PostgreSQL on my
-  development machine, it is a quick installer for PostgreSQL. \end{quotation}
+  development machine. It is a quick installer for PostgreSQL. \end{quotation}
 
 \bibitem{NathanEsquenazi:StartingBackgroundServices:2013:online}
 \BIBentryALTinterwordspacing
@@ -103,7 +103,7 @@ N.~Esquenazi. (2013, October) Starting background services. [Online].
   Available:
   \url{https://guides.codepath.com/android/Starting-Background-Services}
 \BIBentrySTDinterwordspacing
- \begin{quotation}\noindent Used as a refrence for developing the background
+ \begin{quotation}\noindent Used as a reference for developing the background
   services used for the notifications within the Android application.
   \end{quotation}
 
@@ -113,8 +113,8 @@ N.~Esquenazi. (2013, October) Starting background services. [Online].
   Available:
   \url{https://github.com/codepath/android_guides/wiki/Using-an-ArrayAdapter-with-ListView}
 \BIBentrySTDinterwordspacing
- \begin{quotation}\noindent Used as a refrence for the development of the
-  listview's within the Android application. \end{quotation}
+ \begin{quotation}\noindent Used as a reference for the development of the list
+  views within the Android application. \end{quotation}
 
 \bibitem{Google:androidAPIDocs:2015:online}
 \BIBentryALTinterwordspacing
@@ -122,7 +122,7 @@ Google. Android developers. [Online]. Available:
   \url{https://developer.android.com/index.html}
 \BIBentrySTDinterwordspacing
  \begin{quotation}\noindent This was used all the way through the development
-  of the project, it contained all the refrences needed for developing the
+  of the project, it contained all the references needed for developing the
   Android side of the application and was the main API documentation for
   developing the front end application. \end{quotation}
 
@@ -140,9 +140,9 @@ A.~Gorbatchev. Comparing express, restify, hapi and loopback for building
   restful apis. [Online]. Available:
   \url{https://strongloop.com/strongblog/compare-express-restify-hapi-loopback/}
 \BIBentrySTDinterwordspacing
- \begin{quotation}\noindent Used for compairing different frameworks to use for
-  the backend application, was bius towards LoopBack so not really a fair
-  source for compairing the API's \end{quotation}
+ \begin{quotation}\noindent Used for comparing different frameworks to use for
+  the backend application. Was biased towards LoopBack so not really a fair
+  source for comparing the API's. \end{quotation}
 
 \bibitem{MatthewHernandez:NodeHapiRestInterface:2015:online}
 \BIBentryALTinterwordspacing
@@ -151,7 +151,7 @@ M.~Hernandez. (2013, September) Node.js and hapi - creating a rest api.
   \url{http://blog.modulus.io/nodejs-and-hapi-create-rest-api}
 \BIBentrySTDinterwordspacing
  \begin{quotation}\noindent Used in the early development of the backend
-  application to setup the early rest end points. \end{quotation}
+  application to set up the early rest end points. \end{quotation}
 
 \bibitem{RogerHu:StartingBackgroundServices:2015:online}
 \BIBentryALTinterwordspacing
@@ -182,9 +182,9 @@ G.~Mathew. (2012, June) Dynamically add items to listview in android. [Online].
   Available:
   \url{http://wptrafficanalyzer.in/blog/dynamically-add-items-to-listview-in-android/}
 \BIBentrySTDinterwordspacing
- \begin{quotation}\noindent Used as refrence for designing the friends list
-  activity within the application, it simple explains how to add elements
-  dynamically to a list view item on a activity. \end{quotation}
+ \begin{quotation}\noindent Used as reference for designing the friends list
+  activity within the application. It simply explains how to add elements
+  dynamically to a list view item on an activity. \end{quotation}
 
 \bibitem{FilipMinev:SublimeText2:2015:online}
 \BIBentryALTinterwordspacing
@@ -192,7 +192,7 @@ F.~Minev. Sublime text 2 theme for android studio. [Online]. Available:
   \url{http://www.ideacolorthemes.org/themes/5/}
 \BIBentrySTDinterwordspacing
  \begin{quotation}\noindent This is the theme that was used within the Android
-  Studio environment that helped with the useability of the application due to
+  Studio environment that helped with the usability of the application due to
   the stock themes being very bad for people with eye conditions.
   \end{quotation}
 
@@ -202,9 +202,9 @@ mkyong. (2011, November) Android spinner (drop down list) example. [Online].
   Available:
   \url{http://www.mkyong.com/android/android-spinner-drop-down-list-example/}
 \BIBentrySTDinterwordspacing
- \begin{quotation}\noindent This was used as a refrence for developing the drop
-  down list that is used in the posting of messages to select the ranges of the
-  messages. \end{quotation}
+ \begin{quotation}\noindent This was used as a reference for developing the
+  drop down list that is used in the posting of messages to select the ranges
+  of the messages. \end{quotation}
 
 \bibitem{Morten:BasicAuthOverHTTPS:2010:online}
 \BIBentryALTinterwordspacing
@@ -212,8 +212,8 @@ S.~E. Morten. (2010, December) Is basic-auth secure if done over https?
   [Online]. Available:
   \url{https://security.stackexchange.com/questions/988/is-basic-auth-secure-if-done-over-https}
 \BIBentrySTDinterwordspacing
- \begin{quotation}\noindent Used to determin if the way that the passwords are
-  being transfered to the server is secure or not. \end{quotation}
+ \begin{quotation}\noindent Used to determine if the way that the passwords are
+  being transferred to the server is secure or not. \end{quotation}
 
 \bibitem{MySampleCode:CheckboxExample:2012:online}
 \BIBentryALTinterwordspacing
@@ -265,9 +265,9 @@ stackoverflow User:~FleshWound. (2012, August) How to dismiss android
   notification after action has been clicked. [Online]. Available:
   \url{http://stackoverflow.com/questions/11883534/how-to-dismiss-android-notification-after-action-has-been-clicked}
 \BIBentrySTDinterwordspacing
- \begin{quotation}\noindent This was used for making a notifications
-  dissmisable which prevented them filling up the users notification area on
-  there phone. \end{quotation}
+ \begin{quotation}\noindent This was used for making notifications dismissable,
+  which prevented them filling up the user's notification area on their phone.
+  \end{quotation}
 
 \bibitem{friedo:Wheredoyoustoreyoursaltstrings:2009:online}
 \BIBentryALTinterwordspacing
@@ -275,9 +275,9 @@ stackoverflow User:~friedo. (2009, August) Where do you store your salt
   strings? [Online]. Available:
   \url{http://stackoverflow.com/questions/1219899/where-do-you-store-your-salt-strings}
 \BIBentrySTDinterwordspacing
- \begin{quotation}\noindent This was used in desiging the database to make sure
-  that the data is stored safely and the salt for the password system is stored
-  correctly. \end{quotation}
+ \begin{quotation}\noindent This was used in designing the database to make
+  sure that the data is stored safely and the salt for the password system is
+  stored correctly. \end{quotation}
 
 \bibitem{Kzqai:HowcanIhashpasswordsinpostgresql:2010:online}
 \BIBentryALTinterwordspacing
@@ -285,8 +285,8 @@ stackoverflow User:~Kzqai. (2010, April) How can i hash passwords in
   postgresql? [Online]. Available:
   \url{http://stackoverflow.com/questions/2647158/how-can-i-hash-passwords-in-postgresql}
 \BIBentrySTDinterwordspacing
- \begin{quotation}\noindent This was used as guidence for the for hashing the
-  passwords to make them secure. \end{quotation}
+ \begin{quotation}\noindent This was used as guidance for hashing the passwords
+  to make them secure. \end{quotation}
 
 \bibitem{Louzoid:GooglemapsAPIV3multiplemarkersonexactsamespot:2010:online}
 \BIBentryALTinterwordspacing
@@ -294,7 +294,7 @@ stackoverflow User:~Louzoid. (2010, August) Google maps api v3 - multiple
   markers on exact same spot. [Online]. Available:
   \url{http://stackoverflow.com/questions/3548920/google-maps-api-v3-multiple-markers-on-exact-same-spot}
 \BIBentrySTDinterwordspacing
- \begin{quotation}\noindent Explination on how to fix multiple markers placed
+ \begin{quotation}\noindent Explanation of how to fix multiple markers placed
   on the same space within the mapping area. \end{quotation}
 
 \bibitem{mudit:HowdoIgetthecurrentGPSlocationprogrammaticallyinAndroid:2009:online}
@@ -304,7 +304,7 @@ stackoverflow User:~mudit. (2009, October) How do i get the current gps
   \url{http://stackoverflow.com/questions/1513485/how-do-i-get-the-current-gps-location-programmatically-in-android}
 \BIBentrySTDinterwordspacing
  \begin{quotation}\noindent This is the post that all of the GPS functionality
-  is based of within the application, this is one of the most important
+  is based off within the application. This was one of the most important
   documents when it came to implementing the application. \end{quotation}
 
 \bibitem{nknj:AndroidAsynchronousHttpClientloopjandthePersistentCookieStore:2013:online}
@@ -313,8 +313,8 @@ stackoverflow User:~nknj. (2013, May) Android asynchronous http client (loopj)
   and the persistent cookie store. [Online]. Available:
   \url{http://stackoverflow.com/questions/16647287/android-asynchronous-http-client-loopj-and-the-persistent-cookie-store}
 \BIBentrySTDinterwordspacing
- \begin{quotation}\noindent Intergral post to getting the application
-  authetnicating with the backend application. \end{quotation}
+ \begin{quotation}\noindent Intergral post for getting the application
+  authenticating with the backend application. \end{quotation}
 
 \bibitem{SeymourCakes:HowtolaunchaAndroidServicewhentheapplaunches:2010:online}
 \BIBentryALTinterwordspacing
@@ -323,7 +323,7 @@ stackoverflow User: Seymour~Cakes. (2010, December) How to launch a android
   \url{http://stackoverflow.com/questions/4467600/how-to-launch-a-android-service-when-the-app-launches}
 \BIBentrySTDinterwordspacing
  \begin{quotation}\noindent This was used for deploying a service when the
-  application was loaded, this was integral to getting notifications working.
+  application was loaded. This was integral to getting notifications working.
   \end{quotation}
 
 \bibitem{simplified:AndroidListViewinFragment:2011:online}
@@ -333,7 +333,7 @@ stackoverflow User:~simplified. (2011, June) Android listview in fragment.
   \url{http://stackoverflow.com/questions/6510550/android-listview-in-fragment}
 \BIBentrySTDinterwordspacing
  \begin{quotation}\noindent This was used in the design of implementing the
-  ability to have indervidual unique comment \end{quotation}
+  ability to have individual unique comment. \end{quotation}
 
 \bibitem{user1198982:HowtodisablehidethreedotindicatorOptionmenuindicatoronICShandsets:2012:online}
 \BIBentryALTinterwordspacing
@@ -360,8 +360,7 @@ stackoverflow User:~user2627000. (2013, July) Postgresql: insert data into
   \url{http://stackoverflow.com/questions/17905501/postgresql-insert-data-into-table-from-json}
 \BIBentrySTDinterwordspacing
  \begin{quotation}\noindent This post was used for the method that converts a
-  JSON object from a JSON object to a insert statement within the database.
-  \end{quotation}
+  JSON object to an insert statement within the database. \end{quotation}
 
 \bibitem{user2736022:ConvertJavascriptJsonDateStringtoJavaDateusingGson:2014:online}
 \BIBentryALTinterwordspacing
@@ -369,8 +368,8 @@ stackoverflow User:~user2736022. (2014, May) Convert javascript/json date
   string to java date using gson. [Online]. Available:
   \url{http://stackoverflow.com/questions/23811282/convert-javascript-json-date-string-to-java-date-using-gson}
 \BIBentrySTDinterwordspacing
- \begin{quotation}\noindent This was used in parsing the dates contained within
-  a JSON object back into a useable date object within the application.
+ \begin{quotation}\noindent This was used in passing the dates contained within
+  a JSON object back into a usable date object within the application.
   \end{quotation}
 
 \bibitem{user3104719:AndroidSharedpreferencesexample:2014:online}
@@ -379,8 +378,8 @@ stackoverflow User:~user3104719. (2014, April) Android shared preferences
   example. [Online]. Available:
   \url{http://stackoverflow.com/questions/23024831/android-shared-preferences-example}
 \BIBentrySTDinterwordspacing
- \begin{quotation}\noindent This is used for sharing prefrences between the
-  different activitires within the Android application. \end{quotation}
+ \begin{quotation}\noindent This is used for sharing preferences between the
+  different activities within the Android application. \end{quotation}
 
 \bibitem{user775171:LoadingNodejsmodulesdynamicallybasedonroute:2012:online}
 \BIBentryALTinterwordspacing
@@ -398,7 +397,7 @@ stackoverflow User: Ziyan~Junaideen. (2012, May) Android - periodic background
   service - advice. [Online]. Available:
   \url{http://stackoverflow.com/questions/10420358/android-periodic-background-service-advice}
 \BIBentrySTDinterwordspacing
- \begin{quotation}\noindent This was used for squeduling periodic checking of
+ \begin{quotation}\noindent This was used for scheduling periodic checking of
   the services used within the application. \end{quotation}
 
 \bibitem{statista:devicestats:2015:online}
@@ -408,7 +407,7 @@ Statista. Market share held by smartphone platforms in the united states from
   \url{http://www.statista.com/statistics/266572/market-share-held-by-smartphone-platforms-in-the-united-states/}
 \BIBentrySTDinterwordspacing
  \begin{quotation}\noindent Market share of different mobile OS types within
-  the USA, this was used in the writting of this report to detail why Android
+  the USA. This was used in the writing of this report to detail why Android
   was used. \end{quotation}
 
 \bibitem{dmt:dropmessageteam:2015:online}
@@ -432,8 +431,8 @@ H.~Team. Hapi authentication basic. [Online]. Available:
 ------. Hapi authentication cookie. [Online]. Available:
   \url{https://github.com/hapijs/hapi-auth-cookie}
 \BIBentrySTDinterwordspacing
- \begin{quotation}\noindent This is the libary that provided cookie based
-  sessions for the application this is used in the authenticating of users.
+ \begin{quotation}\noindent This is the library that provided cookie based
+  sessions for the application that is used in the authenticating of users.
   \end{quotation}
 
 \bibitem{hapiteam:hapti:2015:online}
@@ -441,8 +440,8 @@ H.~Team. Hapi authentication basic. [Online]. Available:
 ------. A rich framework for building applications and services. [Online].
   Available: \url{http://hapijs.com}
 \BIBentrySTDinterwordspacing
- \begin{quotation}\noindent API documentation for HAPI.js this was the framwork
-  that the backend uses to create RESTful routes. \end{quotation}
+ \begin{quotation}\noindent API documentation for HAPI.js. This was the
+  framework that the backend uses to create RESTful routes. \end{quotation}
 
 \bibitem{nodeteam:node:2015:online}
 \BIBentryALTinterwordspacing
@@ -459,8 +458,8 @@ D.~Tengshe. What is the maximum theoretical accuracy of gps? [Online].
   Available:
   \url{https://gis.stackexchange.com/questions/43617/what-is-the-maximum-theoretical-accuracy-of-gps}
 \BIBentrySTDinterwordspacing
- \begin{quotation}\noindent This is a artical talking about the theoretical
-  accuracy of GPS this was used to assess if the project was worth developing
+ \begin{quotation}\noindent This is an article talking about the theoretical
+  accuracy of GPS. This was used to assess if the project was worth developing
   or not. \end{quotation}
 
 \bibitem{ostezer:sqlframeworks:2014:online}
@@ -469,8 +468,8 @@ O.~Tezer. (2014, February) Sqlite vs mysql vs postgresql: A comparison of
   relational database management systems. [Online]. Available:
   \url{https://www.digitalocean.com/community/tutorials/sqlite-vs-mysql-vs-postgresql-a-comparison-of-relational-database-management-systems}
 \BIBentrySTDinterwordspacing
- \begin{quotation}\noindent Compair and contrasting different relational
-  database systems, used for deciding what database engine was the correct one
+ \begin{quotation}\noindent Comparing and contrasting different relational
+  database systems. Used for deciding what database engine was the correct one
   to use for the project. \end{quotation}
 
 \bibitem{ChrisVeness:GPSDistance:2010:online}
@@ -480,7 +479,7 @@ C.~Veness. Calculate distance, bearing and more between latitude/longitude
   \url{http://www.movable-type.co.uk/scripts/latlong.html}
 \BIBentrySTDinterwordspacing
  \begin{quotation}\noindent This was the base algorithm used for determining
-  how far away a gps co ordinate is away from another point on the map. This is
+  how far away a GPS co-ordinate is away from another point on the map. This is
   integral to the notification code. \end{quotation}
 
 \bibitem{LarsVogel:AndroidNotifications:2013:online}
@@ -488,7 +487,7 @@ C.~Veness. Calculate distance, bearing and more between latitude/longitude
 L.~Vogel. (2013, June) Android notifications - tutorial. [Online]. Available:
   \url{http://www.vogella.com/tutorials/AndroidNotifications/article.html}
 \BIBentrySTDinterwordspacing
- \begin{quotation}\noindent This was used extensivly to implement the
+ \begin{quotation}\noindent This was used extensively to implement the
   notifications within the application. \end{quotation}
 
 \bibitem{LarsVogel:UsingLists:2014:online}
